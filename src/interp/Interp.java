@@ -393,7 +393,7 @@ public class Interp {
     }
     
     private void cargaTransport(AslTree t){
-        int cuantas = 4*evaluateExpression(t.getChild(0)).getIntegerValue()*2;
+        int cuantas = 4*evaluateExpression(t.getChild(0)).getIntegerValue();
         for(int i = 1; i<8; ++i){
             for(int j = 0; j<9;++j){
                 armor[i][j] += cuantas;
@@ -510,7 +510,7 @@ public class Interp {
                 return null;
             //el follon
             case AslLexer.PARTITURA: 
-                //int yerayless = metrica(t); LO SIENTO PERO PARA TESTEAR DA SIDA
+                 //int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
                 AslTree temposito = t.getChild(1); //Tempo => MINE
                 double tempo = quemedesmitempo(temposito.getChild(0).toString())*evaluateExpression(temposito.getChild(1)).getIntegerValue();
  				int tempox = (int)tempo;
@@ -1094,7 +1094,7 @@ public class Interp {
         String res = "";
         if (n == 0) return "R";
         else{
-            int octava = (n-1)/24 +2;
+            int octava = (n-1)/24 +1;
             int nota = (n-1)%24;
             /**C, D, E, F, G, A, B, or R
             do re mi fa sol la si quiet
@@ -1199,65 +1199,65 @@ public class Interp {
                 1 
             */
             case AslLexer.DO:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[1][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(1+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(1+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.RE:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[2][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(5+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(5+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.MI:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[3][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(9+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(9+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.FA:  
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[4][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(11+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(11+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.SOL:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[5][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(15+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(15+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.LA:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[6][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(19+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(19+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
             case AslLexer.SI:
-                rigante = Integer.parseInt(n.getChild(1).toString());
-                eger = calculaAlter(n.getChild(0));
+                rigante = Integer.parseInt(t.getChild(1).toString());
+                eger = calculaAlter(t.getChild(0));
                 if(!becu) eger += +armor[7][rigante];
                 if(eger < 0) eger += 1;
-                value = new Data(23+24*rigante + eger, Note2Dur.get(t.getChild(1).getText()), becu);
+                value = new Data(23+24*rigante + eger, Note2Dur.get(t.getChild(2).getText()), becu);
                 esp = t.getChild(2).getChildCount() ==1;
                 fromID = false;
                 break;
@@ -1551,12 +1551,14 @@ public class Interp {
                 case AslLexer.FLAUTA:
                 case AslLexer.PIANO:
                     for(int i = 0; i<f.getChildCount(); ++i){
+                        System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
                     
                 case AslLexer.REPEAT:
                     for(int i = 1; i<f.getChildCount(); ++i){
+                        System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
@@ -1564,11 +1566,17 @@ public class Interp {
                 case AslLexer.LNOTAS:
                     ++compnumber;
                     int maux = metrica(f.getChild(0));
+                     System.out.println(maux);
                     for(int i = 1; i<f.getChildCount(); ++i){
+                        System.out.println(f.getText());
                         maux += metrica(f.getChild(i));
                     }
+                     System.out.println(maux);
+                      System.out.println("KKK");
                     if(maux != beat){
-                        throw new RuntimeException("El fragmento " + compnumber + " no cumple el beatbox");
+                    System.out.println(beat);
+                    System.out.println(maux);
+                        throw new RuntimeException("El fragmento " + compnumber + " no cumple el beat");
                     }
                     break;
                     
@@ -1581,37 +1589,48 @@ public class Interp {
                 case AslLexer.SI:
                 case AslLexer.QUIET:
                     int aux = Note2Dur.get(f.getChild(2).getText());
+                        System.out.println(f.getText());
                     if(aux == -1) return ekkodur;
                     else ekkodur = aux;
                     return aux;
                     
                 case AslLexer.IF:
                     for(int i = 1; i<f.getChildCount(); ++i){
+                            System.out.println(f.getText());
                         metrica(f.getChild(i));
+                        
                     }
                     break; //yeray lo quiere asi, he intentado explicarle que no era asi, pero no me escucha, vamos a hacerle caso...
                     
                 case AslLexer.TRI:
-                    float auxf = 2*metrica(f.getChild(0))/3;
-                    for(int i = 1; i < f.getChildCount(); ++i){
-                        auxf += 2*metrica(f.getChild(i))/3;
+                int auxf = 0;
+                    for(int i = 0; i < f.getChildCount(); ++i){
+                        System.out.println(f.getText());
+                        auxf += metrica(f.getChild(i));
                     }
-                    return (int) auxf;
+                    auxf = 2*auxf;
+                    return auxf/3;
                     
                 case AslLexer.MULTINOTA:
-                    return Note2Dur.get(f.getChild(1));
+                    System.out.println(f.getText());
+                    return Note2Dur.get(f.getChild(1).getText());
+                    
                     
                 case AslLexer.FALL:
                 case AslLexer.RAISE:
+                System.out.println(f.getText());
                     return metrica(f.getChild(0));
                     
                 case AslLexer.TWICE:
+                System.out.println(f.getText());
                     return 2*metrica(f.getChild(0));
                     
                 case AslLexer.HALF:
+                System.out.println(f.getText());
                     return metrica(f.getChild(0))/2;
                 
                 case AslLexer.ID:
+                System.out.println(f.getText());
                         if(Stack.getVariable(f.getText()).getDuracion() != -1) ekkodur = Stack.getVariable(f.getText()).getDuracion();
                         return ekkodur;
                 
