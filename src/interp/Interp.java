@@ -50,12 +50,14 @@ public class Interp {
    
     private int beat;
     private int [][] armor;
-    private boolean becu;
+    private boolean becu = false;
     private boolean esp = false;
     private int compnumber = 0;
+	private int partnumber = 0;
     private int ekkodur;
     private boolean trie = false;
     private boolean fromID = false;
+	private boolean fromIf = false;
     
     
     private String ant_duracion = ""; //SU PUTA MADRE ME CAGO EN SU PUTA VIDA DESGRACIADA DE MIERDA QUE TE JODAN I TE MUERAS DE UN PUTO CANCER HIJO DE PUTA TE DESEO LA PEOR DE LAS MUERTES QUE SUICIDARTE SEA TU UNICA OPCION Y YO TE PARTA LAS PUTAS PIERNAS ANTES DE HACERLO IMBEIL TE BVOY A MATAR IHJOAFNDKASLPSX
@@ -509,8 +511,15 @@ public class Interp {
                 executeFunction(t.getChild(0).getText(), t.getChild(1));
                 return null;
             //el follon
-            case AslLexer.PARTITURA: 
-                 //int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
+            case AslLexer.PARTITURA:  
+                becu = false;
+				esp = false;
+				compnumber = 0;
+				++partnumber;
+				trie = false;
+				fromID = false;
+				fromIf = false;
+				//int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
                 AslTree temposito = t.getChild(1); //Tempo => MINE
                 double tempo = quemedesmitempo(temposito.getChild(0).toString())*evaluateExpression(temposito.getChild(1)).getIntegerValue();
  				int tempox = (int)tempo;
@@ -1564,19 +1573,24 @@ public class Interp {
                     break;
                 
                 case AslLexer.LNOTAS:
-                    ++compnumber;
+                    if(!fromIf)++compnumber;
                     int maux = metrica(f.getChild(0));
                      System.out.println(maux);
                     for(int i = 1; i<f.getChildCount(); ++i){
                         System.out.println(f.getText());
                         maux += metrica(f.getChild(i));
                     }
-                     System.out.println(maux);
-                      System.out.println("KKK");
-                    if(maux != beat){
-                    System.out.println(beat);
                     System.out.println(maux);
-                        throw new RuntimeException("El fragmento " + compnumber + " no cumple el beat");
+                    System.out.println("KKK");
+                    if(!fromIf){
+                        if(maux != beat){
+                            System.out.println(beat);
+                            System.out.println(maux);
+                            throw new RuntimeException("El fragmento " + compnumber + "de la partitura" + partnumber + " no cumple el beat");
+                        }
+                    }else{
+                        fromIf = fasle;
+                        return maux;
                     }
                     break;
                     
@@ -1595,12 +1609,17 @@ public class Interp {
                     return aux;
                     
                 case AslLexer.IF:
-                    for(int i = 1; i<f.getChildCount(); ++i){
-                            System.out.println(f.getText());
-                        metrica(f.getChild(i));
-                        
+                    fromIf = true;
+                    int ret metrica(f.getChild(1));
+                    for(int i = 2; i<f.getChildCount(); ++i){
+                        fromIf = true;
+                        System.out.println(f.getText());
+                        if(ret != metrica(f.getChild(i)){
+                            throw new RuntimeException("La metrica del if/else del fragmento" + compnumber + " de la partitura " + partnumber + " no coincide.");
+                        }
                     }
-                    break; //yeray lo quiere asi, he intentado explicarle que no era asi, pero no me escucha, vamos a hacerle caso...
+                    return ret;
+                   //yeray lo quiere asi, he intentado explicarle que no era asi, pero no me escucha, vamos a hacerle caso...
                     
                 case AslLexer.TRI:
                 int auxf = 0;
