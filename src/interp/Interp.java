@@ -1586,10 +1586,10 @@ public class Interp {
                         if(maux != beat){
                             System.out.println(beat);
                             System.out.println(maux);
-                            throw new RuntimeException("El fragmento " + compnumber + "de la partitura" + partnumber + " no cumple el beat");
+                            throw new RuntimeException("El fragmento " + compnumber + " de la partitura " + partnumber + " no cumple el beat");
                         }
                     }else{
-                        fromIf = fasle;
+                        fromIf = false;
                         return maux;
                     }
                     break;
@@ -1610,11 +1610,11 @@ public class Interp {
                     
                 case AslLexer.IF:
                     fromIf = true;
-                    int ret metrica(f.getChild(1));
+                    int ret = metrica(f.getChild(1));
                     for(int i = 2; i<f.getChildCount(); ++i){
                         fromIf = true;
                         System.out.println(f.getText());
-                        if(ret != metrica(f.getChild(i)){
+                        if(ret != metrica(f.getChild(i))){
                             throw new RuntimeException("La metrica del if/else del fragmento" + compnumber + " de la partitura " + partnumber + " no coincide.");
                         }
                     }

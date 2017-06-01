@@ -51,8 +51,8 @@ func main() {
 			| Sol4.c* Sol4.sc Fa4.c* Mi4.sc Fa4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.n 
-			| if (Time == 1) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
-			| if (Time == 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
+			| if (Time = 1) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
+			| if (Time = 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
 			:|| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
 			| (Sol4, Sol3).n (Si4, Si3).b* 
 			| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
@@ -70,7 +70,7 @@ func main() {
 			| Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc 
 			| Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
-			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.c
+			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.n
 			| Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc 
 			| Sol4.c* Sol4.sc Fa4.c* Mi4.sc Fa4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
@@ -125,11 +125,11 @@ func main() {
 			| Si1.n (Mi2, Fa2).n Si1.n (Re2, Fa2).n
 			| Fa1.n (¬La2, Mi3).n Fa1.n (La2, Mi3).n
 			| Si1.n Do1.n $Re1.n ¬Re1.n
-			| 2z||: Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3)
+			| 2z||: Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
 			| (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n
 			| Fa1.n (Fa2, La2, Do3).n $$Do1.n (Si2, Re3, Fa3).n
-			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3)
+			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n 
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
 			| if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n } else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n}
 			| if (Time = 1) { (Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n}
@@ -137,7 +137,7 @@ func main() {
 			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n
 			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n
 			| Mi2.n $$Do1.n Do1.n Re1.n
-			| Mi1.n (Sol2, Si2, Mi3) Re1.n (Si2, Re3, Fa3).n
+			| Mi1.n (Sol2, Si2, Mi3).n Re1.n (Si2, Re3, Fa3).n
 			| $Re1.n (Si2, $Re3, Fa3).n Do1.n (Do3, ¬Mi3).n
 			| Fa1.n (Fa2, Mi3).n $$Do1.n (Fa2, Si2, Do3, Mi3).n
 			| Mi1.n (Mi2, Sol2, Si2).n Mi1.b
