@@ -519,7 +519,7 @@ public class Interp {
 				trie = false;
 				fromID = false;
 				fromIf = false;
-				//int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
+				int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
                 AslTree temposito = t.getChild(1); //Tempo => MINE
                 double tempo = quemedesmitempo(temposito.getChild(0).toString())*evaluateExpression(temposito.getChild(1)).getIntegerValue();
  				int tempox = (int)tempo;
@@ -1103,7 +1103,7 @@ public class Interp {
         String res = "";
         if (n == 0) return "R";
         else{
-            int octava = (n-1)/24 +1;
+            int octava = (n-1)/24 +2;
             int nota = (n-1)%24;
             /**C, D, E, F, G, A, B, or R
             do re mi fa sol la si quiet
