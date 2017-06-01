@@ -2,10 +2,6 @@
 
 func main() {
     
-   yeray = Sol.b*;
-   
-   ferran = Mi;
-    
    Beat 4:4
    Speed n:120
    
@@ -91,9 +87,8 @@ func main() {
         | Quiet.n [(¬La4, #Fa4).n Si3.c] [(Si4, Sol4).n Si3.c] [(La4, Fa4).n Si3.c] 
         | Quiet.n [(¬La4, #Fa4).n Si3.c] [($La4, ¬Fa4).n Si3.c] [(Sol4, ¬Mi4).n Si3.c] 
         | (Sol4, Mi4, Si3).r |
-//**//
 	Voice Piano | Quiet.r 
-        | Mi1.n (Sol2, Si2, Mi3).n wtf (Mi3, Si2, Sol2).n 
+        | Mi1.n (Sol2, Si2, Mi3).n $$Do1.n (Mi3, Si2, Sol2).n 
         | La1.n (La2, Do3, Mi3).n ¬La1.n (¬La2, Do3, Mi3).n 
         | La1.n (Do3, Mi3, $Sol3).n La1.n (Do3, Mi3, Sol3).n 
         | //5// Mi1.n (Sol2, Si2, Mi3).n Mi1.n (Sol2, Si2, Mi3).n 
@@ -103,29 +98,75 @@ func main() {
         | //9// Si1.n (Mi2, Fa2).n Si1.n (Re2, Fa2).n 
         | Fa1.n (¬La2, Mi3).n Fa1.n (La2, Mi3).n 
         | Si1.n Do1.n $Re1.n ¬Re1.n 
-        | Mi1.n (Si2, Mi3, Sol3).n wtf (Si2, Re3, $Sol3).n 
-        | Mi1.n (Si2, Mi3, Sol3).n wtf (Si2, Re3, $Sol3).n 
-        | //14// Mi1.n (Si2, Mi3, Sol3).n wtf (Si2, Re3, $Sol3).n 
-        | Mi2.n wtf Do1.n Re1.n 
+        | Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n 
+        | Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n 
+        | //14// Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n 
+        | Mi2.n $$Do1.n Do1.n Re1.n 
         | Mi1.n (Sol2, Si2, Mi3).n Re1.n (Si2, Re3, Fa3).n 
         | $Re1.n (Si2, $Re3, Fa3).n Do1.n (Do3, ¬Mi3).n 
-        | Fa1.n (Fa2, Mi3).n wtf (Fa2, Si2, Do3, Mi3).n 
+        | Fa1.n (Fa2, Mi3).n $$Do1.n (Fa2, Si2, Do3, Mi3).n 
         | //19// Mi1.n Mi1.n Fa1.n Sol1.n 
         | La1.n ($Sol2, Do3, Mi3).n Mi1.n (¬Sol2, Do3, Mi3).n 
         | (¬La1, Mi2).n Fa1.n (Si1, La2).n Quiet.n 
-        | 2 z||: Mi1.n (Si2, Mi3, Sol3).n wtf (Si2, Mi3, $Sol3).n 
+        | 2 z||: Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n 
         | //23// Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n 
         | (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n 
-        | Fa1.n (Fa2, La2, Do3).n wtf (Si2, Re3, Fa3).n 
-        | Mi1.n (Si2, Mi3, Sol3).n wtf (Si2, Mi3, $Sol3).n 
+        | Fa1.n (Fa2, La2, Do3).n $$Do1.n (Si2, Re3, Fa3).n 
+        | Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n 
         | //27// Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n 
         | if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} 
-        | if (Time = 1) {(Fa1, Fa2).n (wtf, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {//31// (Fa1, Fa2).n (wtf, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} 
+        | if (Time = 1) {(Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {//31// (Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} 
         :|| La1.n (Do3, Mi3, $Sol3).n La1.n (Do3, Mi3, Sol3).n 
         | Mi1.n (Sol2, Si2, Mi3).n Mi1.n (Sol2, Si2, Mi3).n 
         | La1.n (Si2, Mi3).n La1.n (Si2, Mi3).n 
         | Mi1.n (Sol2, Si2, Mi3).n Mi1.n (Sol2, Si2, Mi3).n 
-        | //36//
+        | //36// Fa1.n (Si2, Mi3).n Fa1.n (¬La2, Mi3).n
+		| Si1.n (Mi2, Fa2).n Si1.n (Re2, Fa2).n
+		| Fa1.n (¬La2, Mi3).n Fa1.n (La2, Mi3).n
+		| Si1.n Do1.n $Re1.n ¬Re1.n
+		| //40// 2z||: Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3)
+		| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
+		| (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n
+		| Fa1.n (Fa2, La2, Do3).n $$Do1.n (Si2, Re3, Fa3).n
+		| //44// Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3)
+		| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
+		| if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n } else {//48// (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n}
+		| if (Time = 1) { (Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n}
+		:|| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Re3, $Sol3).n
+		| //53// Mi2.n $$Do1.n Do1.n Re1.n
+		| Mi1.n (Sol2, Si2, Mi3) Re1.n (Si2, Re3, Fa3).n
+		| $Re1.n (Si2, $Re3, Fa3).n Do1.n (Do3, ¬Mi3).n
+		| Fa1.n (Fa2, Mi3).n $$Do1.n (Fa2, Si2, Do3, Mi3).n
+		| Mi1.n (Mi2, Sol2, Si2).n Mi1.b
+		| //58// Mi2.c Si2.c Sol3.c Si2.c Fa2.c Do3.c La3.c Do3.c
+		| Mi2.c Si2.c Sol3.c Si2.c La3.c Si2.c Sol3.c Si2.c
+		| (Do2, Do3).n (Sol1, Sol2).n (La1, La2).n (Sol1, Sol2).n
+		| (#Fa1, #Fa2).n (#Sol1, #Sol2).n  Si1.c Si2.c Re3.n
+		| //62// Mi2.c Si2.c Sol3.c Si2.c Fa2.c Do3.c La3.c Do3.c
+		| Mi2.c Si2.c Sol3.c Si2.c La3.c Si2.c Sol3.c Si2.c
+		| (Do2, Do3).n (Sol1, Sol2).n (La1, La2).n (Sol1, Sol2).n
+		| (Fa1, Fa2).n (Si1, Si2).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n
+		| //66// Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
+		| (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n
+		| Fa1.n (Fa2, La2, Do3).n $$Do1.n (Si2, Re3, Fa3).n
+		| //70// Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
+		| (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n
+		| (Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n
+		| //74// Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+		| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+		| Mi2.n $$Do1.n Do1.n Re1.n
+		| Mi1.n (Sol2, Si2, Mi3).n Re1.n (Si2, Re3, Fa3).n
+		| //79// $Re1.n (Si2, $Re3, Fa3).n Do1.n (Do3, ¬Mi3).n
+		| Fa1.n (Fa2, Mi3).n $$Do1.n (Fa2, Si2, Do3, Mi3).n
+		| Mi1.n (Mi2, Sol2, Si2).n $$Do1.n (Mi2, Sol2, Si2).n
+		| $$Do1.n (#Fa2, ¬La2).n (Sol2, Si2).n (Fa2, La2).n
+		| Mi1.c (Mi1, Si1).c~ (Mi1, Si1).b*
+		| (Mi1, Si1, Mi2).r|
 ;
    
 }
