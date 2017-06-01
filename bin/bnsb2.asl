@@ -51,8 +51,8 @@ func main() {
 			| Sol4.c* Sol4.sc Fa4.c* Mi4.sc Fa4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.n 
-			| if (Time == 1) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
-			| if (Time == 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
+			| if (Time = 1) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
+			| if (Time = 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
 			:|| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
 			| (Sol4, Sol3).n (Si4, Si3).b* 
 			| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
