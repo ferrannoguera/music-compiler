@@ -128,6 +128,9 @@ public class Interp {
     private String getInsrumento(String s) {
         if (s.equals("Flauta")) return "Flute";
         else if (s.equals("Piano")) return "Piano";
+		else if (s.equals("Saxo")) return "ALTO_SAX";
+		else if (s.equals("Shot")) return "GUNSHOT";
+		else if (s.equals("Guitarra")) return "ELECTRIC_CLEAN_GUITAR";
         else return "IMBECIL";
     }
     
@@ -1559,6 +1562,9 @@ public class Interp {
                 case AslLexer.CHORUS:
                 case AslLexer.FLAUTA:
                 case AslLexer.PIANO:
+				case AslLexer.SAXO:
+				case AslLexer.SHOT:
+				case AslLexer.GUITARRA:
                     for(int i = 0; i<f.getChildCount(); ++i){
                         System.out.println(f.getText());
                         metrica(f.getChild(i));
