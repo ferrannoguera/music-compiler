@@ -49,7 +49,7 @@ public class Interp {
     Pattern patterns_musicote = new Pattern();
    
     private int beat;
-    private int [][] armor;
+    private int [][] armor = new int[8][9];
     private boolean becu = false;
     private boolean esp = false;
     private int compnumber = 0;
