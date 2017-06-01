@@ -129,7 +129,11 @@ func main() {
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
 			| (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n
 			| Fa1.n (Fa2, La2, Do3).n $$Do1.n (Si2, Re3, Fa3).n
+<<<<<<< HEAD
+			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n
+=======
 			| Mi1.n (Si2, Mi3, Sol3).n $$Do1.n (Si2, Mi3, $Sol3).n 
+>>>>>>> 481a00aebea301528be6c52c0cef95208c25e09a
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
 			| if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n } else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n}
 			| if (Time = 1) { (Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n}

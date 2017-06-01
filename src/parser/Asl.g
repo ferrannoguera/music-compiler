@@ -128,7 +128,7 @@ trans 	:	TRANSPORT^ expr;
 
 armour 	:	ARMOR '{' (alter nota OCT)+ '}'-> ^(ARMOR ^(nota alter OCT)+);
 
-instrumento:		 PIANO|FLAUTA;	
+instrumento:		 PIANO|FLAUTA|SAXO|SHOT|GUITARRA;	
 
 alter	:	(BEMOL^|BECUADRO^|SOSTENIDO^)+;
 //////////////////////////////////////////////////////////////////////////////////
@@ -265,6 +265,9 @@ CHORUS	:	'Chorus';
 VOICE	:	'Voice';
 PIANO	:	'Piano';
 FLAUTA	:	'Flauta';
+SAXO	: 	'Saxo';
+SHOT	:	'Shot';
+GUITARRA:	'Guitarra'
 TWICE	:	'Twice';
 HALF	:	'Half';
 RAISE	:	'Raise';
