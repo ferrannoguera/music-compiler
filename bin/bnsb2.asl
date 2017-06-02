@@ -8,7 +8,7 @@ func main() {
    Armor {$La1 $La2 $La3 $La4 $Si1 $Si2 $Si3 $Si4 $Mi1 $Mi2 $Mi3 $Mi4}
 
    Chorus{
-		Voice Piano | Quiet.n [(Si4, Sol4).n Si.c] [(¬La4, #Fa4).n Si3.c] ($La4, ¬Fa4).n 
+		Voice Saxo | Quiet.n [(Si4, Sol4).n Si.c] [(¬La4, #Fa4).n Si3.c] ($La4, ¬Fa4).n 
 			| (Sol4, Mi4).n~ [(Sol4, Mi4).n Mi4.c~] [Mi4.n Fa4.c] Sol4.n 
 			| (Fa4, Do4).n~ [(Fa4, Do4).n (Do4, ¬La3, $Sol3, Mi3).c~] (Do4, ¬La3, $Sol3, Mi3).b 
 			| Quiet.n [(Mi4, Do4).n $Sol3.c] [(Mi4, Do4, Sol3).n Fa4.c] (Mi4, Do4).n
@@ -35,8 +35,8 @@ func main() {
 			| Sol4.c* Sol4.sc Fa4.c* Mi4.sc Fa4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.n 
-			| if (Time = 1) { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc } else{ Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc} 
-			| if (Time = 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b } else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b }
+			| if (Time = 0) { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc } else{ Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc} 
+			| if (Time = 0) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b } else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b }
 			:|| Quiet.n [(Mi4, Do4).n $Sol3.c] [(Mi4, Do4).n Fa4.c] (Mi4, Do4).n 
 			| (Sol4, Si3).n~ [(Sol4, Si3).n (Si3, Sol3).c~] [(Si3, Sol3).n Do4.c] [(Si3, Sol3).c Do4.c Mi4.c] 
 			| (Fa4, Do4, La3).n [($Sol4, La3).n Fa4.c] [(Sol4, Do4, La3).n Fa4.c] (Mi4, La3).n 
@@ -51,8 +51,8 @@ func main() {
 			| Sol4.c* Sol4.sc Fa4.c* Mi4.sc Fa4.b 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Re4.sc Mi4.n 
 			| Si4.c* Sol4.sc Fa4.c* Mi4.sc Do4.c* Mi4.sc Si3.n 
-			| if (Time = 1) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
-			| if (Time = 1) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
+			| if (Time = 0) { Do4.c* Mi4.sc Si3.c* Si3.sc Do4.c* Re4.sc Mi4.c* La4.sc } else { Do4.c* Mi4.sc Si3.n Do4.c* Re4.sc Mi4.c* La4.sc} 
+			| if (Time = 0) { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} else { Sol4.c* Mi4.sc Fa4.c* Re4.sc Mi4.b} 
 			:|| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
 			| (Sol4, Sol3).n (Si4, Si3).b* 
 			| [(Sol4, Sol3).c (Si4, Si3).c (Si4, Si3).c] (Si4, Si3).b [(Do5, Do4).n (Si4, Si3).c] 
@@ -88,7 +88,7 @@ func main() {
 			| Quiet.n [(¬La4, #Fa4).n Si3.c] [(Si4, Sol4).n Si3.c] [(La4, Fa4).n Si3.c] 
 			| Quiet.n [(¬La4, #Fa4).n Si3.c] [($La4, ¬Fa4).n Si3.c] [(Sol4, ¬Mi4).n Si3.c] 
 			| (Sol4, Mi4, Si3).r |
-		Voice Piano | Quiet.r 
+		Voice Saxo | Quiet.r 
 			| Mi1.n (Sol2, Si2, Mi3).n $$$Do1.n (Mi3, Si2, Sol2).n 
 			| La1.n (La2, Do3, Mi3).n ¬La1.n (¬La2, Do3, Mi3).n 
 			| La1.n (Do3, Mi3, $Sol3).n La1.n (Do3, Mi3, Sol3).n 
@@ -115,8 +115,8 @@ func main() {
 			| Fa1.n (Fa2, La2, Do3).n $$$Do1.n (Si2, Re3, Fa3).n 
 			| Mi1.n (Si2, Mi3, Sol3).n $$$Do1.n (Si2, Mi3, $Sol3).n 
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n 
-			| if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} 
-			| if (Time = 1) {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} 
+			| if (Time = 0) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n} 
+			| if (Time = 0) {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} 
 			:|| La1.n (Do3, Mi3, $Sol3).n La1.n (Do3, Mi3, Sol3).n 
 			| Mi1.n (Sol2, Si2, Mi3).n Mi1.n (Sol2, Si2, Mi3).n 
 			| La1.n (Si2, Mi3).n La1.n (Si2, Mi3).n 
@@ -131,8 +131,8 @@ func main() {
 			| Fa1.n (Fa2, La2, Do3).n $$$Do1.n (Si2, Re3, Fa3).n
 			| Mi1.n (Si2, Mi3, Sol3).n $$$Do1.n (Si2, Mi3, $Sol3).n
 			| Mi1.n (Si2, Mi3, Sol3).n (Si2, Mi3, La3).n (Si2, Mi3, Sol3).n
-			| if (Time = 1) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n } else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n}
-			| if (Time = 1) { (Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n}
+			| if (Time = 0) {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n } else {(Do2, Mi2, La2).n (Si1, Mi2, Sol2).n (Do2, Mi2, La2).n (Si1, Mi2, Sol2).n}
+			| if (Time = 0) { (Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n} else {(Fa1, Fa2).n ($$$Do1, Si1).n (Mi1, Mi2).n (Si2, Mi3, Sol3).n}
 			:|| Mi1.n (Si2, Mi3, Sol3).n $$$Do1.n (Si2, Re3, $Sol3).n
 			| Mi1.n (Si2, Mi3, Sol3).n $$$Do1.n (Si2, Re3, $Sol3).n
 			| Mi1.n (Si2, Mi3, Sol3).n $$$Do1.n (Si2, Re3, $Sol3).n

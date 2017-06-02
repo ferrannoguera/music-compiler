@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home2/users/alumnes/1184002/Asl/src/parser/Asl.g 2017-05-26 17:54:22
+// $ANTLR 3.4 /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g 2017-06-02 12:38:52
 
 package parser;
 
@@ -11,14 +11,6 @@ import java.util.ArrayList;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class AslLexer extends Lexer {
     public static final int EOF=-1;
-    public static final int T__81=81;
-    public static final int T__82=82;
-    public static final int T__83=83;
-    public static final int T__84=84;
-    public static final int T__85=85;
-    public static final int T__86=86;
-    public static final int T__87=87;
-    public static final int T__88=88;
     public static final int T__89=89;
     public static final int T__90=90;
     public static final int T__91=91;
@@ -40,6 +32,14 @@ public class AslLexer extends Lexer {
     public static final int T__107=107;
     public static final int T__108=108;
     public static final int T__109=109;
+    public static final int T__110=110;
+    public static final int T__111=111;
+    public static final int T__112=112;
+    public static final int T__113=113;
+    public static final int T__114=114;
+    public static final int T__115=115;
+    public static final int T__116=116;
+    public static final int T__117=117;
     public static final int AND=4;
     public static final int ARGLIST=5;
     public static final int ARMOR=6;
@@ -69,54 +69,62 @@ public class AslLexer extends Lexer {
     public static final int FUNCALL=30;
     public static final int GE=31;
     public static final int GT=32;
-    public static final int HALF=33;
-    public static final int ID=34;
-    public static final int IF=35;
-    public static final int INT=36;
-    public static final int LA=37;
-    public static final int LE=38;
-    public static final int LIST_FUNCTIONS=39;
-    public static final int LIST_INSTR=40;
-    public static final int LNOTAS=41;
-    public static final int LT=42;
-    public static final int MEQUAL=43;
-    public static final int MI=44;
-    public static final int MINUS=45;
-    public static final int MOD=46;
-    public static final int MUL=47;
-    public static final int MULTINOTA=48;
-    public static final int NOT=49;
-    public static final int NOT_EQUAL=50;
-    public static final int NURAN=51;
-    public static final int OCT=52;
-    public static final int OR=53;
-    public static final int PARAMS=54;
-    public static final int PARTITURA=55;
-    public static final int PEQUAL=56;
-    public static final int PIANO=57;
-    public static final int PLUS=58;
-    public static final int PREF=59;
-    public static final int PVALUE=60;
-    public static final int QUIET=61;
-    public static final int RAISE=62;
-    public static final int RE=63;
-    public static final int READ=64;
-    public static final int REPEAT=65;
-    public static final int REQUAL=66;
-    public static final int RETURN=67;
-    public static final int SI=68;
-    public static final int SOL=69;
-    public static final int SOSTENIDO=70;
-    public static final int SPEED=71;
-    public static final int STRING=72;
-    public static final int TRANSPORT=73;
-    public static final int TRI=74;
-    public static final int TRUE=75;
-    public static final int TWICE=76;
-    public static final int VOICE=77;
-    public static final int WHILE=78;
-    public static final int WRITE=79;
-    public static final int WS=80;
+    public static final int GUITARRA=33;
+    public static final int HALF=34;
+    public static final int ID=35;
+    public static final int IF=36;
+    public static final int INT=37;
+    public static final int LA=38;
+    public static final int LE=39;
+    public static final int LIST_FUNCTIONS=40;
+    public static final int LIST_INSTR=41;
+    public static final int LNOTAS=42;
+    public static final int LT=43;
+    public static final int MEQUAL=44;
+    public static final int MI=45;
+    public static final int MINUS=46;
+    public static final int MOD=47;
+    public static final int MUL=48;
+    public static final int MULTINOTA=49;
+    public static final int NOT=50;
+    public static final int NOT_EQUAL=51;
+    public static final int NURAN=52;
+    public static final int OCT=53;
+    public static final int OR=54;
+    public static final int ORGANO=55;
+    public static final int PARAMS=56;
+    public static final int PARTITURA=57;
+    public static final int PEQUAL=58;
+    public static final int PERCUSION=59;
+    public static final int PIANO=60;
+    public static final int PLUS=61;
+    public static final int PREF=62;
+    public static final int PVALUE=63;
+    public static final int QUIET=64;
+    public static final int RAISE=65;
+    public static final int RE=66;
+    public static final int READ=67;
+    public static final int REPEAT=68;
+    public static final int REQUAL=69;
+    public static final int RETURN=70;
+    public static final int SAXO=71;
+    public static final int SHOT=72;
+    public static final int SI=73;
+    public static final int SOL=74;
+    public static final int SOSTENIDO=75;
+    public static final int SPEED=76;
+    public static final int STRING=77;
+    public static final int TRANSPORT=78;
+    public static final int TRI=79;
+    public static final int TROMPA=80;
+    public static final int TRUE=81;
+    public static final int TWICE=82;
+    public static final int VIOLA=83;
+    public static final int VOICE=84;
+    public static final int WHILE=85;
+    public static final int WRITE=86;
+    public static final int WS=87;
+    public static final int XILOFONO=88;
 
     // delegates
     // delegators
@@ -131,187 +139,17 @@ public class AslLexer extends Lexer {
     public AslLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home2/users/alumnes/1184002/Asl/src/parser/Asl.g"; }
-
-    // $ANTLR start "T__81"
-    public final void mT__81() throws RecognitionException {
-        try {
-            int _type = T__81;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:6:7: ( '&' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:6:9: '&'
-            {
-            match('&'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__81"
-
-    // $ANTLR start "T__82"
-    public final void mT__82() throws RecognitionException {
-        try {
-            int _type = T__82;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:7:7: ( '(' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:7:9: '('
-            {
-            match('('); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__82"
-
-    // $ANTLR start "T__83"
-    public final void mT__83() throws RecognitionException {
-        try {
-            int _type = T__83;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:8:7: ( ')' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:8:9: ')'
-            {
-            match(')'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__83"
-
-    // $ANTLR start "T__84"
-    public final void mT__84() throws RecognitionException {
-        try {
-            int _type = T__84;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:9:7: ( ',' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:9:9: ','
-            {
-            match(','); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__84"
-
-    // $ANTLR start "T__85"
-    public final void mT__85() throws RecognitionException {
-        try {
-            int _type = T__85;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:10:7: ( '.' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:10:9: '.'
-            {
-            match('.'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__85"
-
-    // $ANTLR start "T__86"
-    public final void mT__86() throws RecognitionException {
-        try {
-            int _type = T__86;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:11:7: ( ':' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:11:9: ':'
-            {
-            match(':'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__86"
-
-    // $ANTLR start "T__87"
-    public final void mT__87() throws RecognitionException {
-        try {
-            int _type = T__87;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:12:7: ( ':||' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:12:9: ':||'
-            {
-            match(":||"); 
-
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__87"
-
-    // $ANTLR start "T__88"
-    public final void mT__88() throws RecognitionException {
-        try {
-            int _type = T__88;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:13:7: ( ';' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:13:9: ';'
-            {
-            match(';'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__88"
+    public String getGrammarFileName() { return "/dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g"; }
 
     // $ANTLR start "T__89"
     public final void mT__89() throws RecognitionException {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:14:7: ( '[' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:14:9: '['
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:6:7: ( '&' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:6:9: '&'
             {
-            match('['); 
+            match('&'); 
 
             }
 
@@ -329,10 +167,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:15:7: ( ']' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:15:9: ']'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:7:7: ( '(' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:7:9: '('
             {
-            match(']'); 
+            match('('); 
 
             }
 
@@ -350,10 +188,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:16:7: ( 'b' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:16:9: 'b'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:8:7: ( ')' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:8:9: ')'
             {
-            match('b'); 
+            match(')'); 
 
             }
 
@@ -371,12 +209,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:17:7: ( 'b*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:17:9: 'b*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:9:7: ( ',' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:9:9: ','
             {
-            match("b*"); 
-
-
+            match(','); 
 
             }
 
@@ -394,10 +230,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:18:7: ( 'c' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:18:9: 'c'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:10:7: ( '.' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:10:9: '.'
             {
-            match('c'); 
+            match('.'); 
 
             }
 
@@ -415,12 +251,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:19:7: ( 'c*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:19:9: 'c*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:11:7: ( ':' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:11:9: ':'
             {
-            match("c*"); 
-
-
+            match(':'); 
 
             }
 
@@ -438,10 +272,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:20:7: ( 'f' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:20:9: 'f'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:12:7: ( ':||' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:12:9: ':||'
             {
-            match('f'); 
+            match(":||"); 
+
+
 
             }
 
@@ -459,12 +295,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:21:7: ( 'f*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:21:9: 'f*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:13:7: ( ';' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:13:9: ';'
             {
-            match("f*"); 
-
-
+            match(';'); 
 
             }
 
@@ -482,10 +316,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:22:7: ( 'n' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:22:9: 'n'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:14:7: ( '[' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:14:9: '['
             {
-            match('n'); 
+            match('['); 
 
             }
 
@@ -503,12 +337,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:23:7: ( 'n*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:23:9: 'n*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:15:7: ( ']' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:15:9: ']'
             {
-            match("n*"); 
-
-
+            match(']'); 
 
             }
 
@@ -526,10 +358,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:24:7: ( 'r' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:24:9: 'r'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:16:7: ( 'b' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:16:9: 'b'
             {
-            match('r'); 
+            match('b'); 
 
             }
 
@@ -547,10 +379,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__100;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:25:8: ( 'r*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:25:10: 'r*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:17:8: ( 'b*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:17:10: 'b*'
             {
-            match("r*"); 
+            match("b*"); 
 
 
 
@@ -570,12 +402,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__101;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:26:8: ( 'sc' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:26:10: 'sc'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:18:8: ( 'c' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:18:10: 'c'
             {
-            match("sc"); 
-
-
+            match('c'); 
 
             }
 
@@ -593,10 +423,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__102;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:27:8: ( 'sc*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:27:10: 'sc*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:19:8: ( 'c*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:19:10: 'c*'
             {
-            match("sc*"); 
+            match("c*"); 
 
 
 
@@ -616,12 +446,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__103;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:28:8: ( 'sf' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:28:10: 'sf'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:20:8: ( 'f' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:20:10: 'f'
             {
-            match("sf"); 
-
-
+            match('f'); 
 
             }
 
@@ -639,10 +467,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__104;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:29:8: ( 'sf*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:29:10: 'sf*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:21:8: ( 'f*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:21:10: 'f*'
             {
-            match("sf*"); 
+            match("f*"); 
 
 
 
@@ -662,12 +490,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__105;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:30:8: ( 'z||:' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:30:10: 'z||:'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:22:8: ( 'n' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:22:10: 'n'
             {
-            match("z||:"); 
-
-
+            match('n'); 
 
             }
 
@@ -685,10 +511,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__106;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:31:8: ( '{' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:31:10: '{'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:23:8: ( 'n*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:23:10: 'n*'
             {
-            match('{'); 
+            match("n*"); 
+
+
 
             }
 
@@ -706,10 +534,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__107;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:32:8: ( '|' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:32:10: '|'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:24:8: ( 'r' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:24:10: 'r'
             {
-            match('|'); 
+            match('r'); 
 
             }
 
@@ -727,10 +555,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__108;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:33:8: ( '}' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:33:10: '}'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:25:8: ( 'r*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:25:10: 'r*'
             {
-            match('}'); 
+            match("r*"); 
+
+
 
             }
 
@@ -748,10 +578,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__109;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:34:8: ( '~' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:34:10: '~'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:26:8: ( 'sc' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:26:10: 'sc'
             {
-            match('~'); 
+            match("sc"); 
+
+
 
             }
 
@@ -764,13 +596,189 @@ public class AslLexer extends Lexer {
     }
     // $ANTLR end "T__109"
 
+    // $ANTLR start "T__110"
+    public final void mT__110() throws RecognitionException {
+        try {
+            int _type = T__110;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:27:8: ( 'sc*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:27:10: 'sc*'
+            {
+            match("sc*"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__110"
+
+    // $ANTLR start "T__111"
+    public final void mT__111() throws RecognitionException {
+        try {
+            int _type = T__111;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:28:8: ( 'sf' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:28:10: 'sf'
+            {
+            match("sf"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__111"
+
+    // $ANTLR start "T__112"
+    public final void mT__112() throws RecognitionException {
+        try {
+            int _type = T__112;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:29:8: ( 'sf*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:29:10: 'sf*'
+            {
+            match("sf*"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__112"
+
+    // $ANTLR start "T__113"
+    public final void mT__113() throws RecognitionException {
+        try {
+            int _type = T__113;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:30:8: ( 'z||:' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:30:10: 'z||:'
+            {
+            match("z||:"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__113"
+
+    // $ANTLR start "T__114"
+    public final void mT__114() throws RecognitionException {
+        try {
+            int _type = T__114;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:31:8: ( '{' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:31:10: '{'
+            {
+            match('{'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__114"
+
+    // $ANTLR start "T__115"
+    public final void mT__115() throws RecognitionException {
+        try {
+            int _type = T__115;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:32:8: ( '|' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:32:10: '|'
+            {
+            match('|'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__115"
+
+    // $ANTLR start "T__116"
+    public final void mT__116() throws RecognitionException {
+        try {
+            int _type = T__116;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:33:8: ( '}' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:33:10: '}'
+            {
+            match('}'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__116"
+
+    // $ANTLR start "T__117"
+    public final void mT__117() throws RecognitionException {
+        try {
+            int _type = T__117;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:34:8: ( '~' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:34:10: '~'
+            {
+            match('~'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__117"
+
     // $ANTLR start "BEMOL"
     public final void mBEMOL() throws RecognitionException {
         try {
             int _type = BEMOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:249:7: ( '$' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:249:9: '$'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:249:7: ( '$' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:249:9: '$'
             {
             match('$'); 
 
@@ -790,8 +798,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SOSTENIDO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:250:11: ( '#' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:250:13: '#'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:250:11: ( '#' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:250:13: '#'
             {
             match('#'); 
 
@@ -811,8 +819,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = BECUADRO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:251:10: ( '¬' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:251:12: '¬'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:251:10: ( '¬' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:251:12: '¬'
             {
             match('\u00AC'); 
 
@@ -832,8 +840,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:252:5: ( 'for' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:252:7: 'for'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:252:5: ( 'for' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:252:7: 'for'
             {
             match("for"); 
 
@@ -855,8 +863,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:253:4: ( 'Do' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:253:6: 'Do'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:253:4: ( 'Do' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:253:6: 'Do'
             {
             match("Do"); 
 
@@ -878,8 +886,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:254:4: ( 'Re' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:254:6: 'Re'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:254:4: ( 'Re' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:254:6: 'Re'
             {
             match("Re"); 
 
@@ -901,8 +909,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:255:4: ( 'Mi' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:255:6: 'Mi'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:255:4: ( 'Mi' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:255:6: 'Mi'
             {
             match("Mi"); 
 
@@ -924,8 +932,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:256:4: ( 'Fa' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:256:6: 'Fa'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:256:4: ( 'Fa' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:256:6: 'Fa'
             {
             match("Fa"); 
 
@@ -947,8 +955,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:257:5: ( 'Sol' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:257:7: 'Sol'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:257:5: ( 'Sol' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:257:7: 'Sol'
             {
             match("Sol"); 
 
@@ -970,8 +978,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:258:4: ( 'La' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:258:6: 'La'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:258:4: ( 'La' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:258:6: 'La'
             {
             match("La"); 
 
@@ -993,8 +1001,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:259:4: ( 'Si' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:259:6: 'Si'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:259:4: ( 'Si' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:259:6: 'Si'
             {
             match("Si"); 
 
@@ -1016,8 +1024,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = QUIET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:260:7: ( 'Quiet' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:260:9: 'Quiet'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:260:7: ( 'Quiet' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:260:9: 'Quiet'
             {
             match("Quiet"); 
 
@@ -1039,8 +1047,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ARMOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:261:7: ( 'Armor' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:261:9: 'Armor'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:261:7: ( 'Armor' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:261:9: 'Armor'
             {
             match("Armor"); 
 
@@ -1062,8 +1070,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = BEAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:262:6: ( 'Beat' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:262:8: 'Beat'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:262:6: ( 'Beat' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:262:8: 'Beat'
             {
             match("Beat"); 
 
@@ -1085,8 +1093,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SPEED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:263:7: ( 'Speed' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:263:9: 'Speed'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:263:7: ( 'Speed' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:263:9: 'Speed'
             {
             match("Speed"); 
 
@@ -1108,8 +1116,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = CHORUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:264:8: ( 'Chorus' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:264:10: 'Chorus'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:264:8: ( 'Chorus' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:264:10: 'Chorus'
             {
             match("Chorus"); 
 
@@ -1131,8 +1139,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = VOICE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:265:7: ( 'Voice' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:265:9: 'Voice'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:265:7: ( 'Voice' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:265:9: 'Voice'
             {
             match("Voice"); 
 
@@ -1154,8 +1162,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PIANO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:266:7: ( 'Piano' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:266:9: 'Piano'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:266:7: ( 'Piano' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:266:9: 'Piano'
             {
             match("Piano"); 
 
@@ -1177,8 +1185,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FLAUTA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:267:8: ( 'Flauta' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:267:10: 'Flauta'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:267:8: ( 'Flauta' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:267:10: 'Flauta'
             {
             match("Flauta"); 
 
@@ -1195,13 +1203,197 @@ public class AslLexer extends Lexer {
     }
     // $ANTLR end "FLAUTA"
 
+    // $ANTLR start "SAXO"
+    public final void mSAXO() throws RecognitionException {
+        try {
+            int _type = SAXO;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:268:6: ( 'Saxo' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:268:9: 'Saxo'
+            {
+            match("Saxo"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "SAXO"
+
+    // $ANTLR start "SHOT"
+    public final void mSHOT() throws RecognitionException {
+        try {
+            int _type = SHOT;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:269:6: ( 'Shot' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:269:8: 'Shot'
+            {
+            match("Shot"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "SHOT"
+
+    // $ANTLR start "ORGANO"
+    public final void mORGANO() throws RecognitionException {
+        try {
+            int _type = ORGANO;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:270:8: ( 'Organo' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:270:10: 'Organo'
+            {
+            match("Organo"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "ORGANO"
+
+    // $ANTLR start "TROMPA"
+    public final void mTROMPA() throws RecognitionException {
+        try {
+            int _type = TROMPA;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:271:9: ( 'Trompa' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:271:11: 'Trompa'
+            {
+            match("Trompa"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "TROMPA"
+
+    // $ANTLR start "XILOFONO"
+    public final void mXILOFONO() throws RecognitionException {
+        try {
+            int _type = XILOFONO;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:272:10: ( 'Xilofono' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:272:12: 'Xilofono'
+            {
+            match("Xilofono"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "XILOFONO"
+
+    // $ANTLR start "PERCUSION"
+    public final void mPERCUSION() throws RecognitionException {
+        try {
+            int _type = PERCUSION;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:273:11: ( 'Percusion' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:273:13: 'Percusion'
+            {
+            match("Percusion"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "PERCUSION"
+
+    // $ANTLR start "VIOLA"
+    public final void mVIOLA() throws RecognitionException {
+        try {
+            int _type = VIOLA;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:274:7: ( 'Viola' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:274:9: 'Viola'
+            {
+            match("Viola"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "VIOLA"
+
+    // $ANTLR start "GUITARRA"
+    public final void mGUITARRA() throws RecognitionException {
+        try {
+            int _type = GUITARRA;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:275:10: ( 'Guitarra' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:275:12: 'Guitarra'
+            {
+            match("Guitarra"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "GUITARRA"
+
     // $ANTLR start "TWICE"
     public final void mTWICE() throws RecognitionException {
         try {
             int _type = TWICE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:268:7: ( 'Twice' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:268:9: 'Twice'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:276:7: ( 'Twice' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:276:9: 'Twice'
             {
             match("Twice"); 
 
@@ -1223,8 +1415,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = HALF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:269:6: ( 'Half' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:269:8: 'Half'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:277:6: ( 'Half' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:277:8: 'Half'
             {
             match("Half"); 
 
@@ -1246,8 +1438,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RAISE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:270:7: ( 'Raise' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:270:9: 'Raise'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:278:7: ( 'Raise' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:278:9: 'Raise'
             {
             match("Raise"); 
 
@@ -1269,8 +1461,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:271:6: ( 'Fall' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:271:8: 'Fall'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:279:6: ( 'Fall' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:279:8: 'Fall'
             {
             match("Fall"); 
 
@@ -1292,8 +1484,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:272:8: ( '+=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:272:10: '+='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:280:8: ( '+=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:280:10: '+='
             {
             match("+="); 
 
@@ -1315,8 +1507,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = REQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:273:8: ( '-=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:273:10: '-='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:281:8: ( '-=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:281:10: '-='
             {
             match("-="); 
 
@@ -1338,8 +1530,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:274:8: ( '*=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:274:10: '*='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:282:8: ( '*=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:282:10: '*='
             {
             match("*="); 
 
@@ -1361,8 +1553,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:275:8: ( '/=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:275:10: '/='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:283:8: ( '/=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:283:10: '/='
             {
             match("/="); 
 
@@ -1384,8 +1576,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:276:7: ( '=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:276:9: '='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:284:7: ( '=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:284:9: '='
             {
             match('='); 
 
@@ -1405,8 +1597,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:277:10: ( '!=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:277:12: '!='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:285:10: ( '!=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:285:12: '!='
             {
             match("!="); 
 
@@ -1428,8 +1620,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:278:8: ( '<' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:278:10: '<'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:286:8: ( '<' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:286:10: '<'
             {
             match('<'); 
 
@@ -1449,8 +1641,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:279:8: ( '<=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:279:10: '<='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:287:8: ( '<=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:287:10: '<='
             {
             match("<="); 
 
@@ -1472,8 +1664,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:280:8: ( '>' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:280:10: '>'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:288:8: ( '>' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:288:10: '>'
             {
             match('>'); 
 
@@ -1493,8 +1685,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:281:8: ( '>=' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:281:10: '>='
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:289:8: ( '>=' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:289:10: '>='
             {
             match(">="); 
 
@@ -1516,8 +1708,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DPLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:282:7: ( '++' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:282:8: '++'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:290:7: ( '++' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:290:8: '++'
             {
             match("++"); 
 
@@ -1539,8 +1731,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DMINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:283:8: ( '--' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:283:9: '--'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:291:8: ( '--' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:291:9: '--'
             {
             match("--"); 
 
@@ -1562,8 +1754,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:284:6: ( '+' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:284:8: '+'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:292:6: ( '+' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:292:8: '+'
             {
             match('+'); 
 
@@ -1583,8 +1775,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:285:7: ( '-' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:285:9: '-'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:293:7: ( '-' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:293:9: '-'
             {
             match('-'); 
 
@@ -1604,8 +1796,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MUL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:286:9: ( '*' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:286:11: '*'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:294:9: ( '*' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:294:11: '*'
             {
             match('*'); 
 
@@ -1625,8 +1817,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:287:9: ( '/' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:287:11: '/'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:295:9: ( '/' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:295:11: '/'
             {
             match('/'); 
 
@@ -1646,8 +1838,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:288:9: ( '%' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:288:11: '%'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:296:9: ( '%' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:296:11: '%'
             {
             match('%'); 
 
@@ -1667,8 +1859,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:289:9: ( 'not' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:289:11: 'not'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:297:9: ( 'not' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:297:11: 'not'
             {
             match("not"); 
 
@@ -1690,8 +1882,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:290:9: ( 'and' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:290:11: 'and'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:298:9: ( 'and' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:298:11: 'and'
             {
             match("and"); 
 
@@ -1713,8 +1905,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:291:8: ( 'or' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:291:10: 'or'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:299:8: ( 'or' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:299:10: 'or'
             {
             match("or"); 
 
@@ -1736,8 +1928,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:292:6: ( 'if' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:292:8: 'if'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:300:6: ( 'if' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:300:8: 'if'
             {
             match("if"); 
 
@@ -1759,8 +1951,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:293:6: ( 'else' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:293:8: 'else'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:301:6: ( 'else' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:301:8: 'else'
             {
             match("else"); 
 
@@ -1782,8 +1974,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:294:7: ( 'while' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:294:9: 'while'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:302:7: ( 'while' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:302:9: 'while'
             {
             match("while"); 
 
@@ -1805,8 +1997,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:295:6: ( 'func' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:295:8: 'func'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:303:6: ( 'func' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:303:8: 'func'
             {
             match("func"); 
 
@@ -1828,8 +2020,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:296:8: ( 'return' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:296:10: 'return'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:304:8: ( 'return' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:304:10: 'return'
             {
             match("return"); 
 
@@ -1851,8 +2043,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = READ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:297:6: ( 'read' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:297:8: 'read'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:305:6: ( 'read' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:305:8: 'read'
             {
             match("read"); 
 
@@ -1874,8 +2066,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WRITE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:298:7: ( 'write' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:298:9: 'write'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:306:7: ( 'write' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:306:9: 'write'
             {
             match("write"); 
 
@@ -1897,8 +2089,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:299:9: ( 'true' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:299:11: 'true'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:307:9: ( 'true' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:307:11: 'true'
             {
             match("true"); 
 
@@ -1920,8 +2112,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:300:9: ( 'false' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:300:11: 'false'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:308:9: ( 'false' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:308:11: 'false'
             {
             match("false"); 
 
@@ -1943,8 +2135,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRANSPORT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:301:10: ( 'Transport' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:301:12: 'Transport'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:309:10: ( 'Transport' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:309:12: 'Transport'
             {
             match("Transport"); 
 
@@ -1966,8 +2158,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:302:5: ( '0' .. '8' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:310:5: ( '0' .. '8' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '8') ) {
                 input.consume();
@@ -1995,10 +2187,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:303:6: ( ( '0' .. '9' )+ )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:303:8: ( '0' .. '9' )+
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:6: ( ( '0' .. '9' )+ )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:8: ( '0' .. '9' )+
             {
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:303:8: ( '0' .. '9' )+
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:8: ( '0' .. '9' )+
             int cnt1=0;
             loop1:
             do {
@@ -2012,7 +2204,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:
+            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -2053,8 +2245,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:304:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )* )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:304:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )* )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -2066,7 +2258,7 @@ public class AslLexer extends Lexer {
             }
 
 
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:304:32: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:32: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
             loop2:
             do {
                 int alt2=2;
@@ -2079,7 +2271,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:
+            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -2116,7 +2308,7 @@ public class AslLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:309:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -2146,13 +2338,13 @@ public class AslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:309:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:309:16: (~ ( '\\n' | '\\r' ) )*
+                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:16: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -2165,7 +2357,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:
+                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -2186,7 +2378,7 @@ public class AslLexer extends Lexer {
                     } while (true);
 
 
-                    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:309:30: ( '\\r' )?
+                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:30: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -2195,7 +2387,7 @@ public class AslLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:309:30: '\\r'
+                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:30: '\\r'
                             {
                             match('\r'); 
 
@@ -2212,13 +2404,13 @@ public class AslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:310:8: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:8: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:310:13: ( options {greedy=false; } : . )*
+                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:13: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -2243,7 +2435,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:310:41: .
+                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:41: .
                     	    {
                     	    matchAny(); 
 
@@ -2280,12 +2472,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:314:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:314:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:314:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -2301,7 +2493,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:314:18: ESC_SEQ
+            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:18: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -2309,7 +2501,7 @@ public class AslLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:314:28: ~ ( '\\\\' | '\"' )
+            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:28: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -2346,8 +2538,8 @@ public class AslLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:320:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:320:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:328:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:328:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
             {
             match('\\'); 
 
@@ -2376,8 +2568,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:323:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:323:8: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:331:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:331:8: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -2403,244 +2595,244 @@ public class AslLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:8: ( T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS )
-        int alt8=88;
+        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:8: ( T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | SAXO | SHOT | ORGANO | TROMPA | XILOFONO | PERCUSION | VIOLA | GUITARRA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS )
+        int alt8=96;
         alt8 = dfa8.predict(input);
         switch (alt8) {
             case 1 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:10: T__81
-                {
-                mT__81(); 
-
-
-                }
-                break;
-            case 2 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:16: T__82
-                {
-                mT__82(); 
-
-
-                }
-                break;
-            case 3 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:22: T__83
-                {
-                mT__83(); 
-
-
-                }
-                break;
-            case 4 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:28: T__84
-                {
-                mT__84(); 
-
-
-                }
-                break;
-            case 5 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:34: T__85
-                {
-                mT__85(); 
-
-
-                }
-                break;
-            case 6 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:40: T__86
-                {
-                mT__86(); 
-
-
-                }
-                break;
-            case 7 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:46: T__87
-                {
-                mT__87(); 
-
-
-                }
-                break;
-            case 8 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:52: T__88
-                {
-                mT__88(); 
-
-
-                }
-                break;
-            case 9 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:58: T__89
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:10: T__89
                 {
                 mT__89(); 
 
 
                 }
                 break;
-            case 10 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:64: T__90
+            case 2 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:16: T__90
                 {
                 mT__90(); 
 
 
                 }
                 break;
-            case 11 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:70: T__91
+            case 3 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:22: T__91
                 {
                 mT__91(); 
 
 
                 }
                 break;
-            case 12 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:76: T__92
+            case 4 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:28: T__92
                 {
                 mT__92(); 
 
 
                 }
                 break;
-            case 13 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:82: T__93
+            case 5 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:34: T__93
                 {
                 mT__93(); 
 
 
                 }
                 break;
-            case 14 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:88: T__94
+            case 6 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:40: T__94
                 {
                 mT__94(); 
 
 
                 }
                 break;
-            case 15 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:94: T__95
+            case 7 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:46: T__95
                 {
                 mT__95(); 
 
 
                 }
                 break;
-            case 16 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:100: T__96
+            case 8 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:52: T__96
                 {
                 mT__96(); 
 
 
                 }
                 break;
-            case 17 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:106: T__97
+            case 9 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:58: T__97
                 {
                 mT__97(); 
 
 
                 }
                 break;
-            case 18 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:112: T__98
+            case 10 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:64: T__98
                 {
                 mT__98(); 
 
 
                 }
                 break;
-            case 19 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:118: T__99
+            case 11 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:70: T__99
                 {
                 mT__99(); 
 
 
                 }
                 break;
-            case 20 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:124: T__100
+            case 12 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:76: T__100
                 {
                 mT__100(); 
 
 
                 }
                 break;
-            case 21 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:131: T__101
+            case 13 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:83: T__101
                 {
                 mT__101(); 
 
 
                 }
                 break;
-            case 22 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:138: T__102
+            case 14 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:90: T__102
                 {
                 mT__102(); 
 
 
                 }
                 break;
-            case 23 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:145: T__103
+            case 15 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:97: T__103
                 {
                 mT__103(); 
 
 
                 }
                 break;
-            case 24 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:152: T__104
+            case 16 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:104: T__104
                 {
                 mT__104(); 
 
 
                 }
                 break;
-            case 25 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:159: T__105
+            case 17 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:111: T__105
                 {
                 mT__105(); 
 
 
                 }
                 break;
-            case 26 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:166: T__106
+            case 18 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:118: T__106
                 {
                 mT__106(); 
 
 
                 }
                 break;
-            case 27 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:173: T__107
+            case 19 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:125: T__107
                 {
                 mT__107(); 
 
 
                 }
                 break;
-            case 28 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:180: T__108
+            case 20 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:132: T__108
                 {
                 mT__108(); 
 
 
                 }
                 break;
-            case 29 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:187: T__109
+            case 21 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:139: T__109
                 {
                 mT__109(); 
 
 
                 }
                 break;
+            case 22 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:146: T__110
+                {
+                mT__110(); 
+
+
+                }
+                break;
+            case 23 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:153: T__111
+                {
+                mT__111(); 
+
+
+                }
+                break;
+            case 24 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:160: T__112
+                {
+                mT__112(); 
+
+
+                }
+                break;
+            case 25 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:167: T__113
+                {
+                mT__113(); 
+
+
+                }
+                break;
+            case 26 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:174: T__114
+                {
+                mT__114(); 
+
+
+                }
+                break;
+            case 27 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:181: T__115
+                {
+                mT__115(); 
+
+
+                }
+                break;
+            case 28 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:188: T__116
+                {
+                mT__116(); 
+
+
+                }
+                break;
+            case 29 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:195: T__117
+                {
+                mT__117(); 
+
+
+                }
+                break;
             case 30 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:194: BEMOL
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:202: BEMOL
                 {
                 mBEMOL(); 
 
@@ -2648,7 +2840,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 31 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:200: SOSTENIDO
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:208: SOSTENIDO
                 {
                 mSOSTENIDO(); 
 
@@ -2656,7 +2848,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 32 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:210: BECUADRO
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:218: BECUADRO
                 {
                 mBECUADRO(); 
 
@@ -2664,7 +2856,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 33 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:219: FOR
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:227: FOR
                 {
                 mFOR(); 
 
@@ -2672,7 +2864,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 34 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:223: DO
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:231: DO
                 {
                 mDO(); 
 
@@ -2680,7 +2872,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 35 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:226: RE
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:234: RE
                 {
                 mRE(); 
 
@@ -2688,7 +2880,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 36 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:229: MI
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:237: MI
                 {
                 mMI(); 
 
@@ -2696,7 +2888,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 37 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:232: FA
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:240: FA
                 {
                 mFA(); 
 
@@ -2704,7 +2896,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 38 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:235: SOL
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:243: SOL
                 {
                 mSOL(); 
 
@@ -2712,7 +2904,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:239: LA
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:247: LA
                 {
                 mLA(); 
 
@@ -2720,7 +2912,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 40 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:242: SI
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:250: SI
                 {
                 mSI(); 
 
@@ -2728,7 +2920,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 41 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:245: QUIET
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:253: QUIET
                 {
                 mQUIET(); 
 
@@ -2736,7 +2928,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 42 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:251: ARMOR
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:259: ARMOR
                 {
                 mARMOR(); 
 
@@ -2744,7 +2936,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 43 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:257: BEAT
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:265: BEAT
                 {
                 mBEAT(); 
 
@@ -2752,7 +2944,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 44 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:262: SPEED
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:270: SPEED
                 {
                 mSPEED(); 
 
@@ -2760,7 +2952,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 45 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:268: CHORUS
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:276: CHORUS
                 {
                 mCHORUS(); 
 
@@ -2768,7 +2960,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 46 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:275: VOICE
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:283: VOICE
                 {
                 mVOICE(); 
 
@@ -2776,7 +2968,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 47 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:281: PIANO
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:289: PIANO
                 {
                 mPIANO(); 
 
@@ -2784,7 +2976,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 48 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:287: FLAUTA
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:295: FLAUTA
                 {
                 mFLAUTA(); 
 
@@ -2792,319 +2984,383 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 49 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:294: TWICE
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:302: SAXO
+                {
+                mSAXO(); 
+
+
+                }
+                break;
+            case 50 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:307: SHOT
+                {
+                mSHOT(); 
+
+
+                }
+                break;
+            case 51 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:312: ORGANO
+                {
+                mORGANO(); 
+
+
+                }
+                break;
+            case 52 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:319: TROMPA
+                {
+                mTROMPA(); 
+
+
+                }
+                break;
+            case 53 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:326: XILOFONO
+                {
+                mXILOFONO(); 
+
+
+                }
+                break;
+            case 54 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:335: PERCUSION
+                {
+                mPERCUSION(); 
+
+
+                }
+                break;
+            case 55 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:345: VIOLA
+                {
+                mVIOLA(); 
+
+
+                }
+                break;
+            case 56 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:351: GUITARRA
+                {
+                mGUITARRA(); 
+
+
+                }
+                break;
+            case 57 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:360: TWICE
                 {
                 mTWICE(); 
 
 
                 }
                 break;
-            case 50 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:300: HALF
+            case 58 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:366: HALF
                 {
                 mHALF(); 
 
 
                 }
                 break;
-            case 51 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:305: RAISE
+            case 59 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:371: RAISE
                 {
                 mRAISE(); 
 
 
                 }
                 break;
-            case 52 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:311: FALL
+            case 60 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:377: FALL
                 {
                 mFALL(); 
 
 
                 }
                 break;
-            case 53 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:316: PEQUAL
+            case 61 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:382: PEQUAL
                 {
                 mPEQUAL(); 
 
 
                 }
                 break;
-            case 54 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:323: REQUAL
+            case 62 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:389: REQUAL
                 {
                 mREQUAL(); 
 
 
                 }
                 break;
-            case 55 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:330: MEQUAL
+            case 63 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:396: MEQUAL
                 {
                 mMEQUAL(); 
 
 
                 }
                 break;
-            case 56 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:337: DEQUAL
+            case 64 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:403: DEQUAL
                 {
                 mDEQUAL(); 
 
 
                 }
                 break;
-            case 57 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:344: EQUAL
+            case 65 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:410: EQUAL
                 {
                 mEQUAL(); 
 
 
                 }
                 break;
-            case 58 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:350: NOT_EQUAL
+            case 66 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:416: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
 
                 }
                 break;
-            case 59 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:360: LT
+            case 67 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:426: LT
                 {
                 mLT(); 
 
 
                 }
                 break;
-            case 60 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:363: LE
+            case 68 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:429: LE
                 {
                 mLE(); 
 
 
                 }
                 break;
-            case 61 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:366: GT
+            case 69 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:432: GT
                 {
                 mGT(); 
 
 
                 }
                 break;
-            case 62 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:369: GE
+            case 70 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:435: GE
                 {
                 mGE(); 
 
 
                 }
                 break;
-            case 63 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:372: DPLUS
+            case 71 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:438: DPLUS
                 {
                 mDPLUS(); 
 
 
                 }
                 break;
-            case 64 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:378: DMINUS
+            case 72 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:444: DMINUS
                 {
                 mDMINUS(); 
 
 
                 }
                 break;
-            case 65 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:385: PLUS
+            case 73 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:451: PLUS
                 {
                 mPLUS(); 
 
 
                 }
                 break;
-            case 66 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:390: MINUS
+            case 74 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:456: MINUS
                 {
                 mMINUS(); 
 
 
                 }
                 break;
-            case 67 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:396: MUL
+            case 75 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:462: MUL
                 {
                 mMUL(); 
 
 
                 }
                 break;
-            case 68 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:400: DIV
+            case 76 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:466: DIV
                 {
                 mDIV(); 
 
 
                 }
                 break;
-            case 69 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:404: MOD
+            case 77 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:470: MOD
                 {
                 mMOD(); 
 
 
                 }
                 break;
-            case 70 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:408: NOT
+            case 78 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:474: NOT
                 {
                 mNOT(); 
 
 
                 }
                 break;
-            case 71 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:412: AND
+            case 79 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:478: AND
                 {
                 mAND(); 
 
 
                 }
                 break;
-            case 72 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:416: OR
+            case 80 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:482: OR
                 {
                 mOR(); 
 
 
                 }
                 break;
-            case 73 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:419: IF
+            case 81 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:485: IF
                 {
                 mIF(); 
 
 
                 }
                 break;
-            case 74 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:422: ELSE
+            case 82 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:488: ELSE
                 {
                 mELSE(); 
 
 
                 }
                 break;
-            case 75 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:427: WHILE
+            case 83 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:493: WHILE
                 {
                 mWHILE(); 
 
 
                 }
                 break;
-            case 76 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:433: FUNC
+            case 84 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:499: FUNC
                 {
                 mFUNC(); 
 
 
                 }
                 break;
-            case 77 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:438: RETURN
+            case 85 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:504: RETURN
                 {
                 mRETURN(); 
 
 
                 }
                 break;
-            case 78 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:445: READ
+            case 86 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:511: READ
                 {
                 mREAD(); 
 
 
                 }
                 break;
-            case 79 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:450: WRITE
+            case 87 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:516: WRITE
                 {
                 mWRITE(); 
 
 
                 }
                 break;
-            case 80 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:456: TRUE
+            case 88 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:522: TRUE
                 {
                 mTRUE(); 
 
 
                 }
                 break;
-            case 81 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:461: FALSE
+            case 89 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:527: FALSE
                 {
                 mFALSE(); 
 
 
                 }
                 break;
-            case 82 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:467: TRANSPORT
+            case 90 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:533: TRANSPORT
                 {
                 mTRANSPORT(); 
 
 
                 }
                 break;
-            case 83 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:477: OCT
+            case 91 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:543: OCT
                 {
                 mOCT(); 
 
 
                 }
                 break;
-            case 84 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:481: INT
+            case 92 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:547: INT
                 {
                 mINT(); 
 
 
                 }
                 break;
-            case 85 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:485: ID
+            case 93 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:551: ID
                 {
                 mID(); 
 
 
                 }
                 break;
-            case 86 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:488: COMMENT
+            case 94 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:554: COMMENT
                 {
                 mCOMMENT(); 
 
 
                 }
                 break;
-            case 87 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:496: STRING
+            case 95 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:562: STRING
                 {
                 mSTRING(); 
 
 
                 }
                 break;
-            case 88 :
-                // /home2/users/alumnes/1184002/Asl/src/parser/Asl.g:1:503: WS
+            case 96 :
+                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:569: WS
                 {
                 mWS(); 
 
@@ -3119,93 +3375,105 @@ public class AslLexer extends Lexer {
 
     protected DFA8 dfa8 = new DFA8(this);
     static final String DFA8_eotS =
-        "\6\uffff\1\73\3\uffff\1\75\1\77\1\104\1\107\1\112\2\67\7\uffff\16"+
-        "\67\1\143\1\146\1\150\1\153\2\uffff\1\155\1\157\1\uffff\6\67\1\167"+
-        "\13\uffff\3\67\2\uffff\1\67\2\uffff\1\67\1\uffff\1\177\1\u0081\1"+
-        "\uffff\1\u0082\1\u0083\1\67\1\u0085\1\u0087\2\67\1\u008a\1\67\1"+
-        "\u008c\11\67\17\uffff\1\67\1\u0097\1\u0098\4\67\1\uffff\1\u009d"+
-        "\2\67\1\u00a0\2\67\6\uffff\1\67\1\uffff\1\67\1\uffff\1\67\1\u00a6"+
-        "\1\uffff\1\67\1\uffff\11\67\1\u00b1\2\uffff\4\67\1\uffff\1\u00b6"+
-        "\1\67\1\uffff\1\67\1\u00b9\1\67\1\u00bb\1\67\1\uffff\3\67\1\u00c0"+
-        "\5\67\1\u00c6\1\uffff\1\u00c7\2\67\1\u00ca\1\uffff\1\u00cb\1\67"+
-        "\1\uffff\1\u00cd\1\uffff\1\67\1\u00cf\1\u00d0\1\u00d1\1\uffff\1"+
-        "\67\1\u00d3\1\u00d4\1\u00d5\1\67\2\uffff\1\u00d7\1\u00d8\2\uffff"+
-        "\1\u00d9\1\uffff\1\u00da\3\uffff\1\u00db\3\uffff\1\67\5\uffff\2"+
-        "\67\1\u00df\1\uffff";
+        "\6\uffff\1\76\3\uffff\1\100\1\102\1\107\1\112\1\115\2\72\7\uffff"+
+        "\21\72\1\155\1\160\1\162\1\165\2\uffff\1\167\1\171\1\uffff\6\72"+
+        "\1\u0081\13\uffff\3\72\2\uffff\1\72\2\uffff\1\72\1\uffff\1\u0089"+
+        "\1\u008b\1\uffff\1\u008c\1\u008d\1\72\1\u008f\1\u0091\2\72\1\u0094"+
+        "\3\72\1\u0098\16\72\17\uffff\1\72\1\u00a9\1\u00aa\4\72\1\uffff\1"+
+        "\u00af\2\72\1\u00b2\2\72\6\uffff\1\72\1\uffff\1\72\1\uffff\1\72"+
+        "\1\u00b8\1\uffff\3\72\1\uffff\17\72\1\u00cb\2\uffff\4\72\1\uffff"+
+        "\1\u00d0\1\72\1\uffff\1\72\1\u00d3\1\72\1\u00d5\1\72\1\uffff\1\72"+
+        "\1\u00d8\1\u00d9\2\72\1\u00dc\13\72\1\u00e8\1\uffff\1\u00e9\2\72"+
+        "\1\u00ec\1\uffff\1\u00ed\1\72\1\uffff\1\u00ef\1\uffff\1\72\1\u00f1"+
+        "\2\uffff\1\u00f2\1\u00f3\1\uffff\1\72\1\u00f5\1\u00f6\1\u00f7\4"+
+        "\72\1\u00fc\2\72\2\uffff\1\u00ff\1\u0100\2\uffff\1\u0101\1\uffff"+
+        "\1\u0102\3\uffff\1\u0103\3\uffff\1\72\1\u0105\1\u0106\1\72\1\uffff"+
+        "\2\72\5\uffff\1\72\2\uffff\5\72\1\u0110\1\u0111\1\u0112\1\u0113"+
+        "\4\uffff";
     static final String DFA8_eofS =
-        "\u00e0\uffff";
+        "\u0114\uffff";
     static final String DFA8_minS =
         "\1\11\5\uffff\1\174\3\uffff\5\52\1\143\1\174\7\uffff\1\157\1\141"+
-        "\1\151\1\141\1\151\1\141\1\165\1\162\1\145\1\150\1\157\1\151\1\162"+
+        "\1\151\3\141\1\165\1\162\1\145\1\150\1\151\1\145\2\162\1\151\1\165"+
         "\1\141\1\53\1\55\1\75\1\52\2\uffff\2\75\1\uffff\1\156\1\162\1\146"+
         "\1\154\1\150\1\162\1\60\13\uffff\1\162\1\156\1\154\2\uffff\1\164"+
         "\2\uffff\1\141\1\uffff\2\52\1\uffff\2\101\1\151\2\101\1\141\1\154"+
-        "\1\101\1\145\1\101\1\151\1\155\1\141\1\157\1\151\1\141\1\151\1\141"+
-        "\1\154\17\uffff\1\144\2\101\1\163\2\151\1\165\1\uffff\1\101\1\143"+
-        "\1\163\1\101\1\165\1\144\6\uffff\1\163\1\uffff\1\154\1\uffff\1\165"+
-        "\1\101\1\uffff\1\145\1\uffff\1\145\1\157\1\164\1\162\1\143\1\156"+
-        "\1\143\1\156\1\146\1\101\2\uffff\1\145\1\154\1\164\1\145\1\uffff"+
-        "\1\101\1\145\1\uffff\1\162\1\101\1\145\1\101\1\164\1\uffff\1\144"+
-        "\1\164\1\162\1\101\1\165\1\145\1\157\1\145\1\163\1\101\1\uffff\1"+
-        "\101\2\145\1\101\1\uffff\1\101\1\156\1\uffff\1\101\1\uffff\1\141"+
-        "\3\101\1\uffff\1\163\3\101\1\160\2\uffff\2\101\2\uffff\1\101\1\uffff"+
-        "\1\101\3\uffff\1\101\3\uffff\1\157\5\uffff\1\162\1\164\1\101\1\uffff";
+        "\1\101\1\145\1\170\1\157\1\101\1\151\1\155\1\141\1\157\1\151\1\157"+
+        "\1\141\1\162\1\147\1\141\1\151\1\154\1\151\1\154\17\uffff\1\144"+
+        "\2\101\1\163\2\151\1\165\1\uffff\1\101\1\143\1\163\1\101\1\165\1"+
+        "\144\6\uffff\1\163\1\uffff\1\154\1\uffff\1\165\1\101\1\uffff\1\145"+
+        "\1\157\1\164\1\uffff\1\145\1\157\1\164\1\162\1\143\1\154\1\156\1"+
+        "\143\1\141\1\155\1\156\1\143\1\157\1\164\1\146\1\101\2\uffff\1\145"+
+        "\1\154\1\164\1\145\1\uffff\1\101\1\145\1\uffff\1\162\1\101\1\145"+
+        "\1\101\1\164\1\uffff\1\144\2\101\1\164\1\162\1\101\1\165\1\145\1"+
+        "\141\1\157\1\165\1\156\1\160\1\163\1\145\1\146\1\141\1\101\1\uffff"+
+        "\1\101\2\145\1\101\1\uffff\1\101\1\156\1\uffff\1\101\1\uffff\1\141"+
+        "\1\101\2\uffff\2\101\1\uffff\1\163\3\101\1\163\1\157\1\141\1\160"+
+        "\1\101\1\157\1\162\2\uffff\2\101\2\uffff\1\101\1\uffff\1\101\3\uffff"+
+        "\1\101\3\uffff\1\151\2\101\1\157\1\uffff\1\156\1\162\5\uffff\1\157"+
+        "\2\uffff\1\162\1\157\1\141\1\156\1\164\4\101\4\uffff";
     static final String DFA8_maxS =
         "\1\u00ac\5\uffff\1\174\3\uffff\5\172\1\146\1\174\7\uffff\1\157\1"+
         "\145\1\151\1\154\1\160\1\141\1\165\1\162\1\145\1\150\1\157\1\151"+
-        "\1\167\1\141\4\75\2\uffff\2\75\1\uffff\1\156\1\162\1\146\1\154\2"+
-        "\162\1\71\13\uffff\1\162\1\156\1\154\2\uffff\1\164\2\uffff\1\164"+
-        "\1\uffff\2\172\1\uffff\2\172\1\151\2\172\1\141\1\154\1\172\1\145"+
-        "\1\172\1\151\1\155\1\141\1\157\1\151\1\141\1\151\1\141\1\154\17"+
-        "\uffff\1\144\2\172\1\163\2\151\1\165\1\uffff\1\172\1\143\1\163\1"+
-        "\172\1\165\1\144\6\uffff\1\163\1\uffff\1\154\1\uffff\1\165\1\172"+
-        "\1\uffff\1\145\1\uffff\1\145\1\157\1\164\1\162\1\143\1\156\1\143"+
-        "\1\156\1\146\1\172\2\uffff\1\145\1\154\1\164\1\145\1\uffff\1\172"+
-        "\1\145\1\uffff\1\162\1\172\1\145\1\172\1\164\1\uffff\1\144\1\164"+
-        "\1\162\1\172\1\165\1\145\1\157\1\145\1\163\1\172\1\uffff\1\172\2"+
-        "\145\1\172\1\uffff\1\172\1\156\1\uffff\1\172\1\uffff\1\141\3\172"+
-        "\1\uffff\1\163\3\172\1\160\2\uffff\2\172\2\uffff\1\172\1\uffff\1"+
-        "\172\3\uffff\1\172\3\uffff\1\157\5\uffff\1\162\1\164\1\172\1\uffff";
+        "\1\162\1\167\1\151\1\165\1\141\4\75\2\uffff\2\75\1\uffff\1\156\1"+
+        "\162\1\146\1\154\2\162\1\71\13\uffff\1\162\1\156\1\154\2\uffff\1"+
+        "\164\2\uffff\1\164\1\uffff\2\172\1\uffff\2\172\1\151\2\172\1\141"+
+        "\1\154\1\172\1\145\1\170\1\157\1\172\1\151\1\155\1\141\1\157\1\151"+
+        "\1\157\1\141\1\162\1\147\1\157\1\151\1\154\1\151\1\154\17\uffff"+
+        "\1\144\2\172\1\163\2\151\1\165\1\uffff\1\172\1\143\1\163\1\172\1"+
+        "\165\1\144\6\uffff\1\163\1\uffff\1\154\1\uffff\1\165\1\172\1\uffff"+
+        "\1\145\1\157\1\164\1\uffff\1\145\1\157\1\164\1\162\1\143\1\154\1"+
+        "\156\1\143\1\141\1\155\1\156\1\143\1\157\1\164\1\146\1\172\2\uffff"+
+        "\1\145\1\154\1\164\1\145\1\uffff\1\172\1\145\1\uffff\1\162\1\172"+
+        "\1\145\1\172\1\164\1\uffff\1\144\2\172\1\164\1\162\1\172\1\165\1"+
+        "\145\1\141\1\157\1\165\1\156\1\160\1\163\1\145\1\146\1\141\1\172"+
+        "\1\uffff\1\172\2\145\1\172\1\uffff\1\172\1\156\1\uffff\1\172\1\uffff"+
+        "\1\141\1\172\2\uffff\2\172\1\uffff\1\163\3\172\1\163\1\157\1\141"+
+        "\1\160\1\172\1\157\1\162\2\uffff\2\172\2\uffff\1\172\1\uffff\1\172"+
+        "\3\uffff\1\172\3\uffff\1\151\2\172\1\157\1\uffff\1\156\1\162\5\uffff"+
+        "\1\157\2\uffff\1\162\1\157\1\141\1\156\1\164\4\172\4\uffff";
     static final String DFA8_acceptS =
         "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\uffff\1\10\1\11\1\12\7\uffff\1\32"+
-        "\1\33\1\34\1\35\1\36\1\37\1\40\22\uffff\1\71\1\72\2\uffff\1\105"+
-        "\7\uffff\1\124\1\125\1\127\1\130\1\7\1\6\1\14\1\13\1\16\1\15\1\20"+
-        "\3\uffff\1\17\1\22\1\uffff\1\21\1\24\1\uffff\1\23\2\uffff\1\31\23"+
-        "\uffff\1\65\1\77\1\101\1\66\1\100\1\102\1\67\1\103\1\70\1\126\1"+
-        "\104\1\74\1\73\1\76\1\75\7\uffff\1\123\6\uffff\1\26\1\25\1\30\1"+
-        "\27\1\42\1\43\1\uffff\1\44\1\uffff\1\45\2\uffff\1\50\1\uffff\1\47"+
-        "\12\uffff\1\110\1\111\4\uffff\1\41\2\uffff\1\106\5\uffff\1\46\12"+
-        "\uffff\1\107\4\uffff\1\114\2\uffff\1\116\1\uffff\1\64\4\uffff\1"+
-        "\53\5\uffff\1\62\1\112\2\uffff\1\120\1\121\1\uffff\1\63\1\uffff"+
-        "\1\54\1\51\1\52\1\uffff\1\56\1\57\1\61\1\uffff\1\113\1\117\1\115"+
-        "\1\60\1\55\3\uffff\1\122";
+        "\1\33\1\34\1\35\1\36\1\37\1\40\25\uffff\1\101\1\102\2\uffff\1\115"+
+        "\7\uffff\1\134\1\135\1\137\1\140\1\7\1\6\1\14\1\13\1\16\1\15\1\20"+
+        "\3\uffff\1\17\1\22\1\uffff\1\21\1\24\1\uffff\1\23\2\uffff\1\31\32"+
+        "\uffff\1\75\1\107\1\111\1\76\1\110\1\112\1\77\1\113\1\100\1\136"+
+        "\1\114\1\104\1\103\1\106\1\105\7\uffff\1\133\6\uffff\1\26\1\25\1"+
+        "\30\1\27\1\42\1\43\1\uffff\1\44\1\uffff\1\45\2\uffff\1\50\3\uffff"+
+        "\1\47\20\uffff\1\120\1\121\4\uffff\1\41\2\uffff\1\116\5\uffff\1"+
+        "\46\22\uffff\1\117\4\uffff\1\124\2\uffff\1\126\1\uffff\1\74\2\uffff"+
+        "\1\61\1\62\2\uffff\1\53\13\uffff\1\72\1\122\2\uffff\1\130\1\131"+
+        "\1\uffff\1\73\1\uffff\1\54\1\51\1\52\1\uffff\1\56\1\67\1\57\4\uffff"+
+        "\1\71\2\uffff\1\123\1\127\1\125\1\60\1\55\1\uffff\1\63\1\64\11\uffff"+
+        "\1\65\1\70\1\66\1\132";
     static final String DFA8_specialS =
-        "\u00e0\uffff}>";
+        "\u0114\uffff}>";
     static final String[] DFA8_transitionS = {
-            "\2\71\2\uffff\1\71\22\uffff\1\71\1\53\1\70\1\26\1\25\1\56\1"+
-            "\1\1\uffff\1\2\1\3\1\50\1\46\1\4\1\47\1\5\1\51\11\65\1\66\1"+
-            "\6\1\7\1\54\1\52\1\55\2\uffff\1\37\1\40\1\41\1\30\1\67\1\33"+
-            "\1\67\1\45\3\67\1\35\1\32\2\67\1\43\1\36\1\31\1\34\1\44\1\67"+
-            "\1\42\4\67\1\10\1\uffff\1\11\1\uffff\1\67\1\uffff\1\57\1\12"+
-            "\1\13\1\67\1\62\1\14\2\67\1\61\4\67\1\15\1\60\2\67\1\16\1\17"+
-            "\1\64\2\67\1\63\2\67\1\20\1\21\1\22\1\23\1\24\55\uffff\1\27",
+            "\2\74\2\uffff\1\74\22\uffff\1\74\1\56\1\73\1\26\1\25\1\61\1"+
+            "\1\1\uffff\1\2\1\3\1\53\1\51\1\4\1\52\1\5\1\54\11\70\1\71\1"+
+            "\6\1\7\1\57\1\55\1\60\2\uffff\1\37\1\40\1\41\1\30\1\72\1\33"+
+            "\1\47\1\50\3\72\1\35\1\32\1\72\1\44\1\43\1\36\1\31\1\34\1\45"+
+            "\1\72\1\42\1\72\1\46\2\72\1\10\1\uffff\1\11\1\uffff\1\72\1\uffff"+
+            "\1\62\1\12\1\13\1\72\1\65\1\14\2\72\1\64\4\72\1\15\1\63\2\72"+
+            "\1\16\1\17\1\67\2\72\1\66\2\72\1\20\1\21\1\22\1\23\1\24\55\uffff"+
+            "\1\27",
             "",
             "",
             "",
             "",
             "",
-            "\1\72",
+            "\1\75",
             "",
             "",
             "",
-            "\1\74\26\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\76\26\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\100\26\uffff\32\67\4\uffff\1\67\1\uffff\1\103\15\67\1\101"+
-            "\5\67\1\102\5\67",
-            "\1\105\26\uffff\32\67\4\uffff\1\67\1\uffff\16\67\1\106\13\67",
-            "\1\110\26\uffff\32\67\4\uffff\1\67\1\uffff\4\67\1\111\25\67",
-            "\1\113\2\uffff\1\114",
-            "\1\115",
+            "\1\77\26\uffff\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\101\26\uffff\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\103\26\uffff\32\72\4\uffff\1\72\1\uffff\1\106\15\72\1\104"+
+            "\5\72\1\105\5\72",
+            "\1\110\26\uffff\32\72\4\uffff\1\72\1\uffff\16\72\1\111\13\72",
+            "\1\113\26\uffff\32\72\4\uffff\1\72\1\uffff\4\72\1\114\25\72",
+            "\1\116\2\uffff\1\117",
+            "\1\120",
             "",
             "",
             "",
@@ -3213,205 +3481,257 @@ public class AslLexer extends Lexer {
             "",
             "",
             "",
-            "\1\116",
-            "\1\120\3\uffff\1\117",
             "\1\121",
-            "\1\122\12\uffff\1\123",
-            "\1\125\5\uffff\1\124\1\126",
-            "\1\127",
-            "\1\130",
-            "\1\131",
-            "\1\132",
-            "\1\133",
+            "\1\123\3\uffff\1\122",
+            "\1\124",
+            "\1\125\12\uffff\1\126",
+            "\1\132\6\uffff\1\133\1\130\5\uffff\1\127\1\131",
             "\1\134",
             "\1\135",
-            "\1\137\4\uffff\1\136",
+            "\1\136",
+            "\1\137",
             "\1\140",
-            "\1\142\21\uffff\1\141",
-            "\1\145\17\uffff\1\144",
-            "\1\147",
-            "\1\152\4\uffff\1\152\15\uffff\1\151",
-            "",
-            "",
-            "\1\154",
-            "\1\156",
-            "",
-            "\1\160",
+            "\1\142\5\uffff\1\141",
+            "\1\144\3\uffff\1\143",
+            "\1\145",
+            "\1\146\4\uffff\1\147",
+            "\1\150",
+            "\1\151",
+            "\1\152",
+            "\1\154\21\uffff\1\153",
+            "\1\157\17\uffff\1\156",
             "\1\161",
-            "\1\162",
-            "\1\163",
-            "\1\164\11\uffff\1\165",
+            "\1\164\4\uffff\1\164\15\uffff\1\163",
+            "",
+            "",
             "\1\166",
-            "\12\66",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\170",
-            "\1\171",
+            "",
             "\1\172",
-            "",
-            "",
             "\1\173",
+            "\1\174",
+            "\1\175",
+            "\1\176\11\uffff\1\177",
+            "\1\u0080",
+            "\12\71",
             "",
             "",
-            "\1\175\22\uffff\1\174",
             "",
-            "\1\176\26\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u0080\26\uffff\32\67\4\uffff\1\67\1\uffff\32\67",
             "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u0082",
+            "\1\u0083",
             "\1\u0084",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\13\67\1\u0086\16\67",
-            "\1\u0088",
-            "\1\u0089",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u008b",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u008d",
+            "",
+            "",
+            "\1\u0085",
+            "",
+            "",
+            "\1\u0087\22\uffff\1\u0086",
+            "",
+            "\1\u0088\26\uffff\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u008a\26\uffff\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u008e",
-            "\1\u008f",
-            "\1\u0090",
-            "\1\u0091",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\13\72\1\u0090\16\72",
             "\1\u0092",
             "\1\u0093",
-            "\1\u0094",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u0095",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "\1\u0096",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u0097",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u0099",
             "\1\u009a",
             "\1\u009b",
             "\1\u009c",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u009d",
             "\1\u009e",
             "\1\u009f",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00a0",
             "\1\u00a1",
-            "\1\u00a2",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "\1\u00a3",
-            "",
+            "\1\u00a3\15\uffff\1\u00a2",
             "\1\u00a4",
-            "",
             "\1\u00a5",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
+            "\1\u00a6",
             "\1\u00a7",
             "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u00a8",
-            "\1\u00a9",
-            "\1\u00aa",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u00ab",
             "\1\u00ac",
             "\1\u00ad",
             "\1\u00ae",
-            "\1\u00af",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u00b0",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "",
-            "\1\u00b2",
+            "\1\u00b1",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u00b3",
             "\1\u00b4",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\u00b5",
             "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00b6",
+            "",
             "\1\u00b7",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "",
-            "\1\u00b8",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00b9",
             "\1\u00ba",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\1\u00bc",
+            "\1\u00bb",
             "",
+            "\1\u00bc",
             "\1\u00bd",
             "\1\u00be",
             "\1\u00bf",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00c0",
             "\1\u00c1",
             "\1\u00c2",
             "\1\u00c3",
             "\1\u00c4",
             "\1\u00c5",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00c6",
+            "\1\u00c7",
             "\1\u00c8",
             "\1\u00c9",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00ca",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "",
             "\1\u00cc",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
+            "\1\u00cd",
             "\1\u00ce",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00cf",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00d1",
             "",
             "\1\u00d2",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00d4",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u00d6",
             "",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "",
-            "",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
-            "",
-            "",
-            "",
-            "\1\u00dc",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\1\u00d7",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00da",
+            "\1\u00db",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
             "\1\u00dd",
             "\1\u00de",
-            "\32\67\4\uffff\1\67\1\uffff\32\67",
+            "\1\u00df",
+            "\1\u00e0",
+            "\1\u00e1",
+            "\1\u00e2",
+            "\1\u00e3",
+            "\1\u00e4",
+            "\1\u00e5",
+            "\1\u00e6",
+            "\1\u00e7",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00ea",
+            "\1\u00eb",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00ee",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\1\u00f0",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\1\u00f4",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00f8",
+            "\1\u00f9",
+            "\1\u00fa",
+            "\1\u00fb",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u00fd",
+            "\1\u00fe",
+            "",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "",
+            "",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "",
+            "",
+            "\1\u0104",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\1\u0107",
+            "",
+            "\1\u0108",
+            "\1\u0109",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\1\u010a",
+            "",
+            "",
+            "\1\u010b",
+            "\1\u010c",
+            "\1\u010d",
+            "\1\u010e",
+            "\1\u010f",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "\32\72\4\uffff\1\72\1\uffff\32\72",
+            "",
+            "",
+            "",
             ""
     };
 
@@ -3445,7 +3765,7 @@ public class AslLexer extends Lexer {
             this.transition = DFA8_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__81 | T__82 | T__83 | T__84 | T__85 | T__86 | T__87 | T__88 | T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS );";
+            return "1:1: Tokens : ( T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | SAXO | SHOT | ORGANO | TROMPA | XILOFONO | PERCUSION | VIOLA | GUITARRA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS );";
         }
     }
  

@@ -128,12 +128,14 @@ public class Interp {
     private String getInsrumento(String s) {
         if (s.equals("Flauta")) return "Flute";
         else if (s.equals("Piano")) return "Piano";
-<<<<<<< HEAD
-=======
 		else if (s.equals("Saxo")) return "ALTO_SAX";
 		else if (s.equals("Shot")) return "GUNSHOT";
-		else if (s.equals("Guitarra")) return "ELECTRIC_CLEAN_GUITAR";
->>>>>>> 3025a999a79e1b0a8a5a1b2cf8043d39b744e123
+		else if (s.equals("Guitarra")) return "DISTORTION_GUITAR";
+        else if (s.equals("Xilofono")) return "XYLOPHONE";
+        else if (s.equals("Trompa")) return "FRENCH_HORN";
+        else if (s.equals("Percusion")) return "ELECTRIC_BASS_FINGER";
+        else if (s.equals("Viola")) return "Viola";
+        else if (s.equals("Organo")) return "CHURCH_ORGAN";
         else return "IMBECIL";
     }
     
@@ -490,26 +492,11 @@ public class Interp {
                 AslTree v = t.getChild(0);
                 // Special case for strings
                 if (v.getType() == AslLexer.STRING) {
-                    /*System.out.format(v.getStringValue());
-                    return null;*/
-                    Pattern roun1 = new Pattern("G5wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww").setInstrument("Flute");
-                    Player player = new Player();
-                    player.play(roun1);
-//                     Pattern round1 = new Pattern("V0 ");
-//                     round1.add("I[Flute] G5-hq | E5h D5q | C5hq | G5q E5qi D5i | C5q E5 G5q | C6q B5qi A5i | B5q A5qi G5i | A5hq | G5hq | D6q C6h |");
-// 
-//                     // Create the second voice
-//                     Pattern round2 = new Pattern("V1 ");
-//                     round2.add("I[Piano] G5-hq | E5h D5q | C5hq | G5q E5qi D5i | C5q E5 G5q | C6q B5qi A5i | B5q A5qi G5i | A5hq | G5hq | D6q C6h |");
-//                     Pattern xd = new Pattern();
-//                     xd.add(round1);
-//                     xd.add(round2);
-//                     Player player = new Player();
-//                     player.play(xd);
+                    System.out.format(v.getStringValue());
+                    return null;
                 }
-
                 // Write an expression
-                /*System.out.print(evaluateExpression(v).toString());*/
+                System.out.print(evaluateExpression(v).toString());
                 return null;
 
             // Function call
@@ -557,30 +544,30 @@ public class Interp {
             //tractar i recorrer recursivament els instruments que estaran al else
             String s = "";
             long max = voces[0];
-            System.out.println("max top: "+max);
+//             System.out.println("max top: "+max);
             for (int i = 1; i<t.getChildCount(); ++i) if (voces[i] > max) max = voces[i];
-            System.out.println("max top f1: "+max);
+//             System.out.println("max top f1: "+max);
             for (int i = 0; i<t.getChildCount(); ++i) {
                 if ((long)max-voces[i]>0) {
-                    System.out.println("max-voces[i] top: "+((long)max-voces[i]));
+//                     System.out.println("max-voces[i] top: "+((long)max-voces[i]));
                     Pattern absurdo = new Pattern("R"+Dur2String((long) max-voces[i])).setTempo(tempox).setVoice(i);
                     voces[i] = max;
                     patterns_musicote.add(absurdo);
                 }
             }
-            System.out.println("max top f2: "+max);
+//             System.out.println("max top f2: "+max);
             for (int i = 0; i<t.getChildCount();++i) {
                 //recorrer tots els instruments i guardarho en strings o patterns o basures d'aquestes
                 gintonicysantascrismas(t.getChild(i),i,tempox,true);
             }
             
             max = voces[0];
-            System.out.println("max topqq: "+max);
+//             System.out.println("max topqq: "+max);
             for (int i = 1; i<t.getChildCount(); ++i) if (voces[i] > max) max = voces[i];
-            System.out.println("max top f1qq: "+max);
+//             System.out.println("max top f1qq: "+max);
             for (int i = 0; i<1; ++i) {
                 if ((long)max-voces[i]>0 && voces[i]!=0) {
-                    System.out.println("max-voces[i] topqq: "+((long)max-voces[i]));
+//                     System.out.println("max-voces[i] topqq: "+((long)max-voces[i]));
                     Pattern absurdo = new Pattern("R"+Dur2String((long) max-voces[i])).setTempo(tempox).setVoice(i);
                     voces[i] = max;
                     patterns_musicote.add(absurdo);
@@ -834,13 +821,15 @@ public class Interp {
                     
             case AslLexer.REPEAT:
                 a_reproducir = "";
-                int times = evaluateExpression(l_notas.getChild(0)).getIntegerValue();
+                int times = 0;
+                int eger = evaluateExpression(l_notas.getChild(0)).getIntegerValue();
                 Stack.defineVariable ("Time", new Data (times)); //ponemos times en pila
-                while (Stack.getVariable("Time").getIntegerValue() != 0) {
+                while (eger > Stack.getVariable("Time").getIntegerValue()) {
                     for (int i = 1; i<l_notas.getChildCount(); ++i) {
                         a_reproducir = a_reproducir+executeMusic(l_notas.getChild(i),x);
+                        
                     }
-                Stack.defineVariable ("Time", new Data (Stack.getVariable("Time").getIntegerValue()-1));
+                Stack.defineVariable("Time", new Data (Stack.getVariable("Time").getIntegerValue()+1));
                 }
                 return a_reproducir;
                 
@@ -862,13 +851,13 @@ public class Interp {
 
     private String evaluateNmulti(AslTree t){
         String res = "";
-        System.out.println(t.toString());
+//         System.out./*println*/(t.toString());
         for(int i = 0; i<t.getChild(0).getChildCount(); ++i){
             AslTree n = t.getChild(0).getChild(i);
-            System.out.println(t.getChild(0));
-            System.out.println(t.getChild(i));
+//             System.out.println(t.getChild(0));
+//             System.out.println(t.getChild(i));
             Data value = new Data();
-            System.out.println(n.toString());
+//             System.out.println(n.toString());
             int eger;
             int rigante;
             switch(n.getType()){
@@ -1565,21 +1554,23 @@ public class Interp {
                 case AslLexer.CHORUS:
                 case AslLexer.FLAUTA:
                 case AslLexer.PIANO:
-<<<<<<< HEAD
-=======
 				case AslLexer.SAXO:
 				case AslLexer.SHOT:
 				case AslLexer.GUITARRA:
->>>>>>> 3025a999a79e1b0a8a5a1b2cf8043d39b744e123
+				case AslLexer.PERCUSION:
+				case AslLexer.XILOFONO:
+				case AslLexer.VIOLA:
+				case AslLexer.ORGANO:
+				case AslLexer.TROMPA:
                     for(int i = 0; i<f.getChildCount(); ++i){
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
                     
                 case AslLexer.REPEAT:
                     for(int i = 1; i<f.getChildCount(); ++i){
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
@@ -1587,17 +1578,17 @@ public class Interp {
                 case AslLexer.LNOTAS:
                     if(!fromIf)++compnumber;
                     int maux = metrica(f.getChild(0));
-                     System.out.println(maux);
+//                      System.out.println(maux);
                     for(int i = 1; i<f.getChildCount(); ++i){
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                         maux += metrica(f.getChild(i));
                     }
-                    System.out.println(maux);
-                    System.out.println("KKK");
+//                     System.out.println(maux);
+//                     System.out.println("KKK");
                     if(!fromIf){
                         if(maux != beat){
-                            System.out.println(beat);
-                            System.out.println(maux);
+//                             System.out.println(beat);
+//                             System.out.println(maux);
                             throw new RuntimeException("El fragmento " + compnumber + " de la partitura " + partnumber + " no cumple el beat");
                         }
                     }else{
@@ -1615,7 +1606,7 @@ public class Interp {
                 case AslLexer.SI:
                 case AslLexer.QUIET:
                     int aux = Note2Dur.get(f.getChild(2).getText());
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                     if(aux == -1) return ekkodur;
                     else ekkodur = aux;
                     return aux;
@@ -1625,7 +1616,7 @@ public class Interp {
                     int ret = metrica(f.getChild(1));
                     for(int i = 2; i<f.getChildCount(); ++i){
                         fromIf = true;
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                         if(ret != metrica(f.getChild(i))){
                             throw new RuntimeException("La metrica del if/else del fragmento" + compnumber + " de la partitura " + partnumber + " no coincide.");
                         }
@@ -1636,32 +1627,32 @@ public class Interp {
                 case AslLexer.TRI:
                 int auxf = 0;
                     for(int i = 0; i < f.getChildCount(); ++i){
-                        System.out.println(f.getText());
+//                         System.out.println(f.getText());
                         auxf += metrica(f.getChild(i));
                     }
                     auxf = 2*auxf;
                     return auxf/3;
                     
                 case AslLexer.MULTINOTA:
-                    System.out.println(f.getText());
+//                     System.out.println(f.getText());
                     return Note2Dur.get(f.getChild(1).getText());
                     
                     
                 case AslLexer.FALL:
                 case AslLexer.RAISE:
-                System.out.println(f.getText());
+//                 System.out.println(f.getText());
                     return metrica(f.getChild(0));
                     
                 case AslLexer.TWICE:
-                System.out.println(f.getText());
+//                 System.out.println(f.getText());
                     return 2*metrica(f.getChild(0));
                     
                 case AslLexer.HALF:
-                System.out.println(f.getText());
+//                 System.out.println(f.getText());
                     return metrica(f.getChild(0))/2;
                 
                 case AslLexer.ID:
-                System.out.println(f.getText());
+//                 System.out.println(f.getText());
                         if(Stack.getVariable(f.getText()).getDuracion() != -1) ekkodur = Stack.getVariable(f.getText()).getDuracion();
                         return ekkodur;
                 
@@ -1675,10 +1666,10 @@ public class Interp {
         trie = true;
         Data valistica;
         int nota;
-        System.out.println(t.getText());
+//         System.out.println(t.getText());
         for(int i = 0; i<t.getChildCount(); i++){
             AslTree n = t.getChild(i);
-            System.out.println(n.getText());
+//             System.out.println(n.getText());
             switch(n.getType()){
                 case AslLexer.DO:
                 case AslLexer.RE:
@@ -1719,7 +1710,7 @@ public class Interp {
                 case AslLexer.FALL:
                 case AslLexer.ID:
                     valistica = evaluateExpression(n);
-                    System.out.println("ES AL ACABAR NO TIENE QUE VER CON EL RAIS RIMA HEHEHAHEHA");
+//                     System.out.println("ES AL ACABAR NO TIENE QUE VER CON EL RAIS RIMA HEHEHAHEHA");
                     nota = valistica.getNote();
                     if (fromID){
                         if (!valistica.getBecu()){
