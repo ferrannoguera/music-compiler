@@ -16,7 +16,7 @@ func fin (){
 	Speed n:120
 	Transport -6
 	Armor {#Sol3 #Fa3 #Re3 #Do3}
-	Voice Trompa | Mi.n Fa Si2.b | Sol.n Sol La Si | Si La Sol Fa | Mi Mi Fa Sol |;
+	Voice Percusion | Mi.n Fa Si2.b | Sol.n Sol La Si | Si La Sol Fa | Mi Mi Fa Sol |;
 	
 }
 
@@ -33,7 +33,7 @@ func main() {
 	Armor {#Sol3 #Fa3 #Re3 #Do3}
 	Voice Guitarra |Fa.n Fa Sol Mi | 
 	Voice Saxo |Fa.n Sol.c La Sol.n Mi | 
-	Voice Percusion |Fa.n Sol.c La Sol.n Fa |;
+	Voice Trompa |Fa.n Sol.c La Sol.n Fa |;
 	
 	fin();
 		

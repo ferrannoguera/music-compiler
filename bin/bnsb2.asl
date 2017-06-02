@@ -8,7 +8,7 @@ func main() {
    Armor {$La1 $La2 $La3 $La4 $Si1 $Si2 $Si3 $Si4 $Mi1 $Mi2 $Mi3 $Mi4}
 
    Chorus{
-		Voice Saxo | Quiet.n [(Si4, Sol4).n Si.c] [(¬La4, #Fa4).n Si3.c] ($La4, ¬Fa4).n 
+		Voice Piano | Quiet.n [(Si4, Sol4).n Si.c] [(¬La4, #Fa4).n Si3.c] ($La4, ¬Fa4).n 
 			| (Sol4, Mi4).n~ [(Sol4, Mi4).n Mi4.c~] [Mi4.n Fa4.c] Sol4.n 
 			| (Fa4, Do4).n~ [(Fa4, Do4).n (Do4, ¬La3, $Sol3, Mi3).c~] (Do4, ¬La3, $Sol3, Mi3).b 
 			| Quiet.n [(Mi4, Do4).n $Sol3.c] [(Mi4, Do4, Sol3).n Fa4.c] (Mi4, Do4).n
@@ -88,7 +88,7 @@ func main() {
 			| Quiet.n [(¬La4, #Fa4).n Si3.c] [(Si4, Sol4).n Si3.c] [(La4, Fa4).n Si3.c] 
 			| Quiet.n [(¬La4, #Fa4).n Si3.c] [($La4, ¬Fa4).n Si3.c] [(Sol4, ¬Mi4).n Si3.c] 
 			| (Sol4, Mi4, Si3).r |
-		Voice Saxo | Quiet.r 
+		Voice Piano | Quiet.r 
 			| Mi1.n (Sol2, Si2, Mi3).n $$$Do1.n (Mi3, Si2, Sol2).n 
 			| La1.n (La2, Do3, Mi3).n ¬La1.n (¬La2, Do3, Mi3).n 
 			| La1.n (Do3, Mi3, $Sol3).n La1.n (Do3, Mi3, Sol3).n 

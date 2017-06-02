@@ -1,0 +1,838 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="lightgrey"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="LIST_FUNCTIONS"];
+  n1 [label="func"];
+  n1 [label="func"];
+  n2 [label="repeat"];
+  n3 [label="PARAMS"];
+  n3 [label="PARAMS"];
+  n4 [label="tempo"];
+  n5 [label="LIST_INSTR"];
+  n5 [label="LIST_INSTR"];
+  n6 [label="PARTITURA"];
+  n6 [label="PARTITURA"];
+  n7 [label="Beat"];
+  n7 [label="Beat"];
+  n8 [label="3"];
+  n9 [label="4"];
+  n10 [label="Speed"];
+  n10 [label="Speed"];
+  n11 [label="n"];
+  n12 [label="tempo"];
+  n13 [label="TRANSPORT"];
+  n13 [label="TRANSPORT"];
+  n14 [label="0"];
+  n15 [label="ARMOR"];
+  n15 [label="ARMOR"];
+  n16 [label="NURAN"];
+  n17 [label="Flauta"];
+  n17 [label="Flauta"];
+  n18 [label="LNOTAS"];
+  n18 [label="LNOTAS"];
+  n19 [label="Si"];
+  n19 [label="Si"];
+  n20 [label="NURAN"];
+  n21 [label="3"];
+  n22 [label="n*"];
+  n23 [label="La"];
+  n23 [label="La"];
+  n24 [label="NURAN"];
+  n25 [label="3"];
+  n26 [label="c"];
+  n27 [label="Sol"];
+  n27 [label="Sol"];
+  n28 [label="NURAN"];
+  n29 [label="3"];
+  n30 [label="c"];
+  n31 [label="Fa"];
+  n31 [label="Fa"];
+  n32 [label="NURAN"];
+  n33 [label="3"];
+  n34 [label="c"];
+  n35 [label="LNOTAS"];
+  n35 [label="LNOTAS"];
+  n36 [label="Sol"];
+  n36 [label="Sol"];
+  n37 [label="NURAN"];
+  n38 [label="3"];
+  n39 [label="b"];
+  n40 [label="Do"];
+  n40 [label="Do"];
+  n41 [label="NURAN"];
+  n42 [label="3"];
+  n43 [label="n"];
+  n44 [label="LNOTAS"];
+  n44 [label="LNOTAS"];
+  n45 [label="Si"];
+  n45 [label="Si"];
+  n46 [label="NURAN"];
+  n47 [label="3"];
+  n48 [label="n*"];
+  n49 [label="La"];
+  n49 [label="La"];
+  n50 [label="NURAN"];
+  n51 [label="3"];
+  n52 [label="c"];
+  n53 [label="Sol"];
+  n53 [label="Sol"];
+  n54 [label="NURAN"];
+  n55 [label="3"];
+  n56 [label="c"];
+  n57 [label="Fa"];
+  n57 [label="Fa"];
+  n58 [label="NURAN"];
+  n59 [label="3"];
+  n60 [label="c"];
+  n61 [label="LNOTAS"];
+  n61 [label="LNOTAS"];
+  n62 [label="Sol"];
+  n62 [label="Sol"];
+  n63 [label="NURAN"];
+  n64 [label="3"];
+  n65 [label="b"];
+  n66 [label="Do"];
+  n66 [label="Do"];
+  n67 [label="NURAN"];
+  n68 [label="3"];
+  n69 [label="n"];
+  n70 [label="LNOTAS"];
+  n70 [label="LNOTAS"];
+  n71 [label="Re"];
+  n71 [label="Re"];
+  n72 [label="NURAN"];
+  n73 [label="3"];
+  n74 [label="b*"];
+  n74 [label="b*"];
+  n75 [label="~"];
+  n76 [label="LNOTAS"];
+  n76 [label="LNOTAS"];
+  n77 [label="Re"];
+  n77 [label="Re"];
+  n78 [label="NURAN"];
+  n79 [label="3"];
+  n80 [label="b"];
+  n81 [label="Mi"];
+  n81 [label="Mi"];
+  n82 [label="NURAN"];
+  n83 [label="3"];
+  n84 [label="n"];
+  n85 [label="LNOTAS"];
+  n85 [label="LNOTAS"];
+  n86 [label="Do"];
+  n86 [label="Do"];
+  n87 [label="NURAN"];
+  n88 [label="3"];
+  n89 [label="b*"];
+  n90 [label="func"];
+  n90 [label="func"];
+  n91 [label="main"];
+  n92 [label="PARAMS"];
+  n93 [label="LIST_INSTR"];
+  n93 [label="LIST_INSTR"];
+  n94 [label="PARTITURA"];
+  n94 [label="PARTITURA"];
+  n95 [label="Beat"];
+  n95 [label="Beat"];
+  n96 [label="3"];
+  n97 [label="4"];
+  n98 [label="Speed"];
+  n98 [label="Speed"];
+  n99 [label="n"];
+  n100 [label="120"];
+  n101 [label="TRANSPORT"];
+  n101 [label="TRANSPORT"];
+  n102 [label="0"];
+  n103 [label="ARMOR"];
+  n103 [label="ARMOR"];
+  n104 [label="NURAN"];
+  n105 [label="Flauta"];
+  n105 [label="Flauta"];
+  n106 [label="LNOTAS"];
+  n106 [label="LNOTAS"];
+  n107 [label="Sol"];
+  n107 [label="Sol"];
+  n108 [label="NURAN"];
+  n109 [label="3"];
+  n110 [label="b*"];
+  n111 [label="LNOTAS"];
+  n111 [label="LNOTAS"];
+  n112 [label="Re"];
+  n112 [label="Re"];
+  n113 [label="NURAN"];
+  n114 [label="4"];
+  n115 [label="n"];
+  n116 [label="Do"];
+  n116 [label="Do"];
+  n117 [label="NURAN"];
+  n118 [label="4"];
+  n119 [label="b"];
+  n120 [label="FUNCALL"];
+  n120 [label="FUNCALL"];
+  n121 [label="repeat"];
+  n122 [label="ARGLIST"];
+  n122 [label="ARGLIST"];
+  n123 [label="120"];
+  n124 [label="PARTITURA"];
+  n124 [label="PARTITURA"];
+  n125 [label="Beat"];
+  n125 [label="Beat"];
+  n126 [label="3"];
+  n127 [label="4"];
+  n128 [label="Speed"];
+  n128 [label="Speed"];
+  n129 [label="n"];
+  n130 [label="120"];
+  n131 [label="TRANSPORT"];
+  n131 [label="TRANSPORT"];
+  n132 [label="0"];
+  n133 [label="ARMOR"];
+  n133 [label="ARMOR"];
+  n134 [label="NURAN"];
+  n135 [label="Flauta"];
+  n135 [label="Flauta"];
+  n136 [label="LNOTAS"];
+  n136 [label="LNOTAS"];
+  n137 [label="Sol"];
+  n137 [label="Sol"];
+  n138 [label="NURAN"];
+  n139 [label="3"];
+  n140 [label="n"];
+  n141 [label="Mi"];
+  n141 [label="Mi"];
+  n142 [label="NURAN"];
+  n143 [label="3"];
+  n144 [label="n*"];
+  n145 [label="Re"];
+  n145 [label="Re"];
+  n146 [label="NURAN"];
+  n147 [label="3"];
+  n148 [label="c"];
+  n149 [label="LNOTAS"];
+  n149 [label="LNOTAS"];
+  n150 [label="Do"];
+  n150 [label="Do"];
+  n151 [label="NURAN"];
+  n152 [label="3"];
+  n153 [label="b*"];
+  n154 [label="LNOTAS"];
+  n154 [label="LNOTAS"];
+  n155 [label="Sol"];
+  n155 [label="Sol"];
+  n156 [label="NURAN"];
+  n157 [label="3"];
+  n158 [label="n"];
+  n159 [label="Mi"];
+  n159 [label="Mi"];
+  n160 [label="NURAN"];
+  n161 [label="3"];
+  n162 [label="n*"];
+  n163 [label="Re"];
+  n163 [label="Re"];
+  n164 [label="NURAN"];
+  n165 [label="3"];
+  n166 [label="c"];
+  n167 [label="LNOTAS"];
+  n167 [label="LNOTAS"];
+  n168 [label="Do"];
+  n168 [label="Do"];
+  n169 [label="NURAN"];
+  n170 [label="3"];
+  n171 [label="n"];
+  n172 [label="Mi"];
+  n172 [label="Mi"];
+  n173 [label="NURAN"];
+  n174 [label="3"];
+  n175 [label="n"];
+  n176 [label="Sol"];
+  n176 [label="Sol"];
+  n177 [label="NURAN"];
+  n178 [label="3"];
+  n179 [label="n"];
+  n180 [label="LNOTAS"];
+  n180 [label="LNOTAS"];
+  n181 [label="Do"];
+  n181 [label="Do"];
+  n182 [label="NURAN"];
+  n183 [label="4"];
+  n184 [label="n"];
+  n185 [label="Si"];
+  n185 [label="Si"];
+  n186 [label="NURAN"];
+  n187 [label="3"];
+  n188 [label="n*"];
+  n189 [label="La"];
+  n189 [label="La"];
+  n190 [label="NURAN"];
+  n191 [label="3"];
+  n192 [label="c"];
+  n193 [label="LNOTAS"];
+  n193 [label="LNOTAS"];
+  n194 [label="Si"];
+  n194 [label="Si"];
+  n195 [label="NURAN"];
+  n196 [label="3"];
+  n197 [label="n"];
+  n198 [label="La"];
+  n198 [label="La"];
+  n199 [label="NURAN"];
+  n200 [label="3"];
+  n201 [label="n*"];
+  n202 [label="Sol"];
+  n202 [label="Sol"];
+  n203 [label="NURAN"];
+  n204 [label="3"];
+  n205 [label="c"];
+  n206 [label="LNOTAS"];
+  n206 [label="LNOTAS"];
+  n207 [label="La"];
+  n207 [label="La"];
+  n208 [label="NURAN"];
+  n209 [label="3"];
+  n210 [label="b*"];
+  n211 [label="LNOTAS"];
+  n211 [label="LNOTAS"];
+  n212 [label="Sol"];
+  n212 [label="Sol"];
+  n213 [label="NURAN"];
+  n214 [label="3"];
+  n215 [label="b*"];
+  n216 [label="LNOTAS"];
+  n216 [label="LNOTAS"];
+  n217 [label="Re"];
+  n217 [label="Re"];
+  n218 [label="NURAN"];
+  n219 [label="4"];
+  n220 [label="n"];
+  n221 [label="Do"];
+  n221 [label="Do"];
+  n222 [label="NURAN"];
+  n223 [label="4"];
+  n224 [label="b"];
+  n225 [label="FUNCALL"];
+  n225 [label="FUNCALL"];
+  n226 [label="repeat"];
+  n227 [label="ARGLIST"];
+  n227 [label="ARGLIST"];
+  n228 [label="120"];
+  n229 [label="PARTITURA"];
+  n229 [label="PARTITURA"];
+  n230 [label="Beat"];
+  n230 [label="Beat"];
+  n231 [label="3"];
+  n232 [label="4"];
+  n233 [label="Speed"];
+  n233 [label="Speed"];
+  n234 [label="n"];
+  n235 [label="120"];
+  n236 [label="TRANSPORT"];
+  n236 [label="TRANSPORT"];
+  n237 [label="0"];
+  n238 [label="ARMOR"];
+  n238 [label="ARMOR"];
+  n239 [label="NURAN"];
+  n240 [label="Flauta"];
+  n240 [label="Flauta"];
+  n241 [label="LNOTAS"];
+  n241 [label="LNOTAS"];
+  n242 [label="Mi"];
+  n242 [label="Mi"];
+  n243 [label="NURAN"];
+  n244 [label="3"];
+  n245 [label="b"];
+  n246 [label="Sol"];
+  n246 [label="Sol"];
+  n247 [label="NURAN"];
+  n248 [label="3"];
+  n249 [label="n"];
+  n250 [label="LNOTAS"];
+  n250 [label="LNOTAS"];
+  n251 [label="Do"];
+  n251 [label="Do"];
+  n252 [label="NURAN"];
+  n253 [label="4"];
+  n254 [label="b*"];
+  n255 [label="LNOTAS"];
+  n255 [label="LNOTAS"];
+  n256 [label="Re"];
+  n256 [label="Re"];
+  n257 [label="NURAN"];
+  n258 [label="3"];
+  n259 [label="b"];
+  n260 [label="Do"];
+  n260 [label="Do"];
+  n261 [label="NURAN"];
+  n262 [label="3"];
+  n263 [label="n"];
+  n264 [label="LNOTAS"];
+  n264 [label="LNOTAS"];
+  n265 [label="Sol"];
+  n265 [label="Sol"];
+  n266 [label="NURAN"];
+  n267 [label="3"];
+  n268 [label="b"];
+  n269 [label="Do"];
+  n269 [label="Do"];
+  n270 [label="NURAN"];
+  n271 [label="3"];
+  n272 [label="n"];
+  n273 [label="LNOTAS"];
+  n273 [label="LNOTAS"];
+  n274 [label="Si"];
+  n274 [label="Si"];
+  n275 [label="NURAN"];
+  n276 [label="3"];
+  n277 [label="n*"];
+  n278 [label="La"];
+  n278 [label="La"];
+  n279 [label="NURAN"];
+  n280 [label="3"];
+  n281 [label="c"];
+  n282 [label="Sol"];
+  n282 [label="Sol"];
+  n283 [label="NURAN"];
+  n284 [label="3"];
+  n285 [label="c"];
+  n286 [label="Fa"];
+  n286 [label="Fa"];
+  n287 [label="NURAN"];
+  n288 [label="3"];
+  n289 [label="c"];
+  n290 [label="LNOTAS"];
+  n290 [label="LNOTAS"];
+  n291 [label="Sol"];
+  n291 [label="Sol"];
+  n292 [label="NURAN"];
+  n293 [label="3"];
+  n294 [label="b"];
+  n295 [label="Do"];
+  n295 [label="Do"];
+  n296 [label="NURAN"];
+  n297 [label="3"];
+  n298 [label="n"];
+  n299 [label="LNOTAS"];
+  n299 [label="LNOTAS"];
+  n300 [label="Si"];
+  n300 [label="Si"];
+  n301 [label="NURAN"];
+  n302 [label="3"];
+  n303 [label="n*"];
+  n304 [label="La"];
+  n304 [label="La"];
+  n305 [label="NURAN"];
+  n306 [label="3"];
+  n307 [label="c"];
+  n308 [label="Sol"];
+  n308 [label="Sol"];
+  n309 [label="NURAN"];
+  n310 [label="3"];
+  n311 [label="c"];
+  n312 [label="Fa"];
+  n312 [label="Fa"];
+  n313 [label="NURAN"];
+  n314 [label="3"];
+  n315 [label="c"];
+  n316 [label="LNOTAS"];
+  n316 [label="LNOTAS"];
+  n317 [label="Sol"];
+  n317 [label="Sol"];
+  n318 [label="NURAN"];
+  n319 [label="3"];
+  n320 [label="b*"];
+  n321 [label="LNOTAS"];
+  n321 [label="LNOTAS"];
+  n322 [label="Do"];
+  n322 [label="Do"];
+  n323 [label="NURAN"];
+  n324 [label="3"];
+  n325 [label="b*"];
+  n326 [label="LNOTAS"];
+  n326 [label="LNOTAS"];
+  n327 [label="Fa"];
+  n327 [label="Fa"];
+  n328 [label="NURAN"];
+  n329 [label="3"];
+  n330 [label="n"];
+  n331 [label="Re"];
+  n331 [label="Re"];
+  n332 [label="NURAN"];
+  n333 [label="3"];
+  n334 [label="b"];
+  n334 [label="b"];
+  n335 [label="~"];
+  n336 [label="LNOTAS"];
+  n336 [label="LNOTAS"];
+  n337 [label="Re"];
+  n337 [label="Re"];
+  n338 [label="NURAN"];
+  n339 [label="3"];
+  n340 [label="b"];
+  n341 [label="Mi"];
+  n341 [label="Mi"];
+  n342 [label="NURAN"];
+  n343 [label="3"];
+  n344 [label="n"];
+  n345 [label="LNOTAS"];
+  n345 [label="LNOTAS"];
+  n346 [label="Do"];
+  n346 [label="Do"];
+  n347 [label="NURAN"];
+  n348 [label="3"];
+  n349 [label="b*"];
+
+  n0 -> n1 // "LIST_FUNCTIONS" -> "func"
+  n1 -> n2 // "func" -> "repeat"
+  n1 -> n3 // "func" -> "PARAMS"
+  n3 -> n4 // "PARAMS" -> "tempo"
+  n1 -> n5 // "func" -> "LIST_INSTR"
+  n5 -> n6 // "LIST_INSTR" -> "PARTITURA"
+  n6 -> n7 // "PARTITURA" -> "Beat"
+  n7 -> n8 // "Beat" -> "3"
+  n7 -> n9 // "Beat" -> "4"
+  n6 -> n10 // "PARTITURA" -> "Speed"
+  n10 -> n11 // "Speed" -> "n"
+  n10 -> n12 // "Speed" -> "tempo"
+  n6 -> n13 // "PARTITURA" -> "TRANSPORT"
+  n13 -> n14 // "TRANSPORT" -> "0"
+  n6 -> n15 // "PARTITURA" -> "ARMOR"
+  n15 -> n16 // "ARMOR" -> "NURAN"
+  n6 -> n17 // "PARTITURA" -> "Flauta"
+  n17 -> n18 // "Flauta" -> "LNOTAS"
+  n18 -> n19 // "LNOTAS" -> "Si"
+  n19 -> n20 // "Si" -> "NURAN"
+  n19 -> n21 // "Si" -> "3"
+  n19 -> n22 // "Si" -> "n*"
+  n18 -> n23 // "LNOTAS" -> "La"
+  n23 -> n24 // "La" -> "NURAN"
+  n23 -> n25 // "La" -> "3"
+  n23 -> n26 // "La" -> "c"
+  n18 -> n27 // "LNOTAS" -> "Sol"
+  n27 -> n28 // "Sol" -> "NURAN"
+  n27 -> n29 // "Sol" -> "3"
+  n27 -> n30 // "Sol" -> "c"
+  n18 -> n31 // "LNOTAS" -> "Fa"
+  n31 -> n32 // "Fa" -> "NURAN"
+  n31 -> n33 // "Fa" -> "3"
+  n31 -> n34 // "Fa" -> "c"
+  n17 -> n35 // "Flauta" -> "LNOTAS"
+  n35 -> n36 // "LNOTAS" -> "Sol"
+  n36 -> n37 // "Sol" -> "NURAN"
+  n36 -> n38 // "Sol" -> "3"
+  n36 -> n39 // "Sol" -> "b"
+  n35 -> n40 // "LNOTAS" -> "Do"
+  n40 -> n41 // "Do" -> "NURAN"
+  n40 -> n42 // "Do" -> "3"
+  n40 -> n43 // "Do" -> "n"
+  n17 -> n44 // "Flauta" -> "LNOTAS"
+  n44 -> n45 // "LNOTAS" -> "Si"
+  n45 -> n46 // "Si" -> "NURAN"
+  n45 -> n47 // "Si" -> "3"
+  n45 -> n48 // "Si" -> "n*"
+  n44 -> n49 // "LNOTAS" -> "La"
+  n49 -> n50 // "La" -> "NURAN"
+  n49 -> n51 // "La" -> "3"
+  n49 -> n52 // "La" -> "c"
+  n44 -> n53 // "LNOTAS" -> "Sol"
+  n53 -> n54 // "Sol" -> "NURAN"
+  n53 -> n55 // "Sol" -> "3"
+  n53 -> n56 // "Sol" -> "c"
+  n44 -> n57 // "LNOTAS" -> "Fa"
+  n57 -> n58 // "Fa" -> "NURAN"
+  n57 -> n59 // "Fa" -> "3"
+  n57 -> n60 // "Fa" -> "c"
+  n17 -> n61 // "Flauta" -> "LNOTAS"
+  n61 -> n62 // "LNOTAS" -> "Sol"
+  n62 -> n63 // "Sol" -> "NURAN"
+  n62 -> n64 // "Sol" -> "3"
+  n62 -> n65 // "Sol" -> "b"
+  n61 -> n66 // "LNOTAS" -> "Do"
+  n66 -> n67 // "Do" -> "NURAN"
+  n66 -> n68 // "Do" -> "3"
+  n66 -> n69 // "Do" -> "n"
+  n17 -> n70 // "Flauta" -> "LNOTAS"
+  n70 -> n71 // "LNOTAS" -> "Re"
+  n71 -> n72 // "Re" -> "NURAN"
+  n71 -> n73 // "Re" -> "3"
+  n71 -> n74 // "Re" -> "b*"
+  n74 -> n75 // "b*" -> "~"
+  n17 -> n76 // "Flauta" -> "LNOTAS"
+  n76 -> n77 // "LNOTAS" -> "Re"
+  n77 -> n78 // "Re" -> "NURAN"
+  n77 -> n79 // "Re" -> "3"
+  n77 -> n80 // "Re" -> "b"
+  n76 -> n81 // "LNOTAS" -> "Mi"
+  n81 -> n82 // "Mi" -> "NURAN"
+  n81 -> n83 // "Mi" -> "3"
+  n81 -> n84 // "Mi" -> "n"
+  n17 -> n85 // "Flauta" -> "LNOTAS"
+  n85 -> n86 // "LNOTAS" -> "Do"
+  n86 -> n87 // "Do" -> "NURAN"
+  n86 -> n88 // "Do" -> "3"
+  n86 -> n89 // "Do" -> "b*"
+  n0 -> n90 // "LIST_FUNCTIONS" -> "func"
+  n90 -> n91 // "func" -> "main"
+  n90 -> n92 // "func" -> "PARAMS"
+  n90 -> n93 // "func" -> "LIST_INSTR"
+  n93 -> n94 // "LIST_INSTR" -> "PARTITURA"
+  n94 -> n95 // "PARTITURA" -> "Beat"
+  n95 -> n96 // "Beat" -> "3"
+  n95 -> n97 // "Beat" -> "4"
+  n94 -> n98 // "PARTITURA" -> "Speed"
+  n98 -> n99 // "Speed" -> "n"
+  n98 -> n100 // "Speed" -> "120"
+  n94 -> n101 // "PARTITURA" -> "TRANSPORT"
+  n101 -> n102 // "TRANSPORT" -> "0"
+  n94 -> n103 // "PARTITURA" -> "ARMOR"
+  n103 -> n104 // "ARMOR" -> "NURAN"
+  n94 -> n105 // "PARTITURA" -> "Flauta"
+  n105 -> n106 // "Flauta" -> "LNOTAS"
+  n106 -> n107 // "LNOTAS" -> "Sol"
+  n107 -> n108 // "Sol" -> "NURAN"
+  n107 -> n109 // "Sol" -> "3"
+  n107 -> n110 // "Sol" -> "b*"
+  n105 -> n111 // "Flauta" -> "LNOTAS"
+  n111 -> n112 // "LNOTAS" -> "Re"
+  n112 -> n113 // "Re" -> "NURAN"
+  n112 -> n114 // "Re" -> "4"
+  n112 -> n115 // "Re" -> "n"
+  n111 -> n116 // "LNOTAS" -> "Do"
+  n116 -> n117 // "Do" -> "NURAN"
+  n116 -> n118 // "Do" -> "4"
+  n116 -> n119 // "Do" -> "b"
+  n93 -> n120 // "LIST_INSTR" -> "FUNCALL"
+  n120 -> n121 // "FUNCALL" -> "repeat"
+  n120 -> n122 // "FUNCALL" -> "ARGLIST"
+  n122 -> n123 // "ARGLIST" -> "120"
+  n93 -> n124 // "LIST_INSTR" -> "PARTITURA"
+  n124 -> n125 // "PARTITURA" -> "Beat"
+  n125 -> n126 // "Beat" -> "3"
+  n125 -> n127 // "Beat" -> "4"
+  n124 -> n128 // "PARTITURA" -> "Speed"
+  n128 -> n129 // "Speed" -> "n"
+  n128 -> n130 // "Speed" -> "120"
+  n124 -> n131 // "PARTITURA" -> "TRANSPORT"
+  n131 -> n132 // "TRANSPORT" -> "0"
+  n124 -> n133 // "PARTITURA" -> "ARMOR"
+  n133 -> n134 // "ARMOR" -> "NURAN"
+  n124 -> n135 // "PARTITURA" -> "Flauta"
+  n135 -> n136 // "Flauta" -> "LNOTAS"
+  n136 -> n137 // "LNOTAS" -> "Sol"
+  n137 -> n138 // "Sol" -> "NURAN"
+  n137 -> n139 // "Sol" -> "3"
+  n137 -> n140 // "Sol" -> "n"
+  n136 -> n141 // "LNOTAS" -> "Mi"
+  n141 -> n142 // "Mi" -> "NURAN"
+  n141 -> n143 // "Mi" -> "3"
+  n141 -> n144 // "Mi" -> "n*"
+  n136 -> n145 // "LNOTAS" -> "Re"
+  n145 -> n146 // "Re" -> "NURAN"
+  n145 -> n147 // "Re" -> "3"
+  n145 -> n148 // "Re" -> "c"
+  n135 -> n149 // "Flauta" -> "LNOTAS"
+  n149 -> n150 // "LNOTAS" -> "Do"
+  n150 -> n151 // "Do" -> "NURAN"
+  n150 -> n152 // "Do" -> "3"
+  n150 -> n153 // "Do" -> "b*"
+  n135 -> n154 // "Flauta" -> "LNOTAS"
+  n154 -> n155 // "LNOTAS" -> "Sol"
+  n155 -> n156 // "Sol" -> "NURAN"
+  n155 -> n157 // "Sol" -> "3"
+  n155 -> n158 // "Sol" -> "n"
+  n154 -> n159 // "LNOTAS" -> "Mi"
+  n159 -> n160 // "Mi" -> "NURAN"
+  n159 -> n161 // "Mi" -> "3"
+  n159 -> n162 // "Mi" -> "n*"
+  n154 -> n163 // "LNOTAS" -> "Re"
+  n163 -> n164 // "Re" -> "NURAN"
+  n163 -> n165 // "Re" -> "3"
+  n163 -> n166 // "Re" -> "c"
+  n135 -> n167 // "Flauta" -> "LNOTAS"
+  n167 -> n168 // "LNOTAS" -> "Do"
+  n168 -> n169 // "Do" -> "NURAN"
+  n168 -> n170 // "Do" -> "3"
+  n168 -> n171 // "Do" -> "n"
+  n167 -> n172 // "LNOTAS" -> "Mi"
+  n172 -> n173 // "Mi" -> "NURAN"
+  n172 -> n174 // "Mi" -> "3"
+  n172 -> n175 // "Mi" -> "n"
+  n167 -> n176 // "LNOTAS" -> "Sol"
+  n176 -> n177 // "Sol" -> "NURAN"
+  n176 -> n178 // "Sol" -> "3"
+  n176 -> n179 // "Sol" -> "n"
+  n135 -> n180 // "Flauta" -> "LNOTAS"
+  n180 -> n181 // "LNOTAS" -> "Do"
+  n181 -> n182 // "Do" -> "NURAN"
+  n181 -> n183 // "Do" -> "4"
+  n181 -> n184 // "Do" -> "n"
+  n180 -> n185 // "LNOTAS" -> "Si"
+  n185 -> n186 // "Si" -> "NURAN"
+  n185 -> n187 // "Si" -> "3"
+  n185 -> n188 // "Si" -> "n*"
+  n180 -> n189 // "LNOTAS" -> "La"
+  n189 -> n190 // "La" -> "NURAN"
+  n189 -> n191 // "La" -> "3"
+  n189 -> n192 // "La" -> "c"
+  n135 -> n193 // "Flauta" -> "LNOTAS"
+  n193 -> n194 // "LNOTAS" -> "Si"
+  n194 -> n195 // "Si" -> "NURAN"
+  n194 -> n196 // "Si" -> "3"
+  n194 -> n197 // "Si" -> "n"
+  n193 -> n198 // "LNOTAS" -> "La"
+  n198 -> n199 // "La" -> "NURAN"
+  n198 -> n200 // "La" -> "3"
+  n198 -> n201 // "La" -> "n*"
+  n193 -> n202 // "LNOTAS" -> "Sol"
+  n202 -> n203 // "Sol" -> "NURAN"
+  n202 -> n204 // "Sol" -> "3"
+  n202 -> n205 // "Sol" -> "c"
+  n135 -> n206 // "Flauta" -> "LNOTAS"
+  n206 -> n207 // "LNOTAS" -> "La"
+  n207 -> n208 // "La" -> "NURAN"
+  n207 -> n209 // "La" -> "3"
+  n207 -> n210 // "La" -> "b*"
+  n135 -> n211 // "Flauta" -> "LNOTAS"
+  n211 -> n212 // "LNOTAS" -> "Sol"
+  n212 -> n213 // "Sol" -> "NURAN"
+  n212 -> n214 // "Sol" -> "3"
+  n212 -> n215 // "Sol" -> "b*"
+  n135 -> n216 // "Flauta" -> "LNOTAS"
+  n216 -> n217 // "LNOTAS" -> "Re"
+  n217 -> n218 // "Re" -> "NURAN"
+  n217 -> n219 // "Re" -> "4"
+  n217 -> n220 // "Re" -> "n"
+  n216 -> n221 // "LNOTAS" -> "Do"
+  n221 -> n222 // "Do" -> "NURAN"
+  n221 -> n223 // "Do" -> "4"
+  n221 -> n224 // "Do" -> "b"
+  n93 -> n225 // "LIST_INSTR" -> "FUNCALL"
+  n225 -> n226 // "FUNCALL" -> "repeat"
+  n225 -> n227 // "FUNCALL" -> "ARGLIST"
+  n227 -> n228 // "ARGLIST" -> "120"
+  n93 -> n229 // "LIST_INSTR" -> "PARTITURA"
+  n229 -> n230 // "PARTITURA" -> "Beat"
+  n230 -> n231 // "Beat" -> "3"
+  n230 -> n232 // "Beat" -> "4"
+  n229 -> n233 // "PARTITURA" -> "Speed"
+  n233 -> n234 // "Speed" -> "n"
+  n233 -> n235 // "Speed" -> "120"
+  n229 -> n236 // "PARTITURA" -> "TRANSPORT"
+  n236 -> n237 // "TRANSPORT" -> "0"
+  n229 -> n238 // "PARTITURA" -> "ARMOR"
+  n238 -> n239 // "ARMOR" -> "NURAN"
+  n229 -> n240 // "PARTITURA" -> "Flauta"
+  n240 -> n241 // "Flauta" -> "LNOTAS"
+  n241 -> n242 // "LNOTAS" -> "Mi"
+  n242 -> n243 // "Mi" -> "NURAN"
+  n242 -> n244 // "Mi" -> "3"
+  n242 -> n245 // "Mi" -> "b"
+  n241 -> n246 // "LNOTAS" -> "Sol"
+  n246 -> n247 // "Sol" -> "NURAN"
+  n246 -> n248 // "Sol" -> "3"
+  n246 -> n249 // "Sol" -> "n"
+  n240 -> n250 // "Flauta" -> "LNOTAS"
+  n250 -> n251 // "LNOTAS" -> "Do"
+  n251 -> n252 // "Do" -> "NURAN"
+  n251 -> n253 // "Do" -> "4"
+  n251 -> n254 // "Do" -> "b*"
+  n240 -> n255 // "Flauta" -> "LNOTAS"
+  n255 -> n256 // "LNOTAS" -> "Re"
+  n256 -> n257 // "Re" -> "NURAN"
+  n256 -> n258 // "Re" -> "3"
+  n256 -> n259 // "Re" -> "b"
+  n255 -> n260 // "LNOTAS" -> "Do"
+  n260 -> n261 // "Do" -> "NURAN"
+  n260 -> n262 // "Do" -> "3"
+  n260 -> n263 // "Do" -> "n"
+  n240 -> n264 // "Flauta" -> "LNOTAS"
+  n264 -> n265 // "LNOTAS" -> "Sol"
+  n265 -> n266 // "Sol" -> "NURAN"
+  n265 -> n267 // "Sol" -> "3"
+  n265 -> n268 // "Sol" -> "b"
+  n264 -> n269 // "LNOTAS" -> "Do"
+  n269 -> n270 // "Do" -> "NURAN"
+  n269 -> n271 // "Do" -> "3"
+  n269 -> n272 // "Do" -> "n"
+  n240 -> n273 // "Flauta" -> "LNOTAS"
+  n273 -> n274 // "LNOTAS" -> "Si"
+  n274 -> n275 // "Si" -> "NURAN"
+  n274 -> n276 // "Si" -> "3"
+  n274 -> n277 // "Si" -> "n*"
+  n273 -> n278 // "LNOTAS" -> "La"
+  n278 -> n279 // "La" -> "NURAN"
+  n278 -> n280 // "La" -> "3"
+  n278 -> n281 // "La" -> "c"
+  n273 -> n282 // "LNOTAS" -> "Sol"
+  n282 -> n283 // "Sol" -> "NURAN"
+  n282 -> n284 // "Sol" -> "3"
+  n282 -> n285 // "Sol" -> "c"
+  n273 -> n286 // "LNOTAS" -> "Fa"
+  n286 -> n287 // "Fa" -> "NURAN"
+  n286 -> n288 // "Fa" -> "3"
+  n286 -> n289 // "Fa" -> "c"
+  n240 -> n290 // "Flauta" -> "LNOTAS"
+  n290 -> n291 // "LNOTAS" -> "Sol"
+  n291 -> n292 // "Sol" -> "NURAN"
+  n291 -> n293 // "Sol" -> "3"
+  n291 -> n294 // "Sol" -> "b"
+  n290 -> n295 // "LNOTAS" -> "Do"
+  n295 -> n296 // "Do" -> "NURAN"
+  n295 -> n297 // "Do" -> "3"
+  n295 -> n298 // "Do" -> "n"
+  n240 -> n299 // "Flauta" -> "LNOTAS"
+  n299 -> n300 // "LNOTAS" -> "Si"
+  n300 -> n301 // "Si" -> "NURAN"
+  n300 -> n302 // "Si" -> "3"
+  n300 -> n303 // "Si" -> "n*"
+  n299 -> n304 // "LNOTAS" -> "La"
+  n304 -> n305 // "La" -> "NURAN"
+  n304 -> n306 // "La" -> "3"
+  n304 -> n307 // "La" -> "c"
+  n299 -> n308 // "LNOTAS" -> "Sol"
+  n308 -> n309 // "Sol" -> "NURAN"
+  n308 -> n310 // "Sol" -> "3"
+  n308 -> n311 // "Sol" -> "c"
+  n299 -> n312 // "LNOTAS" -> "Fa"
+  n312 -> n313 // "Fa" -> "NURAN"
+  n312 -> n314 // "Fa" -> "3"
+  n312 -> n315 // "Fa" -> "c"
+  n240 -> n316 // "Flauta" -> "LNOTAS"
+  n316 -> n317 // "LNOTAS" -> "Sol"
+  n317 -> n318 // "Sol" -> "NURAN"
+  n317 -> n319 // "Sol" -> "3"
+  n317 -> n320 // "Sol" -> "b*"
+  n240 -> n321 // "Flauta" -> "LNOTAS"
+  n321 -> n322 // "LNOTAS" -> "Do"
+  n322 -> n323 // "Do" -> "NURAN"
+  n322 -> n324 // "Do" -> "3"
+  n322 -> n325 // "Do" -> "b*"
+  n240 -> n326 // "Flauta" -> "LNOTAS"
+  n326 -> n327 // "LNOTAS" -> "Fa"
+  n327 -> n328 // "Fa" -> "NURAN"
+  n327 -> n329 // "Fa" -> "3"
+  n327 -> n330 // "Fa" -> "n"
+  n326 -> n331 // "LNOTAS" -> "Re"
+  n331 -> n332 // "Re" -> "NURAN"
+  n331 -> n333 // "Re" -> "3"
+  n331 -> n334 // "Re" -> "b"
+  n334 -> n335 // "b" -> "~"
+  n240 -> n336 // "Flauta" -> "LNOTAS"
+  n336 -> n337 // "LNOTAS" -> "Re"
+  n337 -> n338 // "Re" -> "NURAN"
+  n337 -> n339 // "Re" -> "3"
+  n337 -> n340 // "Re" -> "b"
+  n336 -> n341 // "LNOTAS" -> "Mi"
+  n341 -> n342 // "Mi" -> "NURAN"
+  n341 -> n343 // "Mi" -> "3"
+  n341 -> n344 // "Mi" -> "n"
+  n240 -> n345 // "Flauta" -> "LNOTAS"
+  n345 -> n346 // "LNOTAS" -> "Do"
+  n346 -> n347 // "Do" -> "NURAN"
+  n346 -> n348 // "Do" -> "3"
+  n346 -> n349 // "Do" -> "b*"
+
+}
