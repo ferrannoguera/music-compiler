@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g 2017-06-02 12:38:51
+// $ANTLR 3.4 /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g 2017-06-02 20:31:00
 
 package parser;
 import interp.AslTree;
@@ -184,7 +184,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return AslParser.tokenNames; }
-    public String getGrammarFileName() { return "/dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g"; }
+    public String getGrammarFileName() { return "/home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g"; }
 
 
     public static class prog_return extends ParserRuleReturnScope {
@@ -194,7 +194,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "prog"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:1: prog : ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) ;
     public final AslParser.prog_return prog() throws RecognitionException {
         AslParser.prog_return retval = new AslParser.prog_return();
         retval.start = input.LT(1);
@@ -210,10 +210,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_EOF=new RewriteRuleTokenStream(adaptor,"token EOF");
         RewriteRuleSubtreeStream stream_func=new RewriteRuleSubtreeStream(adaptor,"rule func");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:8: ( func )+ EOF
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:6: ( ( func )+ EOF -> ^( LIST_FUNCTIONS ( func )+ ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:8: ( func )+ EOF
             {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:8: ( func )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:8: ( func )+
             int cnt1=0;
             loop1:
             do {
@@ -227,7 +227,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:8: func
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:8: func
             	    {
             	    pushFollow(FOLLOW_func_in_prog219);
             	    func1=func();
@@ -266,7 +266,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 68:18: -> ^( LIST_FUNCTIONS ( func )+ )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:68:21: ^( LIST_FUNCTIONS ( func )+ )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:68:21: ^( LIST_FUNCTIONS ( func )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -321,7 +321,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "func"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:72:1: func : FUNC ^ ID params '{' ! block_instructions '}' !;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:72:1: func : FUNC ^ ID params '{' ! block_instructions '}' !;
     public final AslParser.func_return func() throws RecognitionException {
         AslParser.func_return retval = new AslParser.func_return();
         retval.start = input.LT(1);
@@ -344,8 +344,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal8_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:72:6: ( FUNC ^ ID params '{' ! block_instructions '}' !)
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:72:8: FUNC ^ ID params '{' ! block_instructions '}' !
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:72:6: ( FUNC ^ ID params '{' ! block_instructions '}' !)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:72:8: FUNC ^ ID params '{' ! block_instructions '}' !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -413,7 +413,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "params"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:1: params : '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) ;
     public final AslParser.params_return params() throws RecognitionException {
         AslParser.params_return retval = new AslParser.params_return();
         retval.start = input.LT(1);
@@ -432,14 +432,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_91=new RewriteRuleTokenStream(adaptor,"token 91");
         RewriteRuleSubtreeStream stream_paramlist=new RewriteRuleSubtreeStream(adaptor,"rule paramlist");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:10: '(' ( paramlist )? ')'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:8: ( '(' ( paramlist )? ')' -> ^( PARAMS ( paramlist )? ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:10: '(' ( paramlist )? ')'
             {
             char_literal9=(Token)match(input,90,FOLLOW_90_in_params292);  
             stream_90.add(char_literal9);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:14: ( paramlist )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:14: ( paramlist )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -448,7 +448,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:14: paramlist
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:14: paramlist
                     {
                     pushFollow(FOLLOW_paramlist_in_params294);
                     paramlist10=paramlist();
@@ -480,14 +480,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 76:29: -> ^( PARAMS ( paramlist )? )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:32: ^( PARAMS ( paramlist )? )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:32: ^( PARAMS ( paramlist )? )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(PARAMS, "PARAMS")
                 , root_1);
 
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:76:41: ( paramlist )?
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:76:41: ( paramlist )?
                 if ( stream_paramlist.hasNext() ) {
                     adaptor.addChild(root_1, stream_paramlist.nextTree());
 
@@ -533,7 +533,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "paramlist"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:80:1: paramlist : param ( ',' ! param )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:80:1: paramlist : param ( ',' ! param )* ;
     public final AslParser.paramlist_return paramlist() throws RecognitionException {
         AslParser.paramlist_return retval = new AslParser.paramlist_return();
         retval.start = input.LT(1);
@@ -550,8 +550,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal13_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:80:10: ( param ( ',' ! param )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:80:12: param ( ',' ! param )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:80:10: ( param ( ',' ! param )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:80:12: param ( ',' ! param )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -563,7 +563,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, param12.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:80:18: ( ',' ! param )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:80:18: ( ',' ! param )*
             loop3:
             do {
                 int alt3=2;
@@ -576,7 +576,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:80:19: ',' ! param
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:80:19: ',' ! param
             	    {
             	    char_literal13=(Token)match(input,92,FOLLOW_92_in_paramlist326); 
 
@@ -627,7 +627,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "param"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:85:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:85:1: param : ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) );
     public final AslParser.param_return param() throws RecognitionException {
         AslParser.param_return retval = new AslParser.param_return();
         retval.start = input.LT(1);
@@ -644,7 +644,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:85:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:85:9: ( '&' id= ID -> ^( PREF[$id,$id.text] ) |id= ID -> ^( PVALUE[$id,$id.text] ) )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -663,7 +663,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt4) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:85:13: '&' id= ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:85:13: '&' id= ID
                     {
                     char_literal15=(Token)match(input,89,FOLLOW_89_in_param354);  
                     stream_89.add(char_literal15);
@@ -686,7 +686,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 85:23: -> ^( PREF[$id,$id.text] )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:85:26: ^( PREF[$id,$id.text] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:85:26: ^( PREF[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -704,7 +704,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:86:13: id= ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:86:13: id= ID
                     {
                     id=(Token)match(input,ID,FOLLOW_ID_in_param381);  
                     stream_ID.add(id);
@@ -723,7 +723,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 86:19: -> ^( PVALUE[$id,$id.text] )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:86:22: ^( PVALUE[$id,$id.text] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:86:22: ^( PVALUE[$id,$id.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -771,7 +771,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "block_instructions"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:90:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:90:1: block_instructions : instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) ;
     public final AslParser.block_instructions_return block_instructions() throws RecognitionException {
         AslParser.block_instructions_return retval = new AslParser.block_instructions_return();
         retval.start = input.LT(1);
@@ -789,8 +789,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_96=new RewriteRuleTokenStream(adaptor,"token 96");
         RewriteRuleSubtreeStream stream_instruction=new RewriteRuleSubtreeStream(adaptor,"rule instruction");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:91:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:91:12: instruction ( ';' instruction )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:91:9: ( instruction ( ';' instruction )* -> ^( LIST_INSTR ( instruction )+ ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:91:12: instruction ( ';' instruction )*
             {
             pushFollow(FOLLOW_instruction_in_block_instructions415);
             instruction16=instruction();
@@ -799,7 +799,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_instruction.add(instruction16.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:91:24: ( ';' instruction )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:91:24: ( ';' instruction )*
             loop5:
             do {
                 int alt5=2;
@@ -812,7 +812,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:91:25: ';' instruction
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:91:25: ';' instruction
             	    {
             	    char_literal17=(Token)match(input,96,FOLLOW_96_in_block_instructions418);  
             	    stream_96.add(char_literal17);
@@ -847,7 +847,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 92:13: -> ^( LIST_INSTR ( instruction )+ )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:92:16: ^( LIST_INSTR ( instruction )+ )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:92:16: ^( LIST_INSTR ( instruction )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -902,7 +902,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "instruction"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:96:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write | for_stmt | partitura |);
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:96:1: instruction : ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write | for_stmt | partitura |);
     public final AslParser.instruction_return instruction() throws RecognitionException {
         AslParser.instruction_return retval = new AslParser.instruction_return();
         retval.start = input.LT(1);
@@ -931,7 +931,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:97:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write | for_stmt | partitura |)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:97:9: ( assign | ite_stmt | while_stmt | funcall | return_stmt | read | write | for_stmt | partitura |)
             int alt6=10;
             switch ( input.LA(1) ) {
             case ID:
@@ -1010,7 +1010,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:97:11: assign
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:97:11: assign
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1025,7 +1025,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:98:11: ite_stmt
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:98:11: ite_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1040,7 +1040,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:99:11: while_stmt
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:99:11: while_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1055,7 +1055,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:100:14: funcall
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:100:14: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1070,7 +1070,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:101:11: return_stmt
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:101:11: return_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1085,7 +1085,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:102:11: read
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:102:11: read
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1100,7 +1100,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:103:12: write
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:103:12: write
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1115,7 +1115,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:104:11: for_stmt
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:104:11: for_stmt
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1130,7 +1130,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 9 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:105:11: partitura
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:105:11: partitura
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1145,7 +1145,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 10 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:107:9: 
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:107:9: 
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -1183,7 +1183,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "assign"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:1: assign : ( ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) ) |eq= DPLUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) ) |eq= DMINUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) ) );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:1: assign : ( ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) ) |eq= DPLUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) ) |eq= DMINUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) ) );
     public final AslParser.assign_return assign() throws RecognitionException {
         AslParser.assign_return retval = new AslParser.assign_return();
         retval.start = input.LT(1);
@@ -1223,7 +1223,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_nmusiop=new RewriteRuleSubtreeStream(adaptor,"rule nmusiop");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:8: ( ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) ) |eq= DPLUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) ) |eq= DMINUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:8: ( ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) ) |eq= DPLUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) ) |eq= DMINUS ID -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) ) )
             int alt9=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -1251,13 +1251,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt9) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:10: ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:10: ID (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) )
                     {
                     ID28=(Token)match(input,ID,FOLLOW_ID_in_assign676);  
                     stream_ID.add(ID28);
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:13: (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:13: (eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) ) |eq= PEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) ) |eq= REQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) ) |eq= MEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) ) |eq= DEQUAL expr -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) ) )
                     int alt8=5;
                     switch ( input.LA(1) ) {
                     case EQUAL:
@@ -1295,13 +1295,13 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt8) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:14: eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) )
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:14: eq= EQUAL ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) )
                             {
                             eq=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_assign681);  
                             stream_EQUAL.add(eq);
 
 
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:23: ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) )
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:23: ( expr -> ^( ASSIGN[$eq,\":=\"] ID expr ) | nmusiop -> ^( ASSIGN[$eq, \":=\"] ID nmusiop ) )
                             int alt7=2;
                             int LA7_0 = input.LA(1);
 
@@ -1320,7 +1320,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             switch (alt7) {
                                 case 1 :
-                                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:24: expr
+                                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:24: expr
                                     {
                                     pushFollow(FOLLOW_expr_in_assign684);
                                     expr29=expr();
@@ -1342,7 +1342,7 @@ public TreeAdaptor getTreeAdaptor() {
                                     root_0 = (AslTree)adaptor.nil();
                                     // 109:29: -> ^( ASSIGN[$eq,\":=\"] ID expr )
                                     {
-                                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:109:32: ^( ASSIGN[$eq,\":=\"] ID expr )
+                                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:109:32: ^( ASSIGN[$eq,\":=\"] ID expr )
                                         {
                                         AslTree root_1 = (AslTree)adaptor.nil();
                                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -1366,7 +1366,7 @@ public TreeAdaptor getTreeAdaptor() {
                                     }
                                     break;
                                 case 2 :
-                                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:110:6: nmusiop
+                                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:110:6: nmusiop
                                     {
                                     pushFollow(FOLLOW_nmusiop_in_assign702);
                                     nmusiop30=nmusiop();
@@ -1388,7 +1388,7 @@ public TreeAdaptor getTreeAdaptor() {
                                     root_0 = (AslTree)adaptor.nil();
                                     // 110:14: -> ^( ASSIGN[$eq, \":=\"] ID nmusiop )
                                     {
-                                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:110:17: ^( ASSIGN[$eq, \":=\"] ID nmusiop )
+                                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:110:17: ^( ASSIGN[$eq, \":=\"] ID nmusiop )
                                         {
                                         AslTree root_1 = (AslTree)adaptor.nil();
                                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -1418,7 +1418,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:111:4: eq= PEQUAL expr
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:111:4: eq= PEQUAL expr
                             {
                             eq=(Token)match(input,PEQUAL,FOLLOW_PEQUAL_in_assign723);  
                             stream_PEQUAL.add(eq);
@@ -1444,7 +1444,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 111:21: -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:111:24: ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:111:24: ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID expr ) )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1455,7 +1455,7 @@ public TreeAdaptor getTreeAdaptor() {
                                 stream_ID.nextNode()
                                 );
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:111:46: ^( PLUS ID expr )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:111:46: ^( PLUS ID expr )
                                 {
                                 AslTree root_2 = (AslTree)adaptor.nil();
                                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -1482,7 +1482,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 3 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:112:4: eq= REQUAL expr
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:112:4: eq= REQUAL expr
                             {
                             eq=(Token)match(input,REQUAL,FOLLOW_REQUAL_in_assign751);  
                             stream_REQUAL.add(eq);
@@ -1508,7 +1508,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 112:21: -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:112:24: ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:112:24: ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID expr ) )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1519,7 +1519,7 @@ public TreeAdaptor getTreeAdaptor() {
                                 stream_ID.nextNode()
                                 );
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:112:46: ^( MINUS ID expr )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:112:46: ^( MINUS ID expr )
                                 {
                                 AslTree root_2 = (AslTree)adaptor.nil();
                                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -1546,7 +1546,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 4 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:113:4: eq= MEQUAL expr
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:113:4: eq= MEQUAL expr
                             {
                             eq=(Token)match(input,MEQUAL,FOLLOW_MEQUAL_in_assign779);  
                             stream_MEQUAL.add(eq);
@@ -1572,7 +1572,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 113:21: -> ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:113:24: ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:113:24: ^( ASSIGN[$eq,\":=\"] ID ^( MUL ID expr ) )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1583,7 +1583,7 @@ public TreeAdaptor getTreeAdaptor() {
                                 stream_ID.nextNode()
                                 );
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:113:46: ^( MUL ID expr )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:113:46: ^( MUL ID expr )
                                 {
                                 AslTree root_2 = (AslTree)adaptor.nil();
                                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -1610,7 +1610,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 5 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:114:4: eq= DEQUAL expr
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:114:4: eq= DEQUAL expr
                             {
                             eq=(Token)match(input,DEQUAL,FOLLOW_DEQUAL_in_assign807);  
                             stream_DEQUAL.add(eq);
@@ -1636,7 +1636,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 114:21: -> ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:114:24: ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:114:24: ^( ASSIGN[$eq,\":=\"] ID ^( DIV ID expr ) )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -1647,7 +1647,7 @@ public TreeAdaptor getTreeAdaptor() {
                                 stream_ID.nextNode()
                                 );
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:114:46: ^( DIV ID expr )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:114:46: ^( DIV ID expr )
                                 {
                                 AslTree root_2 = (AslTree)adaptor.nil();
                                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -1680,7 +1680,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:115:4: eq= DPLUS ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:115:4: eq= DPLUS ID
                     {
                     eq=(Token)match(input,DPLUS,FOLLOW_DPLUS_in_assign835);  
                     stream_DPLUS.add(eq);
@@ -1703,7 +1703,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 115:17: -> ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:115:20: ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:115:20: ^( ASSIGN[$eq,\":=\"] ID ^( PLUS ID INT[\"1\"] ) )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -1714,7 +1714,7 @@ public TreeAdaptor getTreeAdaptor() {
                         stream_ID.nextNode()
                         );
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:115:42: ^( PLUS ID INT[\"1\"] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:115:42: ^( PLUS ID INT[\"1\"] )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
@@ -1743,7 +1743,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:116:4: eq= DMINUS ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:116:4: eq= DMINUS ID
                     {
                     eq=(Token)match(input,DMINUS,FOLLOW_DMINUS_in_assign864);  
                     stream_DMINUS.add(eq);
@@ -1766,7 +1766,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 116:18: -> ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:116:21: ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:116:21: ^( ASSIGN[$eq,\":=\"] ID ^( MINUS ID INT[\"1\"] ) )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -1777,7 +1777,7 @@ public TreeAdaptor getTreeAdaptor() {
                         stream_ID.nextNode()
                         );
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:116:43: ^( MINUS ID INT[\"1\"] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:116:43: ^( MINUS ID INT[\"1\"] )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
@@ -1836,7 +1836,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ite_stmt"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:120:1: ite_stmt : IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)? ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:120:1: ite_stmt : IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)? ;
     public final AslParser.ite_stmt_return ite_stmt() throws RecognitionException {
         AslParser.ite_stmt_return retval = new AslParser.ite_stmt_return();
         retval.start = input.LT(1);
@@ -1869,8 +1869,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal47_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:120:10: ( IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)? )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:120:12: IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:120:10: ( IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)? )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:120:12: IF ^ '(' ! expr ')' ! '{' ! block_instructions '}' ! ( ELSE ! '{' ! block_instructions '}' !)?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -1904,7 +1904,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             char_literal43=(Token)match(input,116,FOLLOW_116_in_ite_stmt918); 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:120:58: ( ELSE ! '{' ! block_instructions '}' !)?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:120:58: ( ELSE ! '{' ! block_instructions '}' !)?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1913,7 +1913,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt10) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:120:59: ELSE ! '{' ! block_instructions '}' !
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:120:59: ELSE ! '{' ! block_instructions '}' !
                     {
                     ELSE44=(Token)match(input,ELSE,FOLLOW_ELSE_in_ite_stmt922); 
 
@@ -1965,7 +1965,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "beatbox"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:123:1: beatbox : BEAT ^ expr ':' ! expr ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:123:1: beatbox : BEAT ^ expr ':' ! expr ;
     public final AslParser.beatbox_return beatbox() throws RecognitionException {
         AslParser.beatbox_return retval = new AslParser.beatbox_return();
         retval.start = input.LT(1);
@@ -1984,8 +1984,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal50_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:123:9: ( BEAT ^ expr ':' ! expr )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:123:11: BEAT ^ expr ':' ! expr
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:123:9: ( BEAT ^ expr ':' ! expr )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:123:11: BEAT ^ expr ':' ! expr
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2044,7 +2044,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "speederman"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:125:1: speederman : SPEED ^ dur2 ':' ! expr ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:125:1: speederman : SPEED ^ dur2 ':' ! expr ;
     public final AslParser.speederman_return speederman() throws RecognitionException {
         AslParser.speederman_return retval = new AslParser.speederman_return();
         retval.start = input.LT(1);
@@ -2063,8 +2063,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal54_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:125:12: ( SPEED ^ dur2 ':' ! expr )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:125:14: SPEED ^ dur2 ':' ! expr
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:125:12: ( SPEED ^ dur2 ':' ! expr )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:125:14: SPEED ^ dur2 ':' ! expr
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2123,7 +2123,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "trans"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:127:1: trans : TRANSPORT ^ expr ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:127:1: trans : TRANSPORT ^ expr ;
     public final AslParser.trans_return trans() throws RecognitionException {
         AslParser.trans_return retval = new AslParser.trans_return();
         retval.start = input.LT(1);
@@ -2138,8 +2138,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree TRANSPORT56_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:127:8: ( TRANSPORT ^ expr )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:127:10: TRANSPORT ^ expr
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:127:8: ( TRANSPORT ^ expr )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:127:10: TRANSPORT ^ expr
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2189,7 +2189,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "armour"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:1: armour : ARMOR '{' ( alter nota OCT )+ '}' -> ^( ARMOR ( ^( nota alter OCT ) )+ ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:1: armour : ARMOR '{' ( alter nota OCT )+ '}' -> ^( ARMOR ( ^( nota alter OCT ) )+ ) ;
     public final AslParser.armour_return armour() throws RecognitionException {
         AslParser.armour_return retval = new AslParser.armour_return();
         retval.start = input.LT(1);
@@ -2217,8 +2217,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_nota=new RewriteRuleSubtreeStream(adaptor,"rule nota");
         RewriteRuleSubtreeStream stream_alter=new RewriteRuleSubtreeStream(adaptor,"rule alter");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:9: ( ARMOR '{' ( alter nota OCT )+ '}' -> ^( ARMOR ( ^( nota alter OCT ) )+ ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:11: ARMOR '{' ( alter nota OCT )+ '}'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:9: ( ARMOR '{' ( alter nota OCT )+ '}' -> ^( ARMOR ( ^( nota alter OCT ) )+ ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:11: ARMOR '{' ( alter nota OCT )+ '}'
             {
             ARMOR58=(Token)match(input,ARMOR,FOLLOW_ARMOR_in_armour1001);  
             stream_ARMOR.add(ARMOR58);
@@ -2228,7 +2228,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_114.add(char_literal59);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:21: ( alter nota OCT )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:21: ( alter nota OCT )+
             int cnt11=0;
             loop11:
             do {
@@ -2242,7 +2242,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt11) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:22: alter nota OCT
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:22: alter nota OCT
             	    {
             	    pushFollow(FOLLOW_alter_in_armour1006);
             	    alter60=alter();
@@ -2292,7 +2292,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 129:42: -> ^( ARMOR ( ^( nota alter OCT ) )+ )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:45: ^( ARMOR ( ^( nota alter OCT ) )+ )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:45: ^( ARMOR ( ^( nota alter OCT ) )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -2303,7 +2303,7 @@ public TreeAdaptor getTreeAdaptor() {
                     throw new RewriteEarlyExitException();
                 }
                 while ( stream_alter.hasNext()||stream_OCT.hasNext()||stream_nota.hasNext() ) {
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:129:53: ^( nota alter OCT )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:129:53: ^( nota alter OCT )
                     {
                     AslTree root_2 = (AslTree)adaptor.nil();
                     root_2 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_2);
@@ -2361,7 +2361,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "instrumento"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:131:1: instrumento : ( PIANO | FLAUTA | SAXO | SHOT | GUITARRA | VIOLA | XILOFONO | ORGANO | TROMPA | PERCUSION );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:131:1: instrumento : ( PIANO | FLAUTA | SAXO | SHOT | GUITARRA | VIOLA | XILOFONO | ORGANO | TROMPA | PERCUSION );
     public final AslParser.instrumento_return instrumento() throws RecognitionException {
         AslParser.instrumento_return retval = new AslParser.instrumento_return();
         retval.start = input.LT(1);
@@ -2374,8 +2374,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree set64_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:131:12: ( PIANO | FLAUTA | SAXO | SHOT | GUITARRA | VIOLA | XILOFONO | ORGANO | TROMPA | PERCUSION )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:131:12: ( PIANO | FLAUTA | SAXO | SHOT | GUITARRA | VIOLA | XILOFONO | ORGANO | TROMPA | PERCUSION )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2426,7 +2426,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "alter"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:1: alter : ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+ ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:1: alter : ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+ ;
     public final AslParser.alter_return alter() throws RecognitionException {
         AslParser.alter_return retval = new AslParser.alter_return();
         retval.start = input.LT(1);
@@ -2443,13 +2443,13 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree SOSTENIDO67_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:7: ( ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+ )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:9: ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:7: ( ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+ )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:9: ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:9: ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:9: ( BEMOL ^| BECUADRO ^| SOSTENIDO ^)+
             int cnt12=0;
             loop12:
             do {
@@ -2475,7 +2475,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt12) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:10: BEMOL ^
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:10: BEMOL ^
             	    {
             	    BEMOL65=(Token)match(input,BEMOL,FOLLOW_BEMOL_in_alter1065); 
             	    BEMOL65_tree = 
@@ -2487,7 +2487,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 2 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:17: BECUADRO ^
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:17: BECUADRO ^
             	    {
             	    BECUADRO66=(Token)match(input,BECUADRO,FOLLOW_BECUADRO_in_alter1068); 
             	    BECUADRO66_tree = 
@@ -2499,7 +2499,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 3 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:133:27: SOSTENIDO ^
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:133:27: SOSTENIDO ^
             	    {
             	    SOSTENIDO67=(Token)match(input,SOSTENIDO,FOLLOW_SOSTENIDO_in_alter1071); 
             	    SOSTENIDO67_tree = 
@@ -2552,7 +2552,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nota"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:135:1: nota : ( nota2 | QUIET );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:135:1: nota : ( nota2 | QUIET );
     public final AslParser.nota_return nota() throws RecognitionException {
         AslParser.nota_return retval = new AslParser.nota_return();
         retval.start = input.LT(1);
@@ -2567,7 +2567,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree QUIET69_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:135:6: ( nota2 | QUIET )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:135:6: ( nota2 | QUIET )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -2586,7 +2586,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt13) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:135:8: nota2
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:135:8: nota2
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2601,7 +2601,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:135:14: QUIET
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:135:14: QUIET
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2646,7 +2646,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nota2"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:137:1: nota2 : ( DO | RE | MI | FA | SOL | LA | SI );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:137:1: nota2 : ( DO | RE | MI | FA | SOL | LA | SI );
     public final AslParser.nota2_return nota2() throws RecognitionException {
         AslParser.nota2_return retval = new AslParser.nota2_return();
         retval.start = input.LT(1);
@@ -2659,8 +2659,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree set70_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:137:7: ( DO | RE | MI | FA | SOL | LA | SI )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:137:7: ( DO | RE | MI | FA | SOL | LA | SI )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2711,7 +2711,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "dur"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:139:1: dur : dur2 ^ ( '~' )? ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:139:1: dur : dur2 ^ ( '~' )? ;
     public final AslParser.dur_return dur() throws RecognitionException {
         AslParser.dur_return retval = new AslParser.dur_return();
         retval.start = input.LT(1);
@@ -2726,8 +2726,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal72_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:139:5: ( dur2 ^ ( '~' )? )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:139:7: dur2 ^ ( '~' )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:139:5: ( dur2 ^ ( '~' )? )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:139:7: dur2 ^ ( '~' )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2739,7 +2739,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             root_0 = (AslTree)adaptor.becomeRoot(dur271.getTree(), root_0);
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:139:13: ( '~' )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:139:13: ( '~' )?
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -2748,7 +2748,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt14) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:139:13: '~'
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:139:13: '~'
                     {
                     char_literal72=(Token)match(input,117,FOLLOW_117_in_dur1115); 
                     char_literal72_tree = 
@@ -2794,7 +2794,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "dur2"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:141:1: dur2 : ( 'r' | 'b' | 'n' | 'c' | 'sc' | 'f' | 'sf' | 'r*' | 'b*' | 'n*' | 'c*' | 'sc*' | 'f*' | 'sf*' );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:141:1: dur2 : ( 'r' | 'b' | 'n' | 'c' | 'sc' | 'f' | 'sf' | 'r*' | 'b*' | 'n*' | 'c*' | 'sc*' | 'f*' | 'sf*' );
     public final AslParser.dur2_return dur2() throws RecognitionException {
         AslParser.dur2_return retval = new AslParser.dur2_return();
         retval.start = input.LT(1);
@@ -2807,8 +2807,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree set73_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:141:6: ( 'r' | 'b' | 'n' | 'c' | 'sc' | 'f' | 'sf' | 'r*' | 'b*' | 'n*' | 'c*' | 'sc*' | 'f*' | 'sf*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:141:6: ( 'r' | 'b' | 'n' | 'c' | 'sc' | 'f' | 'sf' | 'r*' | 'b*' | 'n*' | 'c*' | 'sc*' | 'f*' | 'sf*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -2859,7 +2859,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "octal"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:143:1: octal : ( OCT | -> OCT[\"3\"] );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:143:1: octal : ( OCT | -> OCT[\"3\"] );
     public final AslParser.octal_return octal() throws RecognitionException {
         AslParser.octal_return retval = new AslParser.octal_return();
         retval.start = input.LT(1);
@@ -2872,7 +2872,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree OCT74_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:143:7: ( OCT | -> OCT[\"3\"] )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:143:7: ( OCT | -> OCT[\"3\"] )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2891,7 +2891,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt15) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:143:9: OCT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:143:9: OCT
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -2906,7 +2906,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:144:5: 
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:144:5: 
                     {
                     // AST REWRITE
                     // elements: 
@@ -2963,7 +2963,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "acion"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:145:1: acion : ( alter | -> NURAN );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:145:1: acion : ( alter | -> NURAN );
     public final AslParser.acion_return acion() throws RecognitionException {
         AslParser.acion_return retval = new AslParser.acion_return();
         retval.start = input.LT(1);
@@ -2976,7 +2976,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:145:7: ( alter | -> NURAN )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:145:7: ( alter | -> NURAN )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -2995,7 +2995,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt16) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:145:9: alter
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:145:9: alter
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -3010,7 +3010,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:146:5: 
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:146:5: 
                     {
                     // AST REWRITE
                     // elements: 
@@ -3067,7 +3067,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "music_atom"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:1: music_atom : ( nmusiop2 | multinota | ite_stmt_part | triet )+ ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:1: music_atom : ( nmusiop2 | multinota | ite_stmt_part | triet )+ ;
     public final AslParser.music_atom_return music_atom() throws RecognitionException {
         AslParser.music_atom_return retval = new AslParser.music_atom_return();
         retval.start = input.LT(1);
@@ -3086,13 +3086,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:12: ( ( nmusiop2 | multinota | ite_stmt_part | triet )+ )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:14: ( nmusiop2 | multinota | ite_stmt_part | triet )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:12: ( ( nmusiop2 | multinota | ite_stmt_part | triet )+ )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:14: ( nmusiop2 | multinota | ite_stmt_part | triet )+
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:14: ( nmusiop2 | multinota | ite_stmt_part | triet )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:14: ( nmusiop2 | multinota | ite_stmt_part | triet )+
             int cnt17=0;
             loop17:
             do {
@@ -3138,7 +3138,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt17) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:15: nmusiop2
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:15: nmusiop2
             	    {
             	    pushFollow(FOLLOW_nmusiop2_in_music_atom1192);
             	    nmusiop276=nmusiop2();
@@ -3150,7 +3150,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 2 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:24: multinota
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:24: multinota
             	    {
             	    pushFollow(FOLLOW_multinota_in_music_atom1194);
             	    multinota77=multinota();
@@ -3162,7 +3162,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 3 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:34: ite_stmt_part
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:34: ite_stmt_part
             	    {
             	    pushFollow(FOLLOW_ite_stmt_part_in_music_atom1196);
             	    ite_stmt_part78=ite_stmt_part();
@@ -3174,7 +3174,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 4 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:148:48: triet
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:148:48: triet
             	    {
             	    pushFollow(FOLLOW_triet_in_music_atom1198);
             	    triet79=triet();
@@ -3227,7 +3227,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "music_atom2"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:150:1: music_atom2 : music_atom -> ^( LNOTAS music_atom ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:150:1: music_atom2 : music_atom -> ^( LNOTAS music_atom ) ;
     public final AslParser.music_atom2_return music_atom2() throws RecognitionException {
         AslParser.music_atom2_return retval = new AslParser.music_atom2_return();
         retval.start = input.LT(1);
@@ -3240,8 +3240,8 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_music_atom=new RewriteRuleSubtreeStream(adaptor,"rule music_atom");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:150:13: ( music_atom -> ^( LNOTAS music_atom ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:150:15: music_atom
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:150:13: ( music_atom -> ^( LNOTAS music_atom ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:150:15: music_atom
             {
             pushFollow(FOLLOW_music_atom_in_music_atom21210);
             music_atom80=music_atom();
@@ -3263,7 +3263,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 150:26: -> ^( LNOTAS music_atom )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:150:29: ^( LNOTAS music_atom )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:150:29: ^( LNOTAS music_atom )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -3311,7 +3311,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nmusi"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:152:1: nmusi : ( alter nota ^ OCT ( '.' ! dur ) | alter nota OCT -> ^( nota alter OCT NURAN ) | alter nota '.' dur -> ^( nota alter OCT[\"3\"] dur ) | alter nota -> ^( nota alter OCT[\"3\"] NURAN ) | nota OCT '.' dur -> ^( nota NURAN OCT dur ) | nota OCT -> ^( nota NURAN OCT NURAN ) | nota '.' dur -> ^( nota NURAN OCT[\"3\"] dur ) | nota -> ^( nota NURAN OCT[\"3\"] NURAN ) );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:152:1: nmusi : ( alter nota ^ OCT ( '.' ! dur ) | alter nota OCT -> ^( nota alter OCT NURAN ) | alter nota '.' dur -> ^( nota alter OCT[\"3\"] dur ) | alter nota -> ^( nota alter OCT[\"3\"] NURAN ) | nota OCT '.' dur -> ^( nota NURAN OCT dur ) | nota OCT -> ^( nota NURAN OCT NURAN ) | nota '.' dur -> ^( nota NURAN OCT[\"3\"] dur ) | nota -> ^( nota NURAN OCT[\"3\"] NURAN ) );
     public final AslParser.nmusi_return nmusi() throws RecognitionException {
         AslParser.nmusi_return retval = new AslParser.nmusi_return();
         retval.start = input.LT(1);
@@ -3374,12 +3374,12 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_nota=new RewriteRuleSubtreeStream(adaptor,"rule nota");
         RewriteRuleSubtreeStream stream_alter=new RewriteRuleSubtreeStream(adaptor,"rule alter");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:152:7: ( alter nota ^ OCT ( '.' ! dur ) | alter nota OCT -> ^( nota alter OCT NURAN ) | alter nota '.' dur -> ^( nota alter OCT[\"3\"] dur ) | alter nota -> ^( nota alter OCT[\"3\"] NURAN ) | nota OCT '.' dur -> ^( nota NURAN OCT dur ) | nota OCT -> ^( nota NURAN OCT NURAN ) | nota '.' dur -> ^( nota NURAN OCT[\"3\"] dur ) | nota -> ^( nota NURAN OCT[\"3\"] NURAN ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:152:7: ( alter nota ^ OCT ( '.' ! dur ) | alter nota OCT -> ^( nota alter OCT NURAN ) | alter nota '.' dur -> ^( nota alter OCT[\"3\"] dur ) | alter nota -> ^( nota alter OCT[\"3\"] NURAN ) | nota OCT '.' dur -> ^( nota NURAN OCT dur ) | nota OCT -> ^( nota NURAN OCT NURAN ) | nota '.' dur -> ^( nota NURAN OCT[\"3\"] dur ) | nota -> ^( nota NURAN OCT[\"3\"] NURAN ) )
             int alt18=8;
             alt18 = dfa18.predict(input);
             switch (alt18) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:152:9: alter nota ^ OCT ( '.' ! dur )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:152:9: alter nota ^ OCT ( '.' ! dur )
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -3405,8 +3405,8 @@ public TreeAdaptor getTreeAdaptor() {
                     adaptor.addChild(root_0, OCT83_tree);
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:152:25: ( '.' ! dur )
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:152:26: '.' ! dur
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:152:25: ( '.' ! dur )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:152:26: '.' ! dur
                     {
                     char_literal84=(Token)match(input,93,FOLLOW_93_in_nmusi1236); 
 
@@ -3423,7 +3423,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:153:4: alter nota OCT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:153:4: alter nota OCT
                     {
                     pushFollow(FOLLOW_alter_in_nmusi1245);
                     alter86=alter();
@@ -3456,7 +3456,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 153:19: -> ^( nota alter OCT NURAN )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:153:22: ^( nota alter OCT NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:153:22: ^( nota alter OCT NURAN )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3482,7 +3482,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:154:4: alter nota '.' dur
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:154:4: alter nota '.' dur
                     {
                     pushFollow(FOLLOW_alter_in_nmusi1267);
                     alter89=alter();
@@ -3522,7 +3522,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 154:23: -> ^( nota alter OCT[\"3\"] dur )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:154:26: ^( nota alter OCT[\"3\"] dur )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:154:26: ^( nota alter OCT[\"3\"] dur )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3546,7 +3546,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:155:4: alter nota
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:155:4: alter nota
                     {
                     pushFollow(FOLLOW_alter_in_nmusi1291);
                     alter93=alter();
@@ -3575,7 +3575,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 155:14: -> ^( nota alter OCT[\"3\"] NURAN )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:155:17: ^( nota alter OCT[\"3\"] NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:155:17: ^( nota alter OCT[\"3\"] NURAN )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3601,7 +3601,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:156:4: nota OCT '.' dur
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:156:4: nota OCT '.' dur
                     {
                     pushFollow(FOLLOW_nota_in_nmusi1310);
                     nota95=nota();
@@ -3638,7 +3638,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 156:22: -> ^( nota NURAN OCT dur )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:156:25: ^( nota NURAN OCT dur )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:156:25: ^( nota NURAN OCT dur )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3664,7 +3664,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:157:4: nota OCT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:157:4: nota OCT
                     {
                     pushFollow(FOLLOW_nota_in_nmusi1334);
                     nota99=nota();
@@ -3690,7 +3690,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 157:13: -> ^( nota NURAN OCT NURAN )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:157:16: ^( nota NURAN OCT NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:157:16: ^( nota NURAN OCT NURAN )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3718,7 +3718,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:158:4: nota '.' dur
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:158:4: nota '.' dur
                     {
                     pushFollow(FOLLOW_nota_in_nmusi1353);
                     nota101=nota();
@@ -3751,7 +3751,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 158:17: -> ^( nota NURAN OCT[\"3\"] dur )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:158:20: ^( nota NURAN OCT[\"3\"] dur )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:158:20: ^( nota NURAN OCT[\"3\"] dur )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3777,7 +3777,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:159:4: nota
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:159:4: nota
                     {
                     pushFollow(FOLLOW_nota_in_nmusi1375);
                     nota104=nota();
@@ -3799,7 +3799,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 159:9: -> ^( nota NURAN OCT[\"3\"] NURAN )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:159:12: ^( nota NURAN OCT[\"3\"] NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:159:12: ^( nota NURAN OCT[\"3\"] NURAN )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_nota.nextNode(), root_1);
@@ -3857,7 +3857,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nmusiop"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:1: nmusiop : ( ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID ) | nmusi );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:1: nmusiop : ( ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID ) | nmusi );
     public final AslParser.nmusiop_return nmusiop() throws RecognitionException {
         AslParser.nmusiop_return retval = new AslParser.nmusiop_return();
         retval.start = input.LT(1);
@@ -3882,7 +3882,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ID110_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:9: ( ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID ) | nmusi )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:9: ( ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID ) | nmusi )
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -3901,12 +3901,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt21) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:11: ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:11: ( TWICE ^| HALF ^| RAISE ^| FALL ^) ( nmusiop | ID )
                     {
                     root_0 = (AslTree)adaptor.nil();
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:11: ( TWICE ^| HALF ^| RAISE ^| FALL ^)
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:11: ( TWICE ^| HALF ^| RAISE ^| FALL ^)
                     int alt19=4;
                     switch ( input.LA(1) ) {
                     case TWICE:
@@ -3939,7 +3939,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt19) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:12: TWICE ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:12: TWICE ^
                             {
                             TWICE105=(Token)match(input,TWICE,FOLLOW_TWICE_in_nmusiop1398); 
                             TWICE105_tree = 
@@ -3951,7 +3951,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:19: HALF ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:19: HALF ^
                             {
                             HALF106=(Token)match(input,HALF,FOLLOW_HALF_in_nmusiop1401); 
                             HALF106_tree = 
@@ -3963,7 +3963,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 3 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:25: RAISE ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:25: RAISE ^
                             {
                             RAISE107=(Token)match(input,RAISE,FOLLOW_RAISE_in_nmusiop1404); 
                             RAISE107_tree = 
@@ -3975,7 +3975,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 4 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:32: FALL ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:32: FALL ^
                             {
                             FALL108=(Token)match(input,FALL,FOLLOW_FALL_in_nmusiop1407); 
                             FALL108_tree = 
@@ -3990,7 +3990,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:39: ( nmusiop | ID )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:39: ( nmusiop | ID )
                     int alt20=2;
                     int LA20_0 = input.LA(1);
 
@@ -4009,7 +4009,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt20) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:40: nmusiop
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:40: nmusiop
                             {
                             pushFollow(FOLLOW_nmusiop_in_nmusiop1412);
                             nmusiop109=nmusiop();
@@ -4021,7 +4021,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:161:48: ID
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:161:48: ID
                             {
                             ID110=(Token)match(input,ID,FOLLOW_ID_in_nmusiop1414); 
                             ID110_tree = 
@@ -4039,7 +4039,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:162:5: nmusi
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:162:5: nmusi
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -4084,7 +4084,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "nmusiop2"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:164:1: nmusiop2 : ( nmusiop | ID );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:164:1: nmusiop2 : ( nmusiop | ID );
     public final AslParser.nmusiop2_return nmusiop2() throws RecognitionException {
         AslParser.nmusiop2_return retval = new AslParser.nmusiop2_return();
         retval.start = input.LT(1);
@@ -4099,7 +4099,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ID113_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:164:9: ( nmusiop | ID )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:164:9: ( nmusiop | ID )
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -4118,7 +4118,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt22) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:164:12: nmusiop
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:164:12: nmusiop
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -4133,7 +4133,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:164:20: ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:164:20: ID
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -4178,7 +4178,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "multinota"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:1: multinota : '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:1: multinota : '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) ) ;
     public final AslParser.multinota_return multinota() throws RecognitionException {
         AslParser.multinota_return retval = new AslParser.multinota_return();
         retval.start = input.LT(1);
@@ -4226,15 +4226,15 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_acion=new RewriteRuleSubtreeStream(adaptor,"rule acion");
         RewriteRuleSubtreeStream stream_nota2=new RewriteRuleSubtreeStream(adaptor,"rule nota2");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:10: ( '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:12: '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:10: ( '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:12: '(' ( acion nota2 octal ) ',' ( acion nota2 octal ) ( ',' acion nota2 octal )* ')' ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) )
             {
             char_literal114=(Token)match(input,90,FOLLOW_90_in_multinota1439);  
             stream_90.add(char_literal114);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:15: ( acion nota2 octal )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:16: acion nota2 octal
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:15: ( acion nota2 octal )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:16: acion nota2 octal
             {
             pushFollow(FOLLOW_acion_in_multinota1441);
             acion115=acion();
@@ -4264,8 +4264,8 @@ public TreeAdaptor getTreeAdaptor() {
             stream_92.add(char_literal118);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:38: ( acion nota2 octal )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:39: acion nota2 octal
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:38: ( acion nota2 octal )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:39: acion nota2 octal
             {
             pushFollow(FOLLOW_acion_in_multinota1450);
             acion119=acion();
@@ -4291,7 +4291,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:58: ( ',' acion nota2 octal )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:58: ( ',' acion nota2 octal )*
             loop23:
             do {
                 int alt23=2;
@@ -4304,7 +4304,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt23) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:59: ',' acion nota2 octal
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:59: ',' acion nota2 octal
             	    {
             	    char_literal122=(Token)match(input,92,FOLLOW_92_in_multinota1458);  
             	    stream_92.add(char_literal122);
@@ -4344,7 +4344,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_91.add(char_literal126);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:85: ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:85: ( '.' dur -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur ) | -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN ) )
             int alt24=2;
             int LA24_0 = input.LA(1);
 
@@ -4363,7 +4363,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt24) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:86: '.' dur
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:86: '.' dur
                     {
                     char_literal127=(Token)match(input,93,FOLLOW_93_in_multinota1469);  
                     stream_93.add(char_literal127);
@@ -4389,21 +4389,21 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 166:94: -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:97: ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:97: ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) dur )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
                         (AslTree)adaptor.create(MULTINOTA, "MULTINOTA")
                         , root_1);
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:109: ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:109: ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
                         (AslTree)adaptor.create(LNOTAS, "LNOTAS")
                         , root_2);
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:118: ^( nota2 acion octal )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:118: ^( nota2 acion octal )
                         {
                         AslTree root_3 = (AslTree)adaptor.nil();
                         root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4415,7 +4415,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_2, root_3);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:139: ^( nota2 acion octal )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:139: ^( nota2 acion octal )
                         {
                         AslTree root_3 = (AslTree)adaptor.nil();
                         root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4427,9 +4427,9 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_2, root_3);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:160: ( ^( nota2 acion octal ) )*
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:160: ( ^( nota2 acion octal ) )*
                         while ( stream_acion.hasNext()||stream_octal.hasNext()||stream_nota2.hasNext() ) {
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:166:160: ^( nota2 acion octal )
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:166:160: ^( nota2 acion octal )
                             {
                             AslTree root_3 = (AslTree)adaptor.nil();
                             root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4462,7 +4462,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:7: 
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:7: 
                     {
                     // AST REWRITE
                     // elements: nota2, acion, octal, octal, octal, nota2, acion, acion, nota2
@@ -4477,21 +4477,21 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 167:7: -> ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:9: ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:9: ^( MULTINOTA ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* ) NURAN )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
                         (AslTree)adaptor.create(MULTINOTA, "MULTINOTA")
                         , root_1);
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:21: ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:21: ^( LNOTAS ^( nota2 acion octal ) ^( nota2 acion octal ) ( ^( nota2 acion octal ) )* )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
                         (AslTree)adaptor.create(LNOTAS, "LNOTAS")
                         , root_2);
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:30: ^( nota2 acion octal )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:30: ^( nota2 acion octal )
                         {
                         AslTree root_3 = (AslTree)adaptor.nil();
                         root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4503,7 +4503,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_2, root_3);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:51: ^( nota2 acion octal )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:51: ^( nota2 acion octal )
                         {
                         AslTree root_3 = (AslTree)adaptor.nil();
                         root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4515,9 +4515,9 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_2, root_3);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:72: ( ^( nota2 acion octal ) )*
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:72: ( ^( nota2 acion octal ) )*
                         while ( stream_octal.hasNext()||stream_acion.hasNext()||stream_nota2.hasNext() ) {
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:167:72: ^( nota2 acion octal )
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:167:72: ^( nota2 acion octal )
                             {
                             AslTree root_3 = (AslTree)adaptor.nil();
                             root_3 = (AslTree)adaptor.becomeRoot(stream_nota2.nextNode(), root_3);
@@ -4586,7 +4586,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ite_stmt_part"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:169:1: ite_stmt_part : IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)? ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:169:1: ite_stmt_part : IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)? ;
     public final AslParser.ite_stmt_part_return ite_stmt_part() throws RecognitionException {
         AslParser.ite_stmt_part_return retval = new AslParser.ite_stmt_part_return();
         retval.start = input.LT(1);
@@ -4619,8 +4619,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal139_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:169:14: ( IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)? )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:169:16: IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:169:14: ( IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)? )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:169:16: IF ^ '(' ! expr ')' ! '{' ! music_atom2 '}' ! ( ELSE ! '{' ! music_atom2 '}' !)?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -4654,7 +4654,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             char_literal135=(Token)match(input,116,FOLLOW_116_in_ite_stmt_part1577); 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:169:55: ( ELSE ! '{' ! music_atom2 '}' !)?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:169:55: ( ELSE ! '{' ! music_atom2 '}' !)?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -4663,7 +4663,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt25) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:169:56: ELSE ! '{' ! music_atom2 '}' !
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:169:56: ELSE ! '{' ! music_atom2 '}' !
                     {
                     ELSE136=(Token)match(input,ELSE,FOLLOW_ELSE_in_ite_stmt_part1581); 
 
@@ -4715,7 +4715,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "triet"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:1: triet : '[' ( trietom )+ ']' -> ^( TRI ( trietom )+ ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:1: triet : '[' ( trietom )+ ']' -> ^( TRI ( trietom )+ ) ;
     public final AslParser.triet_return triet() throws RecognitionException {
         AslParser.triet_return retval = new AslParser.triet_return();
         retval.start = input.LT(1);
@@ -4734,14 +4734,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_98=new RewriteRuleTokenStream(adaptor,"token 98");
         RewriteRuleSubtreeStream stream_trietom=new RewriteRuleSubtreeStream(adaptor,"rule trietom");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:7: ( '[' ( trietom )+ ']' -> ^( TRI ( trietom )+ ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:9: '[' ( trietom )+ ']'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:7: ( '[' ( trietom )+ ']' -> ^( TRI ( trietom )+ ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:9: '[' ( trietom )+ ']'
             {
             char_literal140=(Token)match(input,97,FOLLOW_97_in_triet1626);  
             stream_97.add(char_literal140);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:13: ( trietom )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:13: ( trietom )+
             int cnt26=0;
             loop26:
             do {
@@ -4755,7 +4755,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt26) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:14: trietom
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:14: trietom
             	    {
             	    pushFollow(FOLLOW_trietom_in_triet1629);
             	    trietom141=trietom();
@@ -4794,7 +4794,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 172:27: -> ^( TRI ( trietom )+ )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:172:30: ^( TRI ( trietom )+ )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:172:30: ^( TRI ( trietom )+ )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -4849,7 +4849,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "trietom"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:174:1: trietom : ( nmusiop2 | multinota );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:174:1: trietom : ( nmusiop2 | multinota );
     public final AslParser.trietom_return trietom() throws RecognitionException {
         AslParser.trietom_return retval = new AslParser.trietom_return();
         retval.start = input.LT(1);
@@ -4864,7 +4864,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:174:9: ( nmusiop2 | multinota )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:174:9: ( nmusiop2 | multinota )
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -4883,7 +4883,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt27) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:174:11: nmusiop2
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:174:11: nmusiop2
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -4898,7 +4898,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:174:20: multinota
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:174:20: multinota
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -4943,7 +4943,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "l_notas"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:1: l_notas : ( ( '|' ! music_atom2 )+ '|' !) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:1: l_notas : ( ( '|' ! music_atom2 )+ '|' !) ;
     public final AslParser.l_notas_return l_notas() throws RecognitionException {
         AslParser.l_notas_return retval = new AslParser.l_notas_return();
         retval.start = input.LT(1);
@@ -4960,16 +4960,16 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal147_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:9: ( ( ( '|' ! music_atom2 )+ '|' !) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:11: ( ( '|' ! music_atom2 )+ '|' !)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:9: ( ( ( '|' ! music_atom2 )+ '|' !) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:11: ( ( '|' ! music_atom2 )+ '|' !)
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:11: ( ( '|' ! music_atom2 )+ '|' !)
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:12: ( '|' ! music_atom2 )+ '|' !
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:11: ( ( '|' ! music_atom2 )+ '|' !)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:12: ( '|' ! music_atom2 )+ '|' !
             {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:12: ( '|' ! music_atom2 )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:12: ( '|' ! music_atom2 )+
             int cnt28=0;
             loop28:
             do {
@@ -4998,7 +4998,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt28) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:177:13: '|' ! music_atom2
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:177:13: '|' ! music_atom2
             	    {
             	    char_literal145=(Token)match(input,115,FOLLOW_115_in_l_notas1664); 
 
@@ -5058,7 +5058,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "l_notas2"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:1: l_notas2 : ( ( l_notas ) ( music_compjp )? | music_compjp );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:1: l_notas2 : ( ( l_notas ) ( music_compjp )? | music_compjp );
     public final AslParser.l_notas2_return l_notas2() throws RecognitionException {
         AslParser.l_notas2_return retval = new AslParser.l_notas2_return();
         retval.start = input.LT(1);
@@ -5075,7 +5075,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:9: ( ( l_notas ) ( music_compjp )? | music_compjp )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:9: ( ( l_notas ) ( music_compjp )? | music_compjp )
             int alt30=2;
             int LA30_0 = input.LA(1);
 
@@ -5094,13 +5094,13 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt30) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:12: ( l_notas ) ( music_compjp )?
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:12: ( l_notas ) ( music_compjp )?
                     {
                     root_0 = (AslTree)adaptor.nil();
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:12: ( l_notas )
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:13: l_notas
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:12: ( l_notas )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:13: l_notas
                     {
                     pushFollow(FOLLOW_l_notas_in_l_notas21682);
                     l_notas148=l_notas();
@@ -5112,7 +5112,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:22: ( music_compjp )?
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:22: ( music_compjp )?
                     int alt29=2;
                     int LA29_0 = input.LA(1);
 
@@ -5121,7 +5121,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt29) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:179:22: music_compjp
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:179:22: music_compjp
                             {
                             pushFollow(FOLLOW_music_compjp_in_l_notas21685);
                             music_compjp149=music_compjp();
@@ -5139,7 +5139,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:180:5: music_compjp
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:180:5: music_compjp
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -5184,7 +5184,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "l_notas3"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:1: l_notas3 : VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:1: l_notas3 : VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) ) ;
     public final AslParser.l_notas3_return l_notas3() throws RecognitionException {
         AslParser.l_notas3_return retval = new AslParser.l_notas3_return();
         retval.start = input.LT(1);
@@ -5205,14 +5205,14 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_l_notas2=new RewriteRuleSubtreeStream(adaptor,"rule l_notas2");
         RewriteRuleSubtreeStream stream_instrumento=new RewriteRuleSubtreeStream(adaptor,"rule instrumento");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:9: ( VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:12: VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:9: ( VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:12: VOICE ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) )
             {
             VOICE151=(Token)match(input,VOICE,FOLLOW_VOICE_in_l_notas31703);  
             stream_VOICE.add(VOICE151);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:18: ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:18: ( instrumento l_notas2 -> ^( instrumento l_notas2 ) | l_notas2 -> ^( PIANO[\"Piano\"] l_notas2 ) )
             int alt31=2;
             int LA31_0 = input.LA(1);
 
@@ -5231,7 +5231,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt31) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:19: instrumento l_notas2
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:19: instrumento l_notas2
                     {
                     pushFollow(FOLLOW_instrumento_in_l_notas31706);
                     instrumento152=instrumento();
@@ -5260,7 +5260,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 183:39: -> ^( instrumento l_notas2 )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:183:42: ^( instrumento l_notas2 )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:183:42: ^( instrumento l_notas2 )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(stream_instrumento.nextNode(), root_1);
@@ -5278,7 +5278,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:184:4: l_notas2
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:184:4: l_notas2
                     {
                     pushFollow(FOLLOW_l_notas2_in_l_notas31720);
                     l_notas2154=l_notas2();
@@ -5300,7 +5300,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 184:13: -> ^( PIANO[\"Piano\"] l_notas2 )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:184:15: ^( PIANO[\"Piano\"] l_notas2 )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:184:15: ^( PIANO[\"Piano\"] l_notas2 )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -5354,7 +5354,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "l_notas4"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:185:1: l_notas4 : ( CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !| l_notas3 );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:185:1: l_notas4 : ( CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !| l_notas3 );
     public final AslParser.l_notas4_return l_notas4() throws RecognitionException {
         AslParser.l_notas4_return retval = new AslParser.l_notas4_return();
         retval.start = input.LT(1);
@@ -5377,7 +5377,7 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal159_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:185:9: ( CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !| l_notas3 )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:185:9: ( CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !| l_notas3 )
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -5396,7 +5396,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt33) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:185:12: CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:185:12: CHORUS ^ '{' ! l_notas3 ( l_notas3 )+ '}' !
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -5417,7 +5417,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     adaptor.addChild(root_0, l_notas3157.getTree());
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:185:34: ( l_notas3 )+
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:185:34: ( l_notas3 )+
                     int cnt32=0;
                     loop32:
                     do {
@@ -5431,7 +5431,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt32) {
                     	case 1 :
-                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:185:34: l_notas3
+                    	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:185:34: l_notas3
                     	    {
                     	    pushFollow(FOLLOW_l_notas3_in_l_notas41744);
                     	    l_notas3158=l_notas3();
@@ -5458,7 +5458,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:186:4: l_notas3
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:186:4: l_notas3
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -5503,7 +5503,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "music_compjp"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:1: music_compjp : repit ( ( music_atom2 '|' !) | repit )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:1: music_compjp : repit ( ( music_atom2 '|' !) | repit )* ;
     public final AslParser.music_compjp_return music_compjp() throws RecognitionException {
         AslParser.music_compjp_return retval = new AslParser.music_compjp_return();
         retval.start = input.LT(1);
@@ -5522,8 +5522,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal163_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:14: ( repit ( ( music_atom2 '|' !) | repit )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:16: repit ( ( music_atom2 '|' !) | repit )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:14: ( repit ( ( music_atom2 '|' !) | repit )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:16: repit ( ( music_atom2 '|' !) | repit )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -5535,7 +5535,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, repit161.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:22: ( ( music_atom2 '|' !) | repit )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:22: ( ( music_atom2 '|' !) | repit )*
             loop34:
             do {
                 int alt34=3;
@@ -5587,10 +5587,10 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt34) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:23: ( music_atom2 '|' !)
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:23: ( music_atom2 '|' !)
             	    {
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:23: ( music_atom2 '|' !)
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:24: music_atom2 '|' !
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:23: ( music_atom2 '|' !)
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:24: music_atom2 '|' !
             	    {
             	    pushFollow(FOLLOW_music_atom2_in_music_compjp1765);
             	    music_atom2162=music_atom2();
@@ -5607,7 +5607,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    break;
             	case 2 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:188:42: repit
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:188:42: repit
             	    {
             	    pushFollow(FOLLOW_repit_in_music_compjp1771);
             	    repit164=repit();
@@ -5656,7 +5656,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "repit"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:1: repit : numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||' -> ^( REPEAT numatom music_atom2 ( music_atom2 )* ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:1: repit : numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||' -> ^( REPEAT numatom music_atom2 ( music_atom2 )* ) ;
     public final AslParser.repit_return repit() throws RecognitionException {
         AslParser.repit_return retval = new AslParser.repit_return();
         retval.start = input.LT(1);
@@ -5683,8 +5683,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_numatom=new RewriteRuleSubtreeStream(adaptor,"rule numatom");
         RewriteRuleSubtreeStream stream_music_atom2=new RewriteRuleSubtreeStream(adaptor,"rule music_atom2");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:7: ( numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||' -> ^( REPEAT numatom music_atom2 ( music_atom2 )* ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:9: numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:7: ( numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||' -> ^( REPEAT numatom music_atom2 ( music_atom2 )* ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:9: numatom 'z||:' ( music_atom2 ) ( '|' music_atom2 )* ':||'
             {
             pushFollow(FOLLOW_numatom_in_repit1782);
             numatom165=numatom();
@@ -5697,8 +5697,8 @@ public TreeAdaptor getTreeAdaptor() {
             stream_113.add(string_literal166);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:24: ( music_atom2 )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:25: music_atom2
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:24: ( music_atom2 )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:25: music_atom2
             {
             pushFollow(FOLLOW_music_atom2_in_repit1787);
             music_atom2167=music_atom2();
@@ -5710,7 +5710,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:38: ( '|' music_atom2 )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:38: ( '|' music_atom2 )*
             loop35:
             do {
                 int alt35=2;
@@ -5723,7 +5723,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt35) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:39: '|' music_atom2
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:39: '|' music_atom2
             	    {
             	    char_literal168=(Token)match(input,115,FOLLOW_115_in_repit1791);  
             	    stream_115.add(char_literal168);
@@ -5762,7 +5762,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 190:63: -> ^( REPEAT numatom music_atom2 ( music_atom2 )* )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:66: ^( REPEAT numatom music_atom2 ( music_atom2 )* )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:66: ^( REPEAT numatom music_atom2 ( music_atom2 )* )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -5773,7 +5773,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_music_atom2.nextTree());
 
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:190:96: ( music_atom2 )*
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:190:96: ( music_atom2 )*
                 while ( stream_music_atom2.hasNext() ) {
                     adaptor.addChild(root_1, stream_music_atom2.nextTree());
 
@@ -5819,7 +5819,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "partitura"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:192:1: partitura : beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:192:1: partitura : beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) ) ;
     public final AslParser.partitura_return partitura() throws RecognitionException {
         AslParser.partitura_return retval = new AslParser.partitura_return();
         retval.start = input.LT(1);
@@ -5852,8 +5852,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_trans=new RewriteRuleSubtreeStream(adaptor,"rule trans");
         RewriteRuleSubtreeStream stream_armour=new RewriteRuleSubtreeStream(adaptor,"rule armour");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:192:11: ( beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:192:13: beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:192:11: ( beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:192:13: beatbox speederman ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) )
             {
             pushFollow(FOLLOW_beatbox_in_partitura1820);
             beatbox171=beatbox();
@@ -5869,7 +5869,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             stream_speederman.add(speederman172.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:3: ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:3: ( trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) ) | armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* ) )
             int alt41=3;
             switch ( input.LA(1) ) {
             case TRANSPORT:
@@ -5900,7 +5900,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt41) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:4: trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:4: trans ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) )
                     {
                     pushFollow(FOLLOW_trans_in_partitura1828);
                     trans173=trans();
@@ -5909,7 +5909,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_trans.add(trans173.getTree());
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:10: ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:10: ( armour ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* ) | ( l_notas4 )* -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* ) )
                     int alt38=2;
                     int LA38_0 = input.LA(1);
 
@@ -5928,7 +5928,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt38) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:11: armour ( l_notas4 )*
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:11: armour ( l_notas4 )*
                             {
                             pushFollow(FOLLOW_armour_in_partitura1831);
                             armour174=armour();
@@ -5937,7 +5937,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                             stream_armour.add(armour174.getTree());
 
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:18: ( l_notas4 )*
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:18: ( l_notas4 )*
                             loop36:
                             do {
                                 int alt36=2;
@@ -5950,7 +5950,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                                 switch (alt36) {
                             	case 1 :
-                            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:18: l_notas4
+                            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:18: l_notas4
                             	    {
                             	    pushFollow(FOLLOW_l_notas4_in_partitura1833);
                             	    l_notas4175=l_notas4();
@@ -5981,7 +5981,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 193:28: -> ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:31: ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:31: ^( PARTITURA beatbox speederman trans armour ( l_notas4 )* )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -5996,7 +5996,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                                 adaptor.addChild(root_1, stream_armour.nextTree());
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:193:75: ( l_notas4 )*
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:193:75: ( l_notas4 )*
                                 while ( stream_l_notas4.hasNext() ) {
                                     adaptor.addChild(root_1, stream_l_notas4.nextTree());
 
@@ -6014,9 +6014,9 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:6: ( l_notas4 )*
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:6: ( l_notas4 )*
                             {
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:6: ( l_notas4 )*
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:6: ( l_notas4 )*
                             loop37:
                             do {
                                 int alt37=2;
@@ -6029,7 +6029,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                                 switch (alt37) {
                             	case 1 :
-                            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:6: l_notas4
+                            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:6: l_notas4
                             	    {
                             	    pushFollow(FOLLOW_l_notas4_in_partitura1858);
                             	    l_notas4176=l_notas4();
@@ -6060,7 +6060,7 @@ public TreeAdaptor getTreeAdaptor() {
                             root_0 = (AslTree)adaptor.nil();
                             // 194:15: -> ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* )
                             {
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:17: ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:17: ^( PARTITURA beatbox speederman trans ^( ARMOR NURAN ) ( l_notas4 )* )
                                 {
                                 AslTree root_1 = (AslTree)adaptor.nil();
                                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -6073,7 +6073,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                                 adaptor.addChild(root_1, stream_trans.nextTree());
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:54: ^( ARMOR NURAN )
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:54: ^( ARMOR NURAN )
                                 {
                                 AslTree root_2 = (AslTree)adaptor.nil();
                                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -6087,7 +6087,7 @@ public TreeAdaptor getTreeAdaptor() {
                                 adaptor.addChild(root_1, root_2);
                                 }
 
-                                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:194:69: ( l_notas4 )*
+                                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:194:69: ( l_notas4 )*
                                 while ( stream_l_notas4.hasNext() ) {
                                     adaptor.addChild(root_1, stream_l_notas4.nextTree());
 
@@ -6111,7 +6111,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:5: armour ( l_notas4 )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:5: armour ( l_notas4 )*
                     {
                     pushFollow(FOLLOW_armour_in_partitura1885);
                     armour177=armour();
@@ -6120,7 +6120,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     stream_armour.add(armour177.getTree());
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:12: ( l_notas4 )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:12: ( l_notas4 )*
                     loop39:
                     do {
                         int alt39=2;
@@ -6133,7 +6133,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt39) {
                     	case 1 :
-                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:12: l_notas4
+                    	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:12: l_notas4
                     	    {
                     	    pushFollow(FOLLOW_l_notas4_in_partitura1887);
                     	    l_notas4178=l_notas4();
@@ -6164,7 +6164,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 195:21: -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:23: ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:23: ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) armour ( l_notas4 )* )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -6175,7 +6175,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_speederman.nextTree());
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:54: ^( TRANSPORT INT[\"0\"] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:54: ^( TRANSPORT INT[\"0\"] )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
@@ -6191,7 +6191,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_armour.nextTree());
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:195:83: ( l_notas4 )*
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:195:83: ( l_notas4 )*
                         while ( stream_l_notas4.hasNext() ) {
                             adaptor.addChild(root_1, stream_l_notas4.nextTree());
 
@@ -6209,9 +6209,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:5: ( l_notas4 )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:5: ( l_notas4 )*
                     {
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:5: ( l_notas4 )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:5: ( l_notas4 )*
                     loop40:
                     do {
                         int alt40=2;
@@ -6224,7 +6224,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         switch (alt40) {
                     	case 1 :
-                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:5: l_notas4
+                    	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:5: l_notas4
                     	    {
                     	    pushFollow(FOLLOW_l_notas4_in_partitura1914);
                     	    l_notas4179=l_notas4();
@@ -6255,7 +6255,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 196:14: -> ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:16: ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:16: ^( PARTITURA beatbox speederman ^( TRANSPORT INT[\"0\"] ) ^( ARMOR NURAN ) ( l_notas4 )* )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -6266,7 +6266,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                         adaptor.addChild(root_1, stream_speederman.nextTree());
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:47: ^( TRANSPORT INT[\"0\"] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:47: ^( TRANSPORT INT[\"0\"] )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
@@ -6280,7 +6280,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_1, root_2);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:69: ^( ARMOR NURAN )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:69: ^( ARMOR NURAN )
                         {
                         AslTree root_2 = (AslTree)adaptor.nil();
                         root_2 = (AslTree)adaptor.becomeRoot(
@@ -6294,7 +6294,7 @@ public TreeAdaptor getTreeAdaptor() {
                         adaptor.addChild(root_1, root_2);
                         }
 
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:196:84: ( l_notas4 )*
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:196:84: ( l_notas4 )*
                         while ( stream_l_notas4.hasNext() ) {
                             adaptor.addChild(root_1, stream_l_notas4.nextTree());
 
@@ -6346,7 +6346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "for_stmt"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:199:1: for_stmt : FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}' -> ^( FOR ^( FCONDS assign expr assign ) block_instructions ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:199:1: for_stmt : FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}' -> ^( FOR ^( FCONDS assign expr assign ) block_instructions ) ;
     public final AslParser.for_stmt_return for_stmt() throws RecognitionException {
         AslParser.for_stmt_return retval = new AslParser.for_stmt_return();
         retval.start = input.LT(1);
@@ -6387,8 +6387,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         RewriteRuleSubtreeStream stream_assign=new RewriteRuleSubtreeStream(adaptor,"rule assign");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:199:10: ( FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}' -> ^( FOR ^( FCONDS assign expr assign ) block_instructions ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:199:12: FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:199:10: ( FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}' -> ^( FOR ^( FCONDS assign expr assign ) block_instructions ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:199:12: FOR '(' assign ';' expr ';' assign ')' '{' block_instructions '}'
             {
             FOR180=(Token)match(input,FOR,FOLLOW_FOR_in_for_stmt1951);  
             stream_FOR.add(FOR180);
@@ -6459,14 +6459,14 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 199:78: -> ^( FOR ^( FCONDS assign expr assign ) block_instructions )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:199:81: ^( FOR ^( FCONDS assign expr assign ) block_instructions )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:199:81: ^( FOR ^( FCONDS assign expr assign ) block_instructions )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
                 stream_FOR.nextNode()
                 , root_1);
 
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:199:88: ^( FCONDS assign expr assign )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:199:88: ^( FCONDS assign expr assign )
                 {
                 AslTree root_2 = (AslTree)adaptor.nil();
                 root_2 = (AslTree)adaptor.becomeRoot(
@@ -6523,7 +6523,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "while_stmt"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:201:1: while_stmt : WHILE ^ expr '{' block_instructions '}' !;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:201:1: while_stmt : WHILE ^ expr '{' block_instructions '}' !;
     public final AslParser.while_stmt_return while_stmt() throws RecognitionException {
         AslParser.while_stmt_return retval = new AslParser.while_stmt_return();
         retval.start = input.LT(1);
@@ -6544,8 +6544,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal195_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:201:12: ( WHILE ^ expr '{' block_instructions '}' !)
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:201:14: WHILE ^ expr '{' block_instructions '}' !
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:201:12: ( WHILE ^ expr '{' block_instructions '}' !)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:201:14: WHILE ^ expr '{' block_instructions '}' !
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6611,7 +6611,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "return_stmt"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:204:1: return_stmt : RETURN ^ ( expr )? ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:204:1: return_stmt : RETURN ^ ( expr )? ;
     public final AslParser.return_stmt_return return_stmt() throws RecognitionException {
         AslParser.return_stmt_return retval = new AslParser.return_stmt_return();
         retval.start = input.LT(1);
@@ -6626,8 +6626,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree RETURN196_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:204:13: ( RETURN ^ ( expr )? )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:204:15: RETURN ^ ( expr )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:204:13: ( RETURN ^ ( expr )? )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:204:15: RETURN ^ ( expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6639,7 +6639,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(RETURN196_tree, root_0);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:204:23: ( expr )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:204:23: ( expr )?
             int alt42=2;
             int LA42_0 = input.LA(1);
 
@@ -6648,7 +6648,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt42) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:204:23: expr
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:204:23: expr
                     {
                     pushFollow(FOLLOW_expr_in_return_stmt2032);
                     expr197=expr();
@@ -6694,7 +6694,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "read"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:207:1: read : READ ^ ID ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:207:1: read : READ ^ ID ;
     public final AslParser.read_return read() throws RecognitionException {
         AslParser.read_return retval = new AslParser.read_return();
         retval.start = input.LT(1);
@@ -6709,8 +6709,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree ID199_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:207:6: ( READ ^ ID )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:207:8: READ ^ ID
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:207:6: ( READ ^ ID )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:207:8: READ ^ ID
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6760,7 +6760,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "write"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:1: write : WRITE ^ ( expr | STRING ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:1: write : WRITE ^ ( expr | STRING ) ;
     public final AslParser.write_return write() throws RecognitionException {
         AslParser.write_return retval = new AslParser.write_return();
         retval.start = input.LT(1);
@@ -6777,8 +6777,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree STRING202_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:7: ( WRITE ^ ( expr | STRING ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:11: WRITE ^ ( expr | STRING )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:7: ( WRITE ^ ( expr | STRING ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:11: WRITE ^ ( expr | STRING )
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6790,7 +6790,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.becomeRoot(WRITE200_tree, root_0);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:18: ( expr | STRING )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:18: ( expr | STRING )
             int alt43=2;
             int LA43_0 = input.LA(1);
 
@@ -6809,7 +6809,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt43) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:19: expr
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:19: expr
                     {
                     pushFollow(FOLLOW_expr_in_write2076);
                     expr201=expr();
@@ -6821,7 +6821,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:210:26: STRING
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:210:26: STRING
                     {
                     STRING202=(Token)match(input,STRING,FOLLOW_STRING_in_write2080); 
                     STRING202_tree = 
@@ -6867,7 +6867,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:213:1: expr : boolterm ( OR ^ boolterm )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:213:1: expr : boolterm ( OR ^ boolterm )* ;
     public final AslParser.expr_return expr() throws RecognitionException {
         AslParser.expr_return retval = new AslParser.expr_return();
         retval.start = input.LT(1);
@@ -6884,8 +6884,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree OR204_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:213:9: ( boolterm ( OR ^ boolterm )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:213:13: boolterm ( OR ^ boolterm )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:213:9: ( boolterm ( OR ^ boolterm )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:213:13: boolterm ( OR ^ boolterm )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6897,7 +6897,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolterm203.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:213:22: ( OR ^ boolterm )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:213:22: ( OR ^ boolterm )*
             loop44:
             do {
                 int alt44=2;
@@ -6910,7 +6910,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt44) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:213:23: OR ^ boolterm
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:213:23: OR ^ boolterm
             	    {
             	    OR204=(Token)match(input,OR,FOLLOW_OR_in_expr2107); 
             	    OR204_tree = 
@@ -6966,7 +6966,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolterm"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:216:1: boolterm : boolfact ( AND ^ boolfact )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:216:1: boolterm : boolfact ( AND ^ boolfact )* ;
     public final AslParser.boolterm_return boolterm() throws RecognitionException {
         AslParser.boolterm_return retval = new AslParser.boolterm_return();
         retval.start = input.LT(1);
@@ -6983,8 +6983,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree AND207_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:216:9: ( boolfact ( AND ^ boolfact )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:216:13: boolfact ( AND ^ boolfact )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:216:9: ( boolfact ( AND ^ boolfact )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:216:13: boolfact ( AND ^ boolfact )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -6996,7 +6996,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, boolfact206.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:216:22: ( AND ^ boolfact )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:216:22: ( AND ^ boolfact )*
             loop45:
             do {
                 int alt45=2;
@@ -7009,7 +7009,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt45) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:216:23: AND ^ boolfact
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:216:23: AND ^ boolfact
             	    {
             	    AND207=(Token)match(input,AND,FOLLOW_AND_in_boolterm2133); 
             	    AND207_tree = 
@@ -7065,7 +7065,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "boolfact"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:1: boolfact : num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? ;
     public final AslParser.boolfact_return boolfact() throws RecognitionException {
         AslParser.boolfact_return retval = new AslParser.boolfact_return();
         retval.start = input.LT(1);
@@ -7092,8 +7092,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree GE215_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:9: ( num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )? )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:13: num_expr ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -7105,7 +7105,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, num_expr209.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:22: ( ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr )?
             int alt47=2;
             int LA47_0 = input.LA(1);
 
@@ -7114,9 +7114,9 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt47) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^) num_expr
                     {
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:23: ( EQUAL ^| NOT_EQUAL ^| LT ^| LE ^| GT ^| GE ^)
                     int alt46=6;
                     switch ( input.LA(1) ) {
                     case EQUAL:
@@ -7159,7 +7159,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                     switch (alt46) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:24: EQUAL ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:24: EQUAL ^
                             {
                             EQUAL210=(Token)match(input,EQUAL,FOLLOW_EQUAL_in_boolfact2160); 
                             EQUAL210_tree = 
@@ -7171,7 +7171,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:33: NOT_EQUAL ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:33: NOT_EQUAL ^
                             {
                             NOT_EQUAL211=(Token)match(input,NOT_EQUAL,FOLLOW_NOT_EQUAL_in_boolfact2165); 
                             NOT_EQUAL211_tree = 
@@ -7183,7 +7183,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 3 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:46: LT ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:46: LT ^
                             {
                             LT212=(Token)match(input,LT,FOLLOW_LT_in_boolfact2170); 
                             LT212_tree = 
@@ -7195,7 +7195,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 4 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:52: LE ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:52: LE ^
                             {
                             LE213=(Token)match(input,LE,FOLLOW_LE_in_boolfact2175); 
                             LE213_tree = 
@@ -7207,7 +7207,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 5 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:58: GT ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:58: GT ^
                             {
                             GT214=(Token)match(input,GT,FOLLOW_GT_in_boolfact2180); 
                             GT214_tree = 
@@ -7219,7 +7219,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 6 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:219:64: GE ^
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:219:64: GE ^
                             {
                             GE215=(Token)match(input,GE,FOLLOW_GE_in_boolfact2185); 
                             GE215_tree = 
@@ -7278,7 +7278,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "num_expr"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:1: num_expr : term ( ( PLUS ^| MINUS ^) term )* ;
     public final AslParser.num_expr_return num_expr() throws RecognitionException {
         AslParser.num_expr_return retval = new AslParser.num_expr_return();
         retval.start = input.LT(1);
@@ -7297,8 +7297,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS219_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:9: ( term ( ( PLUS ^| MINUS ^) term )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:13: term ( ( PLUS ^| MINUS ^) term )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:9: ( term ( ( PLUS ^| MINUS ^) term )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:13: term ( ( PLUS ^| MINUS ^) term )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -7310,7 +7310,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, term217.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:18: ( ( PLUS ^| MINUS ^) term )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:18: ( ( PLUS ^| MINUS ^) term )*
             loop49:
             do {
                 int alt49=2;
@@ -7323,9 +7323,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt49) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:20: ( PLUS ^| MINUS ^) term
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:20: ( PLUS ^| MINUS ^) term
             	    {
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:20: ( PLUS ^| MINUS ^)
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:20: ( PLUS ^| MINUS ^)
             	    int alt48=2;
             	    int LA48_0 = input.LA(1);
 
@@ -7344,7 +7344,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    }
             	    switch (alt48) {
             	        case 1 :
-            	            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:21: PLUS ^
+            	            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:21: PLUS ^
             	            {
             	            PLUS218=(Token)match(input,PLUS,FOLLOW_PLUS_in_num_expr2214); 
             	            PLUS218_tree = 
@@ -7356,7 +7356,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:222:29: MINUS ^
+            	            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:222:29: MINUS ^
             	            {
             	            MINUS219=(Token)match(input,MINUS,FOLLOW_MINUS_in_num_expr2219); 
             	            MINUS219_tree = 
@@ -7418,7 +7418,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "term"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:1: term : factor ( ( MUL ^| DIV ^| MOD ^) factor )* ;
     public final AslParser.term_return term() throws RecognitionException {
         AslParser.term_return retval = new AslParser.term_return();
         retval.start = input.LT(1);
@@ -7439,8 +7439,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MOD224_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:9: ( factor ( ( MUL ^| DIV ^| MOD ^) factor )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:13: factor ( ( MUL ^| DIV ^| MOD ^) factor )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -7452,7 +7452,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, factor221.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:20: ( ( MUL ^| DIV ^| MOD ^) factor )*
             loop51:
             do {
                 int alt51=2;
@@ -7465,9 +7465,9 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt51) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:22: ( MUL ^| DIV ^| MOD ^) factor
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:22: ( MUL ^| DIV ^| MOD ^) factor
             	    {
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:22: ( MUL ^| DIV ^| MOD ^)
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:22: ( MUL ^| DIV ^| MOD ^)
             	    int alt50=3;
             	    switch ( input.LA(1) ) {
             	    case MUL:
@@ -7495,7 +7495,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             	    switch (alt50) {
             	        case 1 :
-            	            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:23: MUL ^
+            	            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:23: MUL ^
             	            {
             	            MUL222=(Token)match(input,MUL,FOLLOW_MUL_in_term2252); 
             	            MUL222_tree = 
@@ -7507,7 +7507,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 2 :
-            	            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:30: DIV ^
+            	            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:30: DIV ^
             	            {
             	            DIV223=(Token)match(input,DIV,FOLLOW_DIV_in_term2257); 
             	            DIV223_tree = 
@@ -7519,7 +7519,7 @@ public TreeAdaptor getTreeAdaptor() {
             	            }
             	            break;
             	        case 3 :
-            	            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:225:37: MOD ^
+            	            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:225:37: MOD ^
             	            {
             	            MOD224=(Token)match(input,MOD,FOLLOW_MOD_in_term2262); 
             	            MOD224_tree = 
@@ -7581,7 +7581,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "factor"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:1: factor : ( NOT ^| PLUS ^| MINUS ^)? atom ;
     public final AslParser.factor_return factor() throws RecognitionException {
         AslParser.factor_return retval = new AslParser.factor_return();
         retval.start = input.LT(1);
@@ -7600,13 +7600,13 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree MINUS228_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:13: ( NOT ^| PLUS ^| MINUS ^)? atom
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:9: ( ( NOT ^| PLUS ^| MINUS ^)? atom )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:13: ( NOT ^| PLUS ^| MINUS ^)? atom
             {
             root_0 = (AslTree)adaptor.nil();
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:13: ( NOT ^| PLUS ^| MINUS ^)?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:13: ( NOT ^| PLUS ^| MINUS ^)?
             int alt52=4;
             switch ( input.LA(1) ) {
                 case NOT:
@@ -7628,7 +7628,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt52) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:14: NOT ^
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:14: NOT ^
                     {
                     NOT226=(Token)match(input,NOT,FOLLOW_NOT_in_factor2289); 
                     NOT226_tree = 
@@ -7640,7 +7640,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:21: PLUS ^
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:21: PLUS ^
                     {
                     PLUS227=(Token)match(input,PLUS,FOLLOW_PLUS_in_factor2294); 
                     PLUS227_tree = 
@@ -7652,7 +7652,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:228:29: MINUS ^
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:228:29: MINUS ^
                     {
                     MINUS228=(Token)match(input,MINUS,FOLLOW_MINUS_in_factor2299); 
                     MINUS228_tree = 
@@ -7705,7 +7705,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atom"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:231:1: atom : ( ID | INT |eq= OCT -> INT[$eq,$eq.text] | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:231:1: atom : ( ID | INT |eq= OCT -> INT[$eq,$eq.text] | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !);
     public final AslParser.atom_return atom() throws RecognitionException {
         AslParser.atom_return retval = new AslParser.atom_return();
         retval.start = input.LT(1);
@@ -7735,7 +7735,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_FALSE=new RewriteRuleTokenStream(adaptor,"token FALSE");
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:231:9: ( ID | INT |eq= OCT -> INT[$eq,$eq.text] | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:231:9: ( ID | INT |eq= OCT -> INT[$eq,$eq.text] | (b= TRUE |b= FALSE ) -> ^( BOOLEAN[$b,$b.text] ) | funcall | '(' ! expr ')' !)
             int alt54=6;
             switch ( input.LA(1) ) {
             case ID:
@@ -7788,7 +7788,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt54) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:231:13: ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:231:13: ID
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -7803,7 +7803,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:232:13: INT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:232:13: INT
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -7818,7 +7818,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:233:10: eq= OCT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:233:10: eq= OCT
                     {
                     eq=(Token)match(input,OCT,FOLLOW_OCT_in_atom2356);  
                     stream_OCT.add(eq);
@@ -7849,9 +7849,9 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:234:13: (b= TRUE |b= FALSE )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:234:13: (b= TRUE |b= FALSE )
                     {
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:234:13: (b= TRUE |b= FALSE )
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:234:13: (b= TRUE |b= FALSE )
                     int alt53=2;
                     int LA53_0 = input.LA(1);
 
@@ -7870,7 +7870,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     switch (alt53) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:234:14: b= TRUE
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:234:14: b= TRUE
                             {
                             b=(Token)match(input,TRUE,FOLLOW_TRUE_in_atom2377);  
                             stream_TRUE.add(b);
@@ -7879,7 +7879,7 @@ public TreeAdaptor getTreeAdaptor() {
                             }
                             break;
                         case 2 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:234:23: b= FALSE
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:234:23: b= FALSE
                             {
                             b=(Token)match(input,FALSE,FOLLOW_FALSE_in_atom2383);  
                             stream_FALSE.add(b);
@@ -7904,7 +7904,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (AslTree)adaptor.nil();
                     // 234:33: -> ^( BOOLEAN[$b,$b.text] )
                     {
-                        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:234:36: ^( BOOLEAN[$b,$b.text] )
+                        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:234:36: ^( BOOLEAN[$b,$b.text] )
                         {
                         AslTree root_1 = (AslTree)adaptor.nil();
                         root_1 = (AslTree)adaptor.becomeRoot(
@@ -7922,7 +7922,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:235:13: funcall
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:235:13: funcall
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -7937,7 +7937,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:236:13: '(' ! expr ')' !
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:236:13: '(' ! expr ')' !
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -7986,7 +7986,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "funcall"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:1: funcall : ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) ;
     public final AslParser.funcall_return funcall() throws RecognitionException {
         AslParser.funcall_return retval = new AslParser.funcall_return();
         retval.start = input.LT(1);
@@ -8008,8 +8008,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
         RewriteRuleSubtreeStream stream_expr_list=new RewriteRuleSubtreeStream(adaptor,"rule expr_list");
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:13: ID '(' ( expr_list )? ')'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:9: ( ID '(' ( expr_list )? ')' -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:13: ID '(' ( expr_list )? ')'
             {
             ID236=(Token)match(input,ID,FOLLOW_ID_in_funcall2445);  
             stream_ID.add(ID236);
@@ -8019,7 +8019,7 @@ public TreeAdaptor getTreeAdaptor() {
             stream_90.add(char_literal237);
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:20: ( expr_list )?
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:20: ( expr_list )?
             int alt55=2;
             int LA55_0 = input.LA(1);
 
@@ -8028,7 +8028,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt55) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:20: expr_list
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:20: expr_list
                     {
                     pushFollow(FOLLOW_expr_list_in_funcall2449);
                     expr_list238=expr_list();
@@ -8060,7 +8060,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (AslTree)adaptor.nil();
             // 239:35: -> ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
             {
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:38: ^( FUNCALL ID ^( ARGLIST ( expr_list )? ) )
                 {
                 AslTree root_1 = (AslTree)adaptor.nil();
                 root_1 = (AslTree)adaptor.becomeRoot(
@@ -8071,14 +8071,14 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:51: ^( ARGLIST ( expr_list )? )
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:51: ^( ARGLIST ( expr_list )? )
                 {
                 AslTree root_2 = (AslTree)adaptor.nil();
                 root_2 = (AslTree)adaptor.becomeRoot(
                 (AslTree)adaptor.create(ARGLIST, "ARGLIST")
                 , root_2);
 
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:239:61: ( expr_list )?
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:239:61: ( expr_list )?
                 if ( stream_expr_list.hasNext() ) {
                     adaptor.addChild(root_2, stream_expr_list.nextTree());
 
@@ -8127,7 +8127,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "numatom"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:241:1: numatom : ( INT |eq= OCT -> INT[$eq,$eq.text] | ID );
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:241:1: numatom : ( INT |eq= OCT -> INT[$eq,$eq.text] | ID );
     public final AslParser.numatom_return numatom() throws RecognitionException {
         AslParser.numatom_return retval = new AslParser.numatom_return();
         retval.start = input.LT(1);
@@ -8145,7 +8145,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_OCT=new RewriteRuleTokenStream(adaptor,"token OCT");
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:241:9: ( INT |eq= OCT -> INT[$eq,$eq.text] | ID )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:241:9: ( INT |eq= OCT -> INT[$eq,$eq.text] | ID )
             int alt56=3;
             switch ( input.LA(1) ) {
             case INT:
@@ -8173,7 +8173,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt56) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:241:11: INT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:241:11: INT
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -8188,7 +8188,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:242:5: eq= OCT
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:242:5: eq= OCT
                     {
                     eq=(Token)match(input,OCT,FOLLOW_OCT_in_numatom2493);  
                     stream_OCT.add(eq);
@@ -8219,7 +8219,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:243:5: ID
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:243:5: ID
                     {
                     root_0 = (AslTree)adaptor.nil();
 
@@ -8264,7 +8264,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr_list"
-    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:245:1: expr_list : expr ( ',' ! expr )* ;
+    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:245:1: expr_list : expr ( ',' ! expr )* ;
     public final AslParser.expr_list_return expr_list() throws RecognitionException {
         AslParser.expr_list_return retval = new AslParser.expr_list_return();
         retval.start = input.LT(1);
@@ -8281,8 +8281,8 @@ public TreeAdaptor getTreeAdaptor() {
         AslTree char_literal243_tree=null;
 
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:245:10: ( expr ( ',' ! expr )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:245:13: expr ( ',' ! expr )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:245:10: ( expr ( ',' ! expr )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:245:13: expr ( ',' ! expr )*
             {
             root_0 = (AslTree)adaptor.nil();
 
@@ -8294,7 +8294,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             adaptor.addChild(root_0, expr242.getTree());
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:245:18: ( ',' ! expr )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:245:18: ( ',' ! expr )*
             loop57:
             do {
                 int alt57=2;
@@ -8307,7 +8307,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt57) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:245:19: ',' ! expr
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:245:19: ',' ! expr
             	    {
             	    char_literal243=(Token)match(input,92,FOLLOW_92_in_expr_list2517); 
 

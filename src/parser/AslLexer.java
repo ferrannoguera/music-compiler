@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g 2017-06-02 12:38:52
+// $ANTLR 3.4 /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g 2017-06-02 20:31:00
 
 package parser;
 
@@ -139,15 +139,15 @@ public class AslLexer extends Lexer {
     public AslLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g"; }
+    public String getGrammarFileName() { return "/home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g"; }
 
     // $ANTLR start "T__89"
     public final void mT__89() throws RecognitionException {
         try {
             int _type = T__89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:6:7: ( '&' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:6:9: '&'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:6:7: ( '&' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:6:9: '&'
             {
             match('&'); 
 
@@ -167,8 +167,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:7:7: ( '(' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:7:9: '('
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:7:7: ( '(' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:7:9: '('
             {
             match('('); 
 
@@ -188,8 +188,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:8:7: ( ')' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:8:9: ')'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:8:7: ( ')' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:8:9: ')'
             {
             match(')'); 
 
@@ -209,8 +209,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:9:7: ( ',' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:9:9: ','
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:9:7: ( ',' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:9:9: ','
             {
             match(','); 
 
@@ -230,8 +230,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:10:7: ( '.' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:10:9: '.'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:10:7: ( '.' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:10:9: '.'
             {
             match('.'); 
 
@@ -251,8 +251,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:11:7: ( ':' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:11:9: ':'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:11:7: ( ':' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:11:9: ':'
             {
             match(':'); 
 
@@ -272,8 +272,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:12:7: ( ':||' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:12:9: ':||'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:12:7: ( ':||' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:12:9: ':||'
             {
             match(":||"); 
 
@@ -295,8 +295,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:13:7: ( ';' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:13:9: ';'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:13:7: ( ';' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:13:9: ';'
             {
             match(';'); 
 
@@ -316,8 +316,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:14:7: ( '[' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:14:9: '['
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:14:7: ( '[' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:14:9: '['
             {
             match('['); 
 
@@ -337,8 +337,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:15:7: ( ']' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:15:9: ']'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:15:7: ( ']' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:15:9: ']'
             {
             match(']'); 
 
@@ -358,8 +358,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:16:7: ( 'b' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:16:9: 'b'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:16:7: ( 'b' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:16:9: 'b'
             {
             match('b'); 
 
@@ -379,8 +379,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__100;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:17:8: ( 'b*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:17:10: 'b*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:17:8: ( 'b*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:17:10: 'b*'
             {
             match("b*"); 
 
@@ -402,8 +402,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__101;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:18:8: ( 'c' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:18:10: 'c'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:18:8: ( 'c' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:18:10: 'c'
             {
             match('c'); 
 
@@ -423,8 +423,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__102;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:19:8: ( 'c*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:19:10: 'c*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:19:8: ( 'c*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:19:10: 'c*'
             {
             match("c*"); 
 
@@ -446,8 +446,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__103;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:20:8: ( 'f' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:20:10: 'f'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:20:8: ( 'f' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:20:10: 'f'
             {
             match('f'); 
 
@@ -467,8 +467,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__104;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:21:8: ( 'f*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:21:10: 'f*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:21:8: ( 'f*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:21:10: 'f*'
             {
             match("f*"); 
 
@@ -490,8 +490,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__105;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:22:8: ( 'n' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:22:10: 'n'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:22:8: ( 'n' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:22:10: 'n'
             {
             match('n'); 
 
@@ -511,8 +511,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__106;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:23:8: ( 'n*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:23:10: 'n*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:23:8: ( 'n*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:23:10: 'n*'
             {
             match("n*"); 
 
@@ -534,8 +534,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__107;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:24:8: ( 'r' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:24:10: 'r'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:24:8: ( 'r' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:24:10: 'r'
             {
             match('r'); 
 
@@ -555,8 +555,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__108;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:25:8: ( 'r*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:25:10: 'r*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:25:8: ( 'r*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:25:10: 'r*'
             {
             match("r*"); 
 
@@ -578,8 +578,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__109;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:26:8: ( 'sc' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:26:10: 'sc'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:26:8: ( 'sc' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:26:10: 'sc'
             {
             match("sc"); 
 
@@ -601,8 +601,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__110;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:27:8: ( 'sc*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:27:10: 'sc*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:27:8: ( 'sc*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:27:10: 'sc*'
             {
             match("sc*"); 
 
@@ -624,8 +624,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__111;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:28:8: ( 'sf' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:28:10: 'sf'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:28:8: ( 'sf' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:28:10: 'sf'
             {
             match("sf"); 
 
@@ -647,8 +647,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__112;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:29:8: ( 'sf*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:29:10: 'sf*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:29:8: ( 'sf*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:29:10: 'sf*'
             {
             match("sf*"); 
 
@@ -670,8 +670,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__113;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:30:8: ( 'z||:' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:30:10: 'z||:'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:30:8: ( 'z||:' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:30:10: 'z||:'
             {
             match("z||:"); 
 
@@ -693,8 +693,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__114;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:31:8: ( '{' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:31:10: '{'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:31:8: ( '{' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:31:10: '{'
             {
             match('{'); 
 
@@ -714,8 +714,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__115;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:32:8: ( '|' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:32:10: '|'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:32:8: ( '|' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:32:10: '|'
             {
             match('|'); 
 
@@ -735,8 +735,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__116;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:33:8: ( '}' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:33:10: '}'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:33:8: ( '}' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:33:10: '}'
             {
             match('}'); 
 
@@ -756,8 +756,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = T__117;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:34:8: ( '~' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:34:10: '~'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:34:8: ( '~' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:34:10: '~'
             {
             match('~'); 
 
@@ -777,8 +777,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = BEMOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:249:7: ( '$' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:249:9: '$'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:249:7: ( '$' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:249:9: '$'
             {
             match('$'); 
 
@@ -798,8 +798,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SOSTENIDO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:250:11: ( '#' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:250:13: '#'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:250:11: ( '#' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:250:13: '#'
             {
             match('#'); 
 
@@ -819,8 +819,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = BECUADRO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:251:10: ( '¬' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:251:12: '¬'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:251:10: ( '¬' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:251:12: '¬'
             {
             match('\u00AC'); 
 
@@ -840,8 +840,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:252:5: ( 'for' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:252:7: 'for'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:252:5: ( 'for' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:252:7: 'for'
             {
             match("for"); 
 
@@ -863,8 +863,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:253:4: ( 'Do' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:253:6: 'Do'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:253:4: ( 'Do' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:253:6: 'Do'
             {
             match("Do"); 
 
@@ -886,8 +886,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:254:4: ( 'Re' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:254:6: 'Re'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:254:4: ( 'Re' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:254:6: 'Re'
             {
             match("Re"); 
 
@@ -909,8 +909,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:255:4: ( 'Mi' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:255:6: 'Mi'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:255:4: ( 'Mi' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:255:6: 'Mi'
             {
             match("Mi"); 
 
@@ -932,8 +932,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:256:4: ( 'Fa' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:256:6: 'Fa'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:256:4: ( 'Fa' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:256:6: 'Fa'
             {
             match("Fa"); 
 
@@ -955,8 +955,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:257:5: ( 'Sol' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:257:7: 'Sol'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:257:5: ( 'Sol' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:257:7: 'Sol'
             {
             match("Sol"); 
 
@@ -978,8 +978,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:258:4: ( 'La' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:258:6: 'La'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:258:4: ( 'La' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:258:6: 'La'
             {
             match("La"); 
 
@@ -1001,8 +1001,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SI;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:259:4: ( 'Si' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:259:6: 'Si'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:259:4: ( 'Si' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:259:6: 'Si'
             {
             match("Si"); 
 
@@ -1024,8 +1024,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = QUIET;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:260:7: ( 'Quiet' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:260:9: 'Quiet'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:260:7: ( 'Quiet' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:260:9: 'Quiet'
             {
             match("Quiet"); 
 
@@ -1047,8 +1047,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ARMOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:261:7: ( 'Armor' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:261:9: 'Armor'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:261:7: ( 'Armor' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:261:9: 'Armor'
             {
             match("Armor"); 
 
@@ -1070,8 +1070,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = BEAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:262:6: ( 'Beat' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:262:8: 'Beat'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:262:6: ( 'Beat' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:262:8: 'Beat'
             {
             match("Beat"); 
 
@@ -1093,8 +1093,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SPEED;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:263:7: ( 'Speed' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:263:9: 'Speed'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:263:7: ( 'Speed' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:263:9: 'Speed'
             {
             match("Speed"); 
 
@@ -1116,8 +1116,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = CHORUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:264:8: ( 'Chorus' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:264:10: 'Chorus'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:264:8: ( 'Chorus' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:264:10: 'Chorus'
             {
             match("Chorus"); 
 
@@ -1139,8 +1139,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = VOICE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:265:7: ( 'Voice' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:265:9: 'Voice'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:265:7: ( 'Voice' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:265:9: 'Voice'
             {
             match("Voice"); 
 
@@ -1162,8 +1162,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PIANO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:266:7: ( 'Piano' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:266:9: 'Piano'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:266:7: ( 'Piano' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:266:9: 'Piano'
             {
             match("Piano"); 
 
@@ -1185,8 +1185,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FLAUTA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:267:8: ( 'Flauta' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:267:10: 'Flauta'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:267:8: ( 'Flauta' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:267:10: 'Flauta'
             {
             match("Flauta"); 
 
@@ -1208,8 +1208,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SAXO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:268:6: ( 'Saxo' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:268:9: 'Saxo'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:268:6: ( 'Saxo' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:268:9: 'Saxo'
             {
             match("Saxo"); 
 
@@ -1231,8 +1231,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = SHOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:269:6: ( 'Shot' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:269:8: 'Shot'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:269:6: ( 'Shot' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:269:8: 'Shot'
             {
             match("Shot"); 
 
@@ -1254,8 +1254,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ORGANO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:270:8: ( 'Organo' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:270:10: 'Organo'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:270:8: ( 'Organo' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:270:10: 'Organo'
             {
             match("Organo"); 
 
@@ -1277,8 +1277,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TROMPA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:271:9: ( 'Trompa' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:271:11: 'Trompa'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:271:9: ( 'Trompa' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:271:11: 'Trompa'
             {
             match("Trompa"); 
 
@@ -1300,8 +1300,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = XILOFONO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:272:10: ( 'Xilofono' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:272:12: 'Xilofono'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:272:10: ( 'Xilofono' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:272:12: 'Xilofono'
             {
             match("Xilofono"); 
 
@@ -1323,8 +1323,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PERCUSION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:273:11: ( 'Percusion' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:273:13: 'Percusion'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:273:11: ( 'Percusion' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:273:13: 'Percusion'
             {
             match("Percusion"); 
 
@@ -1346,8 +1346,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = VIOLA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:274:7: ( 'Viola' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:274:9: 'Viola'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:274:7: ( 'Viola' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:274:9: 'Viola'
             {
             match("Viola"); 
 
@@ -1369,8 +1369,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GUITARRA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:275:10: ( 'Guitarra' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:275:12: 'Guitarra'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:275:10: ( 'Guitarra' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:275:12: 'Guitarra'
             {
             match("Guitarra"); 
 
@@ -1392,8 +1392,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TWICE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:276:7: ( 'Twice' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:276:9: 'Twice'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:276:7: ( 'Twice' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:276:9: 'Twice'
             {
             match("Twice"); 
 
@@ -1415,8 +1415,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = HALF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:277:6: ( 'Half' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:277:8: 'Half'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:277:6: ( 'Half' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:277:8: 'Half'
             {
             match("Half"); 
 
@@ -1438,8 +1438,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RAISE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:278:7: ( 'Raise' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:278:9: 'Raise'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:278:7: ( 'Raise' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:278:9: 'Raise'
             {
             match("Raise"); 
 
@@ -1461,8 +1461,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:279:6: ( 'Fall' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:279:8: 'Fall'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:279:6: ( 'Fall' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:279:8: 'Fall'
             {
             match("Fall"); 
 
@@ -1484,8 +1484,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:280:8: ( '+=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:280:10: '+='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:280:8: ( '+=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:280:10: '+='
             {
             match("+="); 
 
@@ -1507,8 +1507,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = REQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:281:8: ( '-=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:281:10: '-='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:281:8: ( '-=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:281:10: '-='
             {
             match("-="); 
 
@@ -1530,8 +1530,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:282:8: ( '*=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:282:10: '*='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:282:8: ( '*=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:282:10: '*='
             {
             match("*="); 
 
@@ -1553,8 +1553,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DEQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:283:8: ( '/=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:283:10: '/='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:283:8: ( '/=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:283:10: '/='
             {
             match("/="); 
 
@@ -1576,8 +1576,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:284:7: ( '=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:284:9: '='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:284:7: ( '=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:284:9: '='
             {
             match('='); 
 
@@ -1597,8 +1597,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT_EQUAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:285:10: ( '!=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:285:12: '!='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:285:10: ( '!=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:285:12: '!='
             {
             match("!="); 
 
@@ -1620,8 +1620,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:286:8: ( '<' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:286:10: '<'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:286:8: ( '<' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:286:10: '<'
             {
             match('<'); 
 
@@ -1641,8 +1641,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = LE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:287:8: ( '<=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:287:10: '<='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:287:8: ( '<=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:287:10: '<='
             {
             match("<="); 
 
@@ -1664,8 +1664,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:288:8: ( '>' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:288:10: '>'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:288:8: ( '>' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:288:10: '>'
             {
             match('>'); 
 
@@ -1685,8 +1685,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = GE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:289:8: ( '>=' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:289:10: '>='
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:289:8: ( '>=' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:289:10: '>='
             {
             match(">="); 
 
@@ -1708,8 +1708,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DPLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:290:7: ( '++' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:290:8: '++'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:290:7: ( '++' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:290:8: '++'
             {
             match("++"); 
 
@@ -1731,8 +1731,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DMINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:291:8: ( '--' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:291:9: '--'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:291:8: ( '--' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:291:9: '--'
             {
             match("--"); 
 
@@ -1754,8 +1754,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:292:6: ( '+' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:292:8: '+'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:292:6: ( '+' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:292:8: '+'
             {
             match('+'); 
 
@@ -1775,8 +1775,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MINUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:293:7: ( '-' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:293:9: '-'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:293:7: ( '-' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:293:9: '-'
             {
             match('-'); 
 
@@ -1796,8 +1796,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MUL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:294:9: ( '*' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:294:11: '*'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:294:9: ( '*' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:294:11: '*'
             {
             match('*'); 
 
@@ -1817,8 +1817,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = DIV;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:295:9: ( '/' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:295:11: '/'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:295:9: ( '/' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:295:11: '/'
             {
             match('/'); 
 
@@ -1838,8 +1838,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = MOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:296:9: ( '%' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:296:11: '%'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:296:9: ( '%' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:296:11: '%'
             {
             match('%'); 
 
@@ -1859,8 +1859,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = NOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:297:9: ( 'not' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:297:11: 'not'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:297:9: ( 'not' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:297:11: 'not'
             {
             match("not"); 
 
@@ -1882,8 +1882,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:298:9: ( 'and' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:298:11: 'and'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:298:9: ( 'and' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:298:11: 'and'
             {
             match("and"); 
 
@@ -1905,8 +1905,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:299:8: ( 'or' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:299:10: 'or'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:299:8: ( 'or' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:299:10: 'or'
             {
             match("or"); 
 
@@ -1928,8 +1928,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:300:6: ( 'if' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:300:8: 'if'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:300:6: ( 'if' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:300:8: 'if'
             {
             match("if"); 
 
@@ -1951,8 +1951,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:301:6: ( 'else' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:301:8: 'else'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:301:6: ( 'else' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:301:8: 'else'
             {
             match("else"); 
 
@@ -1974,8 +1974,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:302:7: ( 'while' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:302:9: 'while'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:302:7: ( 'while' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:302:9: 'while'
             {
             match("while"); 
 
@@ -1997,8 +1997,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FUNC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:303:6: ( 'func' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:303:8: 'func'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:303:6: ( 'func' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:303:8: 'func'
             {
             match("func"); 
 
@@ -2020,8 +2020,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:304:8: ( 'return' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:304:10: 'return'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:304:8: ( 'return' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:304:10: 'return'
             {
             match("return"); 
 
@@ -2043,8 +2043,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = READ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:305:6: ( 'read' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:305:8: 'read'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:305:6: ( 'read' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:305:8: 'read'
             {
             match("read"); 
 
@@ -2066,8 +2066,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WRITE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:306:7: ( 'write' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:306:9: 'write'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:306:7: ( 'write' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:306:9: 'write'
             {
             match("write"); 
 
@@ -2089,8 +2089,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:307:9: ( 'true' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:307:11: 'true'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:307:9: ( 'true' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:307:11: 'true'
             {
             match("true"); 
 
@@ -2112,8 +2112,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:308:9: ( 'false' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:308:11: 'false'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:308:9: ( 'false' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:308:11: 'false'
             {
             match("false"); 
 
@@ -2135,8 +2135,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = TRANSPORT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:309:10: ( 'Transport' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:309:12: 'Transport'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:309:10: ( 'Transport' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:309:12: 'Transport'
             {
             match("Transport"); 
 
@@ -2158,8 +2158,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = OCT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:310:5: ( '0' .. '8' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:310:5: ( '0' .. '8' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '8') ) {
                 input.consume();
@@ -2187,10 +2187,10 @@ public class AslLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:6: ( ( '0' .. '9' )+ )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:8: ( '0' .. '9' )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:311:6: ( ( '0' .. '9' )+ )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:311:8: ( '0' .. '9' )+
             {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:311:8: ( '0' .. '9' )+
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:311:8: ( '0' .. '9' )+
             int cnt1=0;
             loop1:
             do {
@@ -2204,7 +2204,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -2245,8 +2245,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )* )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:312:6: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )* )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:312:8: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -2258,7 +2258,7 @@ public class AslLexer extends Lexer {
             }
 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:312:32: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:312:32: ( 'a' .. 'z' | 'A' .. 'Z' | '_' )*
             loop2:
             do {
                 int alt2=2;
@@ -2271,7 +2271,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
             	    {
             	    if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -2308,7 +2308,7 @@ public class AslLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:317:9: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -2338,13 +2338,13 @@ public class AslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:317:11: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:16: (~ ( '\\n' | '\\r' ) )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:317:16: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -2357,7 +2357,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:
+                    	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -2378,7 +2378,7 @@ public class AslLexer extends Lexer {
                     } while (true);
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:30: ( '\\r' )?
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:317:30: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -2387,7 +2387,7 @@ public class AslLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:317:30: '\\r'
+                            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:317:30: '\\r'
                             {
                             match('\r'); 
 
@@ -2404,13 +2404,13 @@ public class AslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:8: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:318:8: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:13: ( options {greedy=false; } : . )*
+                    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:318:13: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -2435,7 +2435,7 @@ public class AslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:318:41: .
+                    	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:318:41: .
                     	    {
                     	    matchAny(); 
 
@@ -2472,12 +2472,12 @@ public class AslLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:322:9: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:322:12: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:322:16: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -2493,7 +2493,7 @@ public class AslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:18: ESC_SEQ
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:322:18: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -2501,7 +2501,7 @@ public class AslLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:322:28: ~ ( '\\\\' | '\"' )
+            	    // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:322:28: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -2538,8 +2538,8 @@ public class AslLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:328:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:328:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:328:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:328:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
             {
             match('\\'); 
 
@@ -2568,8 +2568,8 @@ public class AslLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:331:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:331:8: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:331:6: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:331:8: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -2595,12 +2595,12 @@ public class AslLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:8: ( T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | SAXO | SHOT | ORGANO | TROMPA | XILOFONO | PERCUSION | VIOLA | GUITARRA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS )
+        // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:8: ( T__89 | T__90 | T__91 | T__92 | T__93 | T__94 | T__95 | T__96 | T__97 | T__98 | T__99 | T__100 | T__101 | T__102 | T__103 | T__104 | T__105 | T__106 | T__107 | T__108 | T__109 | T__110 | T__111 | T__112 | T__113 | T__114 | T__115 | T__116 | T__117 | BEMOL | SOSTENIDO | BECUADRO | FOR | DO | RE | MI | FA | SOL | LA | SI | QUIET | ARMOR | BEAT | SPEED | CHORUS | VOICE | PIANO | FLAUTA | SAXO | SHOT | ORGANO | TROMPA | XILOFONO | PERCUSION | VIOLA | GUITARRA | TWICE | HALF | RAISE | FALL | PEQUAL | REQUAL | MEQUAL | DEQUAL | EQUAL | NOT_EQUAL | LT | LE | GT | GE | DPLUS | DMINUS | PLUS | MINUS | MUL | DIV | MOD | NOT | AND | OR | IF | ELSE | WHILE | FUNC | RETURN | READ | WRITE | TRUE | FALSE | TRANSPORT | OCT | INT | ID | COMMENT | STRING | WS )
         int alt8=96;
         alt8 = dfa8.predict(input);
         switch (alt8) {
             case 1 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:10: T__89
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:10: T__89
                 {
                 mT__89(); 
 
@@ -2608,7 +2608,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:16: T__90
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:16: T__90
                 {
                 mT__90(); 
 
@@ -2616,7 +2616,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:22: T__91
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:22: T__91
                 {
                 mT__91(); 
 
@@ -2624,7 +2624,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:28: T__92
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:28: T__92
                 {
                 mT__92(); 
 
@@ -2632,7 +2632,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:34: T__93
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:34: T__93
                 {
                 mT__93(); 
 
@@ -2640,7 +2640,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:40: T__94
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:40: T__94
                 {
                 mT__94(); 
 
@@ -2648,7 +2648,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:46: T__95
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:46: T__95
                 {
                 mT__95(); 
 
@@ -2656,7 +2656,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:52: T__96
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:52: T__96
                 {
                 mT__96(); 
 
@@ -2664,7 +2664,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:58: T__97
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:58: T__97
                 {
                 mT__97(); 
 
@@ -2672,7 +2672,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:64: T__98
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:64: T__98
                 {
                 mT__98(); 
 
@@ -2680,7 +2680,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:70: T__99
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:70: T__99
                 {
                 mT__99(); 
 
@@ -2688,7 +2688,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:76: T__100
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:76: T__100
                 {
                 mT__100(); 
 
@@ -2696,7 +2696,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:83: T__101
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:83: T__101
                 {
                 mT__101(); 
 
@@ -2704,7 +2704,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:90: T__102
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:90: T__102
                 {
                 mT__102(); 
 
@@ -2712,7 +2712,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:97: T__103
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:97: T__103
                 {
                 mT__103(); 
 
@@ -2720,7 +2720,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:104: T__104
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:104: T__104
                 {
                 mT__104(); 
 
@@ -2728,7 +2728,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:111: T__105
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:111: T__105
                 {
                 mT__105(); 
 
@@ -2736,7 +2736,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:118: T__106
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:118: T__106
                 {
                 mT__106(); 
 
@@ -2744,7 +2744,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:125: T__107
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:125: T__107
                 {
                 mT__107(); 
 
@@ -2752,7 +2752,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:132: T__108
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:132: T__108
                 {
                 mT__108(); 
 
@@ -2760,7 +2760,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:139: T__109
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:139: T__109
                 {
                 mT__109(); 
 
@@ -2768,7 +2768,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:146: T__110
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:146: T__110
                 {
                 mT__110(); 
 
@@ -2776,7 +2776,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 23 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:153: T__111
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:153: T__111
                 {
                 mT__111(); 
 
@@ -2784,7 +2784,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 24 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:160: T__112
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:160: T__112
                 {
                 mT__112(); 
 
@@ -2792,7 +2792,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 25 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:167: T__113
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:167: T__113
                 {
                 mT__113(); 
 
@@ -2800,7 +2800,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 26 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:174: T__114
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:174: T__114
                 {
                 mT__114(); 
 
@@ -2808,7 +2808,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 27 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:181: T__115
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:181: T__115
                 {
                 mT__115(); 
 
@@ -2816,7 +2816,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 28 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:188: T__116
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:188: T__116
                 {
                 mT__116(); 
 
@@ -2824,7 +2824,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:195: T__117
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:195: T__117
                 {
                 mT__117(); 
 
@@ -2832,7 +2832,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 30 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:202: BEMOL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:202: BEMOL
                 {
                 mBEMOL(); 
 
@@ -2840,7 +2840,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 31 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:208: SOSTENIDO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:208: SOSTENIDO
                 {
                 mSOSTENIDO(); 
 
@@ -2848,7 +2848,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 32 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:218: BECUADRO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:218: BECUADRO
                 {
                 mBECUADRO(); 
 
@@ -2856,7 +2856,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 33 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:227: FOR
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:227: FOR
                 {
                 mFOR(); 
 
@@ -2864,7 +2864,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 34 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:231: DO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:231: DO
                 {
                 mDO(); 
 
@@ -2872,7 +2872,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 35 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:234: RE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:234: RE
                 {
                 mRE(); 
 
@@ -2880,7 +2880,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 36 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:237: MI
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:237: MI
                 {
                 mMI(); 
 
@@ -2888,7 +2888,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 37 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:240: FA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:240: FA
                 {
                 mFA(); 
 
@@ -2896,7 +2896,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 38 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:243: SOL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:243: SOL
                 {
                 mSOL(); 
 
@@ -2904,7 +2904,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:247: LA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:247: LA
                 {
                 mLA(); 
 
@@ -2912,7 +2912,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 40 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:250: SI
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:250: SI
                 {
                 mSI(); 
 
@@ -2920,7 +2920,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 41 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:253: QUIET
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:253: QUIET
                 {
                 mQUIET(); 
 
@@ -2928,7 +2928,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 42 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:259: ARMOR
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:259: ARMOR
                 {
                 mARMOR(); 
 
@@ -2936,7 +2936,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 43 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:265: BEAT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:265: BEAT
                 {
                 mBEAT(); 
 
@@ -2944,7 +2944,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 44 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:270: SPEED
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:270: SPEED
                 {
                 mSPEED(); 
 
@@ -2952,7 +2952,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 45 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:276: CHORUS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:276: CHORUS
                 {
                 mCHORUS(); 
 
@@ -2960,7 +2960,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 46 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:283: VOICE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:283: VOICE
                 {
                 mVOICE(); 
 
@@ -2968,7 +2968,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 47 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:289: PIANO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:289: PIANO
                 {
                 mPIANO(); 
 
@@ -2976,7 +2976,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 48 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:295: FLAUTA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:295: FLAUTA
                 {
                 mFLAUTA(); 
 
@@ -2984,7 +2984,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 49 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:302: SAXO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:302: SAXO
                 {
                 mSAXO(); 
 
@@ -2992,7 +2992,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 50 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:307: SHOT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:307: SHOT
                 {
                 mSHOT(); 
 
@@ -3000,7 +3000,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 51 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:312: ORGANO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:312: ORGANO
                 {
                 mORGANO(); 
 
@@ -3008,7 +3008,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 52 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:319: TROMPA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:319: TROMPA
                 {
                 mTROMPA(); 
 
@@ -3016,7 +3016,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 53 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:326: XILOFONO
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:326: XILOFONO
                 {
                 mXILOFONO(); 
 
@@ -3024,7 +3024,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 54 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:335: PERCUSION
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:335: PERCUSION
                 {
                 mPERCUSION(); 
 
@@ -3032,7 +3032,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 55 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:345: VIOLA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:345: VIOLA
                 {
                 mVIOLA(); 
 
@@ -3040,7 +3040,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 56 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:351: GUITARRA
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:351: GUITARRA
                 {
                 mGUITARRA(); 
 
@@ -3048,7 +3048,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 57 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:360: TWICE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:360: TWICE
                 {
                 mTWICE(); 
 
@@ -3056,7 +3056,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 58 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:366: HALF
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:366: HALF
                 {
                 mHALF(); 
 
@@ -3064,7 +3064,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 59 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:371: RAISE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:371: RAISE
                 {
                 mRAISE(); 
 
@@ -3072,7 +3072,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 60 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:377: FALL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:377: FALL
                 {
                 mFALL(); 
 
@@ -3080,7 +3080,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 61 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:382: PEQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:382: PEQUAL
                 {
                 mPEQUAL(); 
 
@@ -3088,7 +3088,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 62 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:389: REQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:389: REQUAL
                 {
                 mREQUAL(); 
 
@@ -3096,7 +3096,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 63 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:396: MEQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:396: MEQUAL
                 {
                 mMEQUAL(); 
 
@@ -3104,7 +3104,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 64 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:403: DEQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:403: DEQUAL
                 {
                 mDEQUAL(); 
 
@@ -3112,7 +3112,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 65 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:410: EQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:410: EQUAL
                 {
                 mEQUAL(); 
 
@@ -3120,7 +3120,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 66 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:416: NOT_EQUAL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:416: NOT_EQUAL
                 {
                 mNOT_EQUAL(); 
 
@@ -3128,7 +3128,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 67 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:426: LT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:426: LT
                 {
                 mLT(); 
 
@@ -3136,7 +3136,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 68 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:429: LE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:429: LE
                 {
                 mLE(); 
 
@@ -3144,7 +3144,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 69 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:432: GT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:432: GT
                 {
                 mGT(); 
 
@@ -3152,7 +3152,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 70 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:435: GE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:435: GE
                 {
                 mGE(); 
 
@@ -3160,7 +3160,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 71 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:438: DPLUS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:438: DPLUS
                 {
                 mDPLUS(); 
 
@@ -3168,7 +3168,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 72 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:444: DMINUS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:444: DMINUS
                 {
                 mDMINUS(); 
 
@@ -3176,7 +3176,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 73 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:451: PLUS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:451: PLUS
                 {
                 mPLUS(); 
 
@@ -3184,7 +3184,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 74 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:456: MINUS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:456: MINUS
                 {
                 mMINUS(); 
 
@@ -3192,7 +3192,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 75 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:462: MUL
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:462: MUL
                 {
                 mMUL(); 
 
@@ -3200,7 +3200,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 76 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:466: DIV
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:466: DIV
                 {
                 mDIV(); 
 
@@ -3208,7 +3208,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 77 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:470: MOD
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:470: MOD
                 {
                 mMOD(); 
 
@@ -3216,7 +3216,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 78 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:474: NOT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:474: NOT
                 {
                 mNOT(); 
 
@@ -3224,7 +3224,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 79 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:478: AND
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:478: AND
                 {
                 mAND(); 
 
@@ -3232,7 +3232,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 80 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:482: OR
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:482: OR
                 {
                 mOR(); 
 
@@ -3240,7 +3240,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 81 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:485: IF
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:485: IF
                 {
                 mIF(); 
 
@@ -3248,7 +3248,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 82 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:488: ELSE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:488: ELSE
                 {
                 mELSE(); 
 
@@ -3256,7 +3256,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 83 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:493: WHILE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:493: WHILE
                 {
                 mWHILE(); 
 
@@ -3264,7 +3264,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 84 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:499: FUNC
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:499: FUNC
                 {
                 mFUNC(); 
 
@@ -3272,7 +3272,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 85 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:504: RETURN
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:504: RETURN
                 {
                 mRETURN(); 
 
@@ -3280,7 +3280,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 86 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:511: READ
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:511: READ
                 {
                 mREAD(); 
 
@@ -3288,7 +3288,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 87 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:516: WRITE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:516: WRITE
                 {
                 mWRITE(); 
 
@@ -3296,7 +3296,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 88 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:522: TRUE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:522: TRUE
                 {
                 mTRUE(); 
 
@@ -3304,7 +3304,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 89 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:527: FALSE
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:527: FALSE
                 {
                 mFALSE(); 
 
@@ -3312,7 +3312,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 90 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:533: TRANSPORT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:533: TRANSPORT
                 {
                 mTRANSPORT(); 
 
@@ -3320,7 +3320,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 91 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:543: OCT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:543: OCT
                 {
                 mOCT(); 
 
@@ -3328,7 +3328,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 92 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:547: INT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:547: INT
                 {
                 mINT(); 
 
@@ -3336,7 +3336,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 93 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:551: ID
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:551: ID
                 {
                 mID(); 
 
@@ -3344,7 +3344,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 94 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:554: COMMENT
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:554: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -3352,7 +3352,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 95 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:562: STRING
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:562: STRING
                 {
                 mSTRING(); 
 
@@ -3360,7 +3360,7 @@ public class AslLexer extends Lexer {
                 }
                 break;
             case 96 :
-                // /dades/ferran.noguera/linux/CL/Practica/src/parser/Asl.g:1:569: WS
+                // /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/src/parser/Asl.g:1:569: WS
                 {
                 mWS(); 
 

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec java -enableassertions -jar /home2/users/alumnes/1182979/dades/musicote/CL-Musica-FIB-master/bin/Asl.jar "$@"

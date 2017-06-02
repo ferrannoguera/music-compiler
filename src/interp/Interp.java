@@ -1,30 +1,3 @@
-/**
- * Copyright (c) 2011, Jordi Cortadella
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *    * Redistributions of source code must retain the above copyright
- *      notice, this list of conditions and the following disclaimer.
- *    * Redistributions in binary form must reproduce the above copyright
- *      notice, this list of conditions and the following disclaimer in the
- *      documentation and/or other materials provided with the distribution.
- *    * Neither the name of the <organization> nor the
- *      names of its contributors may be used to endorse or promote products
- *      derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
- * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
 package interp;
 
 import parser.*;
@@ -45,36 +18,34 @@ import org.jfugue.pattern.Pattern;
 
 public class Interp {
     
-   //NUESTRAS VARIABLES GLOBALES, QUE BONITAS JODER! 
-    Pattern patterns_musicote = new Pattern();
+    Pattern patterns_musicote = new Pattern();// global para la lista de notas a reproducir
    
-    private int beat;
-    private int [][] armor = new int[8][9];
-    private boolean becu = false;
-    private boolean esp = false;
-    private int compnumber = 0;
+    private int beat; //global para el beat
+    private int [][] armor = new int[8][9]; // armadura + transport
+    private boolean becu = false; // calculado un becuadro al evaluar la ultima nota
+    private boolean esp = false; // detectado un ~ al evaluar ultima nota
+    private int compnumber = 0;//para el seguimiento de errores
 	private int partnumber = 0;
-    private int ekkodur;
-    private boolean trie = false;
-    private boolean fromID = false;
-	private boolean fromIf = false;
+    private int ekkodur;//ultima duracion calculada
+    private boolean trie = false;//si seesta calculando un trieto
+    private boolean fromID = false;//si se esta calculando un ID
+	private boolean fromIf = false;//si se esta calculando un if de partitura
     
     
-    private String ant_duracion = ""; //SU PUTA MADRE ME CAGO EN SU PUTA VIDA DESGRACIADA DE MIERDA QUE TE JODAN I TE MUERAS DE UN PUTO CANCER HIJO DE PUTA TE DESEO LA PEOR DE LAS MUERTES QUE SUICIDARTE SEA TU UNICA OPCION Y YO TE PARTA LAS PUTAS PIERNAS ANTES DE HACERLO IMBEIL TE BVOY A MATAR IHJOAFNDKASLPSX
+    private String ant_duracion = "";//ultima duracion en string
     
     
-    private long[] voces = new long[16];
+    private long[] voces = new long[16]; //para igualar coros
     
     
     boolean puentecito = false; //Es nota puente(?)
 
     
-    /**Diccionario con las equivalencias nota duracion (by yeray, esta orgulloso)*/
+    /**Diccionario con las equivalencias nota duracion*/
     private HashMap<String,Integer> Note2Dur;
     
     
-    /** Que yeray sepa, puede ir aqui */
-    //C5sf D8sf E1sf F6sf G3sf A4sf B2sf
+    /**Pasa a notacion inglesa*/
     private String givememahnote(String s) {
         if (s.equals("Do")) return "C";
         else if (s.equals("Re")) return "D";
@@ -84,9 +55,9 @@ public class Interp {
         else if (s.equals("La")) return "A";
         else if (s.equals("Si")) return "B";
         else if (s.equals("Quiet")) return "R";
-        else return "IMBECIL";
+        else return "ERROR";
     }
-    
+    /**Pasa duracion de string nodo a string jfugue*/
    private String damemiduracion(String s) {
        if (s.equals("r")) return "w"; //4
        else if (s.equals("r*")) return "w."; //6
@@ -102,10 +73,10 @@ public class Interp {
        else if (s.equals("f*")) return "t."; //0.1875
        else if (s.equals("sf")) return "x"; //0.0625
        else if (s.equals("sf*")) return "x."; //0.09375
-       else return "IMBECIL";
+       else return "ERROR";
     }
     
-    
+    /**Pasa de string a duracion en float */
     private double quemedesmitempo(String s) {
        if (s.equals("r")) return 4.0;
        else if (s.equals("r*")) return 6.0;
@@ -124,7 +95,7 @@ public class Interp {
        else return 0.0;
     }
     
-    
+    /**Pasa de instrumento AST a instrumento jfugue */
     private String getInsrumento(String s) {
         if (s.equals("Flauta")) return "Flute";
         else if (s.equals("Piano")) return "Piano";
@@ -139,6 +110,7 @@ public class Interp {
         else return "IMBECIL";
     }
     
+    /**carga el Diccionario de equivalencias nota duracion */
     private void cargaNote(){
         Note2Dur.put("sf", 2);		Note2Dur.put("c", 16);
         Note2Dur.put("sf*", 3);		Note2Dur.put("c*", 24);
@@ -337,7 +309,7 @@ public class Interp {
         return null;
     }
     
-    
+    /**Calcula la cantidad de semitonos que aplican las alteraciones apuntadas por t*/
     private int calculaAlter (AslTree t) {
         int val = 0;
         becu = false;
@@ -365,7 +337,8 @@ public class Interp {
         return val;
     }
 
-    
+    /**Carga la cantidad de semitonos a añadir en cada nota definidos
+    *por la armadura apuntada por t */
     private void cargaArmor(AslTree t){
         
         for (int i = 0; i<t.getChildCount(); ++i){
@@ -402,6 +375,8 @@ public class Interp {
         }
     }
     
+    /** Carga la cantidad de tonos añadidos a todas las notas definido por
+    *el Trasnport apuntado por t*/
     private void cargaTransport(AslTree t){
         int cuantas = 4*evaluateExpression(t.getChild(0)).getIntegerValue();
         for(int i = 1; i<8; ++i){
@@ -503,7 +478,7 @@ public class Interp {
             case AslLexer.FUNCALL:
                 executeFunction(t.getChild(0).getText(), t.getChild(1));
                 return null;
-            //el follon
+            //Partitura interpret
             case AslLexer.PARTITURA:  
                 becu = false;
 				esp = false;
@@ -512,19 +487,16 @@ public class Interp {
 				trie = false;
 				fromID = false;
 				fromIf = false;
-				int yerayless = metrica(t);// LO SIENTO PERO PARA TESTEAR DA SIDA
-                AslTree temposito = t.getChild(1); //Tempo => MINE
+				int nonsense = metrica(t);
+                AslTree temposito = t.getChild(1);
                 double tempo = quemedesmitempo(temposito.getChild(0).toString())*evaluateExpression(temposito.getChild(1)).getIntegerValue();
  				int tempox = (int)tempo;
- 				//A TEMPOX ESTA EL TEMPO DE LA PARTITURA
-                AslTree transp = t.getChild(2); //transport Tranqui que ya llegara => MINE
-                //
+                AslTree transp = t.getChild(2);
                 armor=new int[8][9];
-                cargaArmor(t.getChild(3)); //EN TEORIA FUNCIONA HEHE HIHI HAHA => SI NO FUNCIONA MIRA A LA IZQUIERDA, YERAY NO ME SEAS DISLEXICO (YERAY)
+                cargaArmor(t.getChild(3));
                 cargaTransport(t.getChild(2));
-                //
                 for (int j = 4; j<t.getChildCount(); ++j) {
-                    gintonicysantascrismas(t.getChild(j),0,tempox,false);
+                    tract_voces(t.getChild(j),0,tempox,false);
                 }
                 armor = new int[8][9];
                 return null;
@@ -538,36 +510,28 @@ public class Interp {
     }
     
     
-    
-   private void gintonicysantascrismas(AslTree t, int x,int tempox,boolean coro) {
+   /**Trata las voices de los coros o en su defecto la voice apuntados por t*/ 
+   private void tract_voces(AslTree t, int x,int tempox,boolean coro) {
         if (t.getType() == AslLexer.CHORUS) {
             //tractar i recorrer recursivament els instruments que estaran al else
             String s = "";
             long max = voces[0];
-//             System.out.println("max top: "+max);
             for (int i = 1; i<t.getChildCount(); ++i) if (voces[i] > max) max = voces[i];
-//             System.out.println("max top f1: "+max);
             for (int i = 0; i<t.getChildCount(); ++i) {
                 if ((long)max-voces[i]>0) {
-//                     System.out.println("max-voces[i] top: "+((long)max-voces[i]));
                     Pattern absurdo = new Pattern("R"+Dur2String((long) max-voces[i])).setTempo(tempox).setVoice(i);
                     voces[i] = max;
                     patterns_musicote.add(absurdo);
                 }
             }
-//             System.out.println("max top f2: "+max);
             for (int i = 0; i<t.getChildCount();++i) {
-                //recorrer tots els instruments i guardarho en strings o patterns o basures d'aquestes
-                gintonicysantascrismas(t.getChild(i),i,tempox,true);
+                tract_voces(t.getChild(i),i,tempox,true);
             }
             
             max = voces[0];
-//             System.out.println("max topqq: "+max);
             for (int i = 1; i<t.getChildCount(); ++i) if (voces[i] > max) max = voces[i];
-//             System.out.println("max top f1qq: "+max);
             for (int i = 0; i<1; ++i) {
                 if ((long)max-voces[i]>0 && voces[i]!=0) {
-//                     System.out.println("max-voces[i] topqq: "+((long)max-voces[i]));
                     Pattern absurdo = new Pattern("R"+Dur2String((long) max-voces[i])).setTempo(tempox).setVoice(i);
                     voces[i] = max;
                     patterns_musicote.add(absurdo);
@@ -576,14 +540,13 @@ public class Interp {
         }
         //sino seran instruments que tractarem per aqui
         else {
-            AslTree instrumento = t; //instrumento => Falta funcion para saber cual toca, de momento flauta y piano.
-                                                //PUEDE HABER COROS PERO DE MOMENTO NOPE, DE MOMENTO SOLO UNI Y AUN GRACIAS
+            AslTree instrumento = t; //instrumento
             // A PARTIR DE AQUI SUENA LO QUE TOCA EL INSTRUMENTO DES DE INSTRUMENTO.
             String musicamaestro = "";
             for (int i = 0; i<instrumento.getChildCount();++i) {
                 musicamaestro = musicamaestro+executeMusic(instrumento.getChild(i), x);
             }
-            System.out.println(musicamaestro);
+            //System.out.println(musicamaestro);
             Pattern pattern = new Pattern(musicamaestro).setInstrument(getInsrumento(instrumento.toString())).setTempo(tempox).setVoice(x);
             patterns_musicote.add(pattern);
         }
@@ -594,8 +557,6 @@ public class Interp {
     /**
      * Reproduce la musica que esta en l_notas
      */
-    
-    
     private String executeMusic (AslTree l_notas, int x) {
         assert l_notas != null;
         String a_reproducir = ""; //Lo que va a sonar
@@ -618,7 +579,7 @@ public class Interp {
                         case AslLexer.RAISE:
                             Data qsth = new Data(evaluateExpression(l_notas.getChild(i)));
                             String zzz = Not2String(qsth.getNote()); //te da la nota y la octava
-                            boolean detras = qsth.getDuracion() == -1; //seria como un nuran pero cosecha propia
+                            boolean detras = qsth.getDuracion() == -1; //seria como un nuran
                             String yyy = zzz+Dur2String((long)qsth.getDuracion()); //todo
                             if (!puentecito) {
                                 if(notita.getChildCount() != 0){
@@ -631,7 +592,7 @@ public class Interp {
                                         else {
                                             a_reproducir = a_reproducir+yyy+"- ";
                                             ant_duracion = Dur2String((long)qsth.getDuracion());
-                                            voces[x] += (long)qsth.getDuracion(); //google, imbecil
+                                            voces[x] += (long)qsth.getDuracion();
                                         }
                                     }
                                     else {
@@ -711,7 +672,7 @@ public class Interp {
                         
                         
                         case AslLexer.ID:
-                            nota = new Data(Stack.getVariable(notita.toString())); //lo tiene todo almacenado papi
+                            nota = new Data(Stack.getVariable(notita.toString())); //lo tiene todo almacenado
                             notayoctava = nota.getNote(); //te da la nota y la octava
                             duracion = nota.getDuracion(); //todo
                             if (!nota.getBecu()){
@@ -734,70 +695,42 @@ public class Interp {
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[1][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.RE:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[2][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.MI:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[3][octava];
-                            }*/
                              a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.FA:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[4][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.SOL:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[5][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.LA:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[6][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.SI:
                             nota = new Data(evaluateExpression(notita));
                             notayoctava = nota.getNote();
                             duracion = nota.getDuracion();
-                            /*if (!becu) {
-                                octava = (Integer.parseInt(notita.getChild(1).toString()));
-                                notayoctava = notayoctava+armor[7][octava];
-                            }*/
                             a_reproducir = a_reproducir+tratapuenteyponlenota(notayoctava, duracion,notita,x);
                             break;
                         case AslLexer.QUIET:
@@ -832,32 +765,20 @@ public class Interp {
                 Stack.defineVariable("Time", new Data (Stack.getVariable("Time").getIntegerValue()+1));
                 }
                 return a_reproducir;
-                
-                
-                
-                ////////////////////////////////////
+
             default: assert false;
         }
         assert false;
         return null;
     }
-    
 
-
-
-/*TE DA LA STRING Q JFUGUE COME PARA REPRODUCIR LA MULTINOTA DE L ARBOL T(q apunta a MULTINOTA TOKEN)*/
-    
-
-
+    /**Evalua la multinota apuntada por t y la retorna en 
+    *formato string de jfugue */
     private String evaluateNmulti(AslTree t){
         String res = "";
-//         System.out./*println*/(t.toString());
         for(int i = 0; i<t.getChild(0).getChildCount(); ++i){
             AslTree n = t.getChild(0).getChild(i);
-//             System.out.println(t.getChild(0));
-//             System.out.println(t.getChild(i));
             Data value = new Data();
-//             System.out.println(n.toString());
             int eger;
             int rigante;
             switch(n.getType()){
@@ -912,19 +833,6 @@ public class Interp {
                     break;
             }
             int nota = value.getNote();
-            /*if (!value.getBecu()){
-                int oc = (nota-1)/24+1;
-                int cual = (nota-1)%24+1;
-                if(cual < 4) cual = 1;
-                else if(cual < 8) cual = 2;
-                else if(cual < 11) cual = 3;
-                else if(cual < 14) cual = 4;
-                else if(cual < 18) cual = 5;
-                else if(cual < 22) cual = 6;
-                else if(cual < 25) cual = 7;
-                else assert false;
-                nota += armor[cual][oc];
-            }*/
             res += Not2String(nota);
             if(puentecito) res +="-";
             res += Dur2String( (long) value.getDuracion());
@@ -934,16 +842,12 @@ public class Interp {
         }
         if(t.getChild(1).getChildCount() == 1) puentecito = true;
         else puentecito = false;
-        ant_duracion = t.getChild(1).getText();
+        ekkodur = Note2Dur.get(t.getChild(1).getText());
+        ant_duracion = Dur2String(ekkodur);
         return res;
     }
 
-    
-    
-    
-    
-    
-    
+    /**Trata el caso del puente y devuelve la nota en string para jfugue */
     private String tratapuenteyponlenota(int nyo, int d, AslTree notita, int x) {    
         String notyoct = Not2String(nyo);
         String dur = Dur2String((long)d);
@@ -961,7 +865,7 @@ public class Interp {
                     else {
                         a_ret = notyoct+dur+"- ";
                         ant_duracion = dur;
-                        voces[x] += d; //google, imbecil
+                        voces[x] += d;
                     }
                 }
                 else {
@@ -1031,10 +935,6 @@ public class Interp {
         return a_ret;
     }
     
-
-    
-    
-    
     /** le entra una duracion en formato 192 y la pasa a String
     r-w,b-h,n-q,c-i,sc-s,f-t,sf-x,
     */
@@ -1075,6 +975,7 @@ public class Interp {
         return res;
     }
     
+    /**pasa duracion de string de jfugue a int formato 192*/
     private int String2Dur(String d){
         char[] res = d.toCharArray();
         int v = 0;
@@ -1093,7 +994,7 @@ public class Interp {
         }
         return v;
     }
-    
+    /**pasa de nota formato 24 oct a string de jfugue */
     private String Not2String(int n){
         String res = "";
         if (n == 0) return "R";
@@ -1104,7 +1005,6 @@ public class Interp {
             do re mi fa sol la si quiet
             d   d#   r  r#   m   f  f#   s  s#   l  l#   si
             */
-            
             switch(nota){
                 case 0:
                 case 1:
@@ -1195,13 +1095,7 @@ public class Interp {
             case AslLexer.BOOLEAN:
                 value = new Data(t.getBooleanValue());
                 break;
-                
-                
             // A Note
-            /** tabla:
-                    d   d#   r  r#   m   f  f#   s  s#   l  l#   si
-                1 
-            */
             case AslLexer.DO:
                 rigante = Integer.parseInt(t.getChild(1).toString());
                 eger = calculaAlter(t.getChild(0));
@@ -1271,19 +1165,16 @@ public class Interp {
                 break;
             
             case AslLexer.HALF:
-//             System.out.println(t.getChild(0).getText());
                 value = new Data(evaluateExpression(t.getChild(0)));
                 assert value.isNote();
                 value.setDur(value.getDuracion()/2);
                 break;
             case AslLexer.TWICE:
-//             System.out.println(t.getChild(0).getText());
                 value = new Data(evaluateExpression(t.getChild(0)));
                 assert value.isNote();
                 value.setDur(value.getDuracion()*2);
                 break;
             case AslLexer.RAISE:
-//             System.out.println(t.getChild(0).getText());
                 value = new Data(evaluateExpression(t.getChild(0)));
                 assert value.isNote();
                 eger =value.getNote();
@@ -1292,15 +1183,12 @@ public class Interp {
                 value.setNote(eger);
                 break;
             case AslLexer.FALL:
-//             System.out.println(t.getChild(0).getText());
                 value = new Data(evaluateExpression(t.getChild(0)));
                 eger =value.getNote();
                 if(eger % 2 == 0) eger -= 2;
                 else eger -= 1;
                 value.setNote(eger);
                 break;
-                
-                
             // A function call. Checks that the function returns a result.
             case AslLexer.FUNCALL:
                 value = executeFunction(t.getChild(0).getText(), t.getChild(1));
@@ -1311,13 +1199,11 @@ public class Interp {
                 break;
             default: break;
         }
-
         // Retrieve the original line and return
         if (value != null) {
             setLineNumber(previous_line);
             return value;
         }
-        
         // Unary operators
         value = evaluateExpression(t.getChild(0));
         if (t.getChildCount() == 1) {
@@ -1338,7 +1224,6 @@ public class Interp {
             setLineNumber(previous_line);
             return value;
         }
-
         // Two operands
         Data value2;
         switch (type) {
@@ -1355,7 +1240,6 @@ public class Interp {
                 }
                 value = value.evaluateRelational(type, value2);
                 break;
-
             // Arithmetic operators
             case AslLexer.PLUS:
             case AslLexer.MINUS:
@@ -1366,7 +1250,6 @@ public class Interp {
                 checkInteger(value); checkInteger(value2);
                 value.evaluateArithmetic(type, value2);
                 break;
-
             // Boolean operators
             case AslLexer.AND:
             case AslLexer.OR:
@@ -1409,7 +1292,6 @@ public class Interp {
                 
             default: assert false;
         }
-
         // Return the value of the second expression
         v = evaluateExpression(t);
         checkBoolean(v);
@@ -1541,6 +1423,7 @@ public class Interp {
     beat = num*redondas/num2
     */
     
+    /**Revisa la metrica de la partitura apuntada por f */
     private int metrica(AslTree f){
     
         switch (f.getType()) {
@@ -1563,14 +1446,12 @@ public class Interp {
 				case AslLexer.ORGANO:
 				case AslLexer.TROMPA:
                     for(int i = 0; i<f.getChildCount(); ++i){
-//                         System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
                     
                 case AslLexer.REPEAT:
                     for(int i = 1; i<f.getChildCount(); ++i){
-//                         System.out.println(f.getText());
                         metrica(f.getChild(i));
                     }
                     break;
@@ -1578,17 +1459,11 @@ public class Interp {
                 case AslLexer.LNOTAS:
                     if(!fromIf)++compnumber;
                     int maux = metrica(f.getChild(0));
-//                      System.out.println(maux);
                     for(int i = 1; i<f.getChildCount(); ++i){
-//                         System.out.println(f.getText());
                         maux += metrica(f.getChild(i));
                     }
-//                     System.out.println(maux);
-//                     System.out.println("KKK");
                     if(!fromIf){
                         if(maux != beat){
-//                             System.out.println(beat);
-//                             System.out.println(maux);
                             throw new RuntimeException("El fragmento " + compnumber + " de la partitura " + partnumber + " no cumple el beat");
                         }
                     }else{
@@ -1606,7 +1481,6 @@ public class Interp {
                 case AslLexer.SI:
                 case AslLexer.QUIET:
                     int aux = Note2Dur.get(f.getChild(2).getText());
-//                         System.out.println(f.getText());
                     if(aux == -1) return ekkodur;
                     else ekkodur = aux;
                     return aux;
@@ -1616,43 +1490,36 @@ public class Interp {
                     int ret = metrica(f.getChild(1));
                     for(int i = 2; i<f.getChildCount(); ++i){
                         fromIf = true;
-//                         System.out.println(f.getText());
                         if(ret != metrica(f.getChild(i))){
                             throw new RuntimeException("La metrica del if/else del fragmento" + compnumber + " de la partitura " + partnumber + " no coincide.");
                         }
                     }
                     return ret;
-                   //yeray lo quiere asi, he intentado explicarle que no era asi, pero no me escucha, vamos a hacerle caso...
                     
                 case AslLexer.TRI:
                 int auxf = 0;
                     for(int i = 0; i < f.getChildCount(); ++i){
-//                         System.out.println(f.getText());
                         auxf += metrica(f.getChild(i));
                     }
                     auxf = 2*auxf;
                     return auxf/3;
                     
                 case AslLexer.MULTINOTA:
-//                     System.out.println(f.getText());
-                    return Note2Dur.get(f.getChild(1).getText());
+                    ekkodur =Note2Dur.get(f.getChild(1).getText());
+                    return ekkodur;
                     
                     
                 case AslLexer.FALL:
                 case AslLexer.RAISE:
-//                 System.out.println(f.getText());
                     return metrica(f.getChild(0));
                     
                 case AslLexer.TWICE:
-//                 System.out.println(f.getText());
                     return 2*metrica(f.getChild(0));
                     
                 case AslLexer.HALF:
-//                 System.out.println(f.getText());
                     return metrica(f.getChild(0))/2;
                 
                 case AslLexer.ID:
-//                 System.out.println(f.getText());
                         if(Stack.getVariable(f.getText()).getDuracion() != -1) ekkodur = Stack.getVariable(f.getText()).getDuracion();
                         return ekkodur;
                 
@@ -1661,15 +1528,15 @@ public class Interp {
             return 0;
     }
     
+    /**Evalua el trisillo apuntado por t y lo devuelve en string jfugue */
     private String evaluateTri(AslTree t){
         String res = "";
         trie = true;
         Data valistica;
         int nota;
-//         System.out.println(t.getText());
         for(int i = 0; i<t.getChildCount(); i++){
             AslTree n = t.getChild(i);
-//             System.out.println(n.getText());
+
             switch(n.getType()){
                 case AslLexer.DO:
                 case AslLexer.RE:
@@ -1681,19 +1548,6 @@ public class Interp {
                 case AslLexer.QUIET:
                     valistica = evaluateExpression(n);
                     nota = valistica.getNote();
-                    /*if (!valistica.getBecu()){
-                        int oc = (nota-1)/24+1;
-                        int cual = (nota-1)%24+1;
-                        if(cual < 4) cual = 1;
-                        else if(cual < 8) cual = 2;
-                        else if(cual < 11) cual = 3;
-                        else if(cual < 14) cual = 4;
-                        else if(cual < 18) cual = 5;
-                        else if(cual < 22) cual = 6;
-                        else if(cual < 25) cual = 7;
-                        else assert false;
-                        nota += armor[cual][oc];
-                    }*/
                     res += Not2String(nota);
                     if(puentecito) res +="-";
                     ant_duracion = Dur2String(valistica.getDuracion());
@@ -1710,7 +1564,6 @@ public class Interp {
                 case AslLexer.FALL:
                 case AslLexer.ID:
                     valistica = evaluateExpression(n);
-//                     System.out.println("ES AL ACABAR NO TIENE QUE VER CON EL RAIS RIMA HEHEHAHEHA");
                     nota = valistica.getNote();
                     if (fromID){
                         if (!valistica.getBecu()){

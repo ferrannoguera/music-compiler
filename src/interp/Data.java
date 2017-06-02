@@ -56,10 +56,6 @@ public class Data {
     /** Constructor for integers */
     Data(int v) { type = Type.INTEGER; value = v;}
     
-    /** pausa para definir Notes: value sera la nota, 0 es silencio, >0 sera la nota en si siguiendo posiciones degun escala y octaba de la forma:
-    Do1 = 1, sostenidoDo1/bemolRe1 = 2, Re1 = 3 etc
-    asi podemos saber si una nota se va a la puta solo sabiendo si su numero se pasa de rango
-    duracion sera obviamente la duracion,(-1 si es NURAN) siendo 1 la semifusa y aciendo potencia de 2 cada salto, asi nos libramos de decimales (a no ser q sean unos cretinos y nos pongan un half a una semifusa o algo equibalente(viva la ortografia))*/
     
     /** Constructor for NOTES */
     Data(int v, int d, boolean b){type = Type.NOTE; value = v; duracion = d; becu = b;}
@@ -84,6 +80,9 @@ public class Data {
 
     /** Indicates whether the data is void */
     public boolean isVoid() { return type == Type.VOID; }
+    
+    /** Indicates whether the data is a Note */
+	public boolean isNote(){ return type == Type.NOTE; }
 
     /**
      * Gets the value of an integer data. The method asserts that
@@ -103,24 +102,32 @@ public class Data {
         return value == 1;
     }
     
+    /**
+    *Gets the duracion of a Note data. The method asserts that
+    *the data is a Note
+    */
     public int getDuracion() {
         assert type == Type.NOTE;
         return duracion;
 	}
 	
+	/**
+	*Gets the value of a Note data. The method asserts that
+	*the data is a Note
+	*/
 	public int getNote(){
         assert type == Type.NOTE;
         return value;
 	}
 	
+	/**
+	*Gets the becu of a Note data. The method asserts that
+	*the data is a Note
+	*/
 	public boolean getBecu() {
         assert type == Type.NOTE;
         return becu;
 	}
-	
-	public boolean isNote(){
-        return type == Type.NOTE;
-    }
 
     /** Defines a Boolean value for the data */
     public void setValue(boolean b) { type = Type.BOOLEAN; value = b ? 1 : 0; }
